@@ -1,0 +1,6054 @@
+[
+  {
+    "id": "arch-linux",
+    "name": "Arch Linux",
+    "name_zh": "Arch Linux",
+    "family": "arch",
+    "secondary_families": [],
+    "upstream": "獨立開發（受 CRUX 啟發）",
+    "based_on_since": null,
+    "first_release": 2002,
+    "latest_version": "滾動更新",
+    "latest_release_date": null,
+    "release_model": "rolling",
+    "release_cycle": "持續滾動，安裝映象按月更新",
+    "package_manager": "pacman",
+    "update_command": "sudo pacman -Syu",
+    "gui_updater": "無官方圖形更新器（社群提供 Pamac、Octopi 等）",
+    "init_system": "systemd",
+    "default_desktop": [
+      "無預設桌面（使用者自選）"
+    ],
+    "supported_arch": [
+      "x86_64"
+    ],
+    "status": "active",
+    "status_note": "持續滾動維護，由社群獨立運營",
+    "maintainer_type": "community",
+    "maintainer": "Arch Linux 團隊",
+    "founder": "Judd Vinet",
+    "founded_year": 2002,
+    "org": "Arch Linux 社群",
+    "license": "GPL-2.0-or-later 等（各軟體包許可證不同）",
+    "openness": "firmware",
+    "commercial_edition": "無",
+    "official_site": "https://archlinux.org/",
+    "docs": "https://wiki.archlinux.org/",
+    "download": "https://archlinux.org/download/",
+    "repo": "https://gitlab.archlinux.org/",
+    "wiki": "https://wiki.archlinux.org/",
+    "forum": "https://bbs.archlinux.org/",
+    "chat": "https://archlinux.org/irc/",
+    "reddit": "https://www.reddit.com/r/archlinux/",
+    "intro": "Arch Linux 是一個以「KISS」（Keep It Simple, Stupid）為哲學的獨立滾動發行版，由 Judd Vinet 於 2002 年建立。它不預裝桌面環境，安裝時由使用者自行選擇核心、顯示伺服器、桌面與元件，因此呈現出一種“從零件開始搭系統”的體驗。Arch 的官方倉庫只收錄較新的上游軟體，滾動更新讓使用者持續獲得最新版本，而不必等待一年兩次的系統升級。pacman 是它的包管理器，語法直接、速度快；AUR（Arch User Repository）則由社群提供海量 PKGBUILD，配合 yay、paru 等助手可覆蓋官方倉庫之外的軟體。Arch Wiki 被公認為 Linux 世界最詳盡的文件之一，許多其他發行版的使用者也會查閱。它適合願意閱讀文件、理解系統組成、接受“更新可能帶來手工干預”的中高階使用者；如果你需要開箱即用、長期不折騰的桌面，Manjaro 或 EndeavourOS 會更省心。需要說明的是，Arch 預設包含部分韌體與二進位制 blob，並非完全自由軟體發行版。",
+    "highlights": [
+      "滾動更新，官方倉庫軟體版本貼近上游",
+      "pacman + AUR，軟體覆蓋極廣",
+      "Arch Wiki：高質量、可遷移的系統文件",
+      "極簡基礎系統，桌面與元件完全自選"
+    ],
+    "pros": [
+      "軟體新、定製自由度高",
+      "文件與社群沉澱深厚",
+      "包管理簡單透明，適合學習 Linux"
+    ],
+    "cons": [
+      "安裝與維護門檻較高",
+      "滾動更新偶發需要人工處理",
+      "官方不提供桌面環境的完整開箱體驗"
+    ],
+    "similar": [
+      "endeavouros",
+      "manjaro",
+      "artix"
+    ],
+    "target_user": "願意折騰、想深入理解 Linux 的中高階使用者",
+    "tags": [
+      "desktop",
+      "lightweight",
+      "hobby",
+      "server"
+    ],
+    "popularity": 5,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "manjaro",
+    "name": "Manjaro",
+    "name_zh": "Manjaro Linux",
+    "family": "arch",
+    "secondary_families": [],
+    "upstream": "Arch Linux",
+    "based_on_since": 2011,
+    "first_release": 2011,
+    "latest_version": "滾動更新",
+    "latest_release_date": null,
+    "release_model": "rolling",
+    "release_cycle": "穩定延遲滾動，快照通常在 Arch 更新後數週釋出",
+    "package_manager": "pacman + Pamac",
+    "update_command": "pamac update  # 或 sudo pacman -Syu",
+    "gui_updater": "Pamac",
+    "init_system": "systemd",
+    "default_desktop": [
+      "Xfce",
+      "KDE Plasma",
+      "GNOME"
+    ],
+    "supported_arch": [
+      "x86_64"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，由 Manjaro GmbH & Co. KG 協調",
+    "maintainer_type": "company",
+    "maintainer": "Manjaro 團隊",
+    "founder": "Roland Singer、Philip Müller 等",
+    "founded_year": 2011,
+    "org": "Manjaro GmbH & Co. KG",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "proprietary",
+    "commercial_edition": "無",
+    "official_site": "https://manjaro.org/",
+    "docs": "https://wiki.manjaro.org/",
+    "download": "https://manjaro.org/download/",
+    "repo": "https://gitlab.manjaro.org/",
+    "wiki": "https://wiki.manjaro.org/",
+    "forum": "https://forum.manjaro.org/",
+    "chat": "https://matrix.to/#/#manjaro:manjaro.org",
+    "reddit": "https://www.reddit.com/r/ManjaroLinux/",
+    "intro": "Manjaro 是 Arch Linux 最知名的下游之一，2011 年起以“讓 Arch 更好上手”為目標，提供預配置桌面、圖形安裝器、硬體檢測與核心管理工具。它並不直接復刻 Arch 的軟體源，而是先經過一段穩定延遲再推送更新，以降低滾動發行版突然破壞系統的機率。官方提供 Xfce、KDE Plasma 和 GNOME 等版本，Pamac 圖形包管理器集成了倉庫、AUR 與 Flatpak，更新、搜尋和降級都更直觀。Manjaro 還維護自己的核心、驅動與部分應用補丁，因此軟體版本通常略落後於 Arch，但整體仍屬滾動更新。它的社群論壇和 Wiki 對新手友好，適合想體驗 Arch 生態、又不想從命令列安裝一切的使用者。需要留意的是，延遲更新並不等於絕對穩定；跨大版本升級、AUR 包與驅動衝突仍可能要求使用者閱讀公告並手工處理。Manjaro 的商標與基礎設施由公司協調，但發行版本身可免費使用。",
+    "highlights": [
+      "Arch 生態 + 預配置桌面，安裝即用",
+      "Pamac 整合官方倉庫、AUR 與 Flatpak",
+      "穩定延遲滾動，更新節奏比 Arch 保守",
+      "自帶核心與硬體管理工具"
+    ],
+    "pros": [
+      "對新手友好，圖形化程度高",
+      "軟體較新且硬體相容性不錯",
+      "官方風味版選擇豐富"
+    ],
+    "cons": [
+      "延遲更新可能帶來依賴錯位",
+      "AUR 與 Manjaro 倉庫並非官方保證",
+      "部分決策與社群溝通曾引發爭議"
+    ],
+    "similar": [
+      "endeavouros",
+      "arch-linux",
+      "garuda"
+    ],
+    "target_user": "想用 Arch 生態但希望開箱即用的桌面使用者",
+    "tags": [
+      "desktop",
+      "gaming",
+      "hobby"
+    ],
+    "popularity": 5,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "endeavouros",
+    "name": "EndeavourOS",
+    "name_zh": "EndeavourOS",
+    "family": "arch",
+    "secondary_families": [],
+    "upstream": "Arch Linux",
+    "based_on_since": 2019,
+    "first_release": 2019,
+    "latest_version": "滾動更新",
+    "latest_release_date": null,
+    "release_model": "rolling",
+    "release_cycle": "貼近 Arch 倉庫滾動，ISO 定期重新整理",
+    "package_manager": "pacman + yay（預裝）",
+    "update_command": "sudo pacman -Syu",
+    "gui_updater": "無官方圖形更新器（可自行安裝）",
+    "init_system": "systemd",
+    "default_desktop": [
+      "Xfce",
+      "KDE Plasma",
+      "GNOME",
+      "Budgie 等"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "aarch64（社群映象）"
+    ],
+    "status": "active",
+    "status_note": "活躍維護的社群專案",
+    "maintainer_type": "community",
+    "maintainer": "EndeavourOS 團隊",
+    "founder": "Bryan Poerwoatmodjo 等",
+    "founded_year": 2019,
+    "org": "EndeavourOS 社群",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "firmware",
+    "commercial_edition": "無",
+    "official_site": "https://endeavouros.com/",
+    "docs": "https://discovery.endeavouros.com/",
+    "download": "https://endeavouros.com/latest-release/",
+    "repo": "https://github.com/endeavouros-team",
+    "wiki": "https://discovery.endeavouros.com/",
+    "forum": "https://forum.endeavouros.com/",
+    "chat": "https://matrix.to/#/#endeavouros:matrix.org",
+    "reddit": "https://www.reddit.com/r/EndeavourOS/",
+    "intro": "EndeavourOS 誕生於 2019 年，接過了已停止維護的 Antergos 的接力棒，定位是“最接近 Arch 的友好安裝體驗”。它使用 Arch 官方倉庫，不額外維護一套軟體源，因此更新節奏、軟體版本與 Arch 基本同步；區別在於安裝器、預設主題、歡迎工具和少量便利指令碼。預設提供 Xfce 桌面，也允許在安裝時選擇 KDE Plasma、GNOME、Budgie、Cinnamon、MATE 等環境。專案強調“終端優先、圖形輔助”：系統裝好後不會替你隱藏 pacman，但會用歡迎程式幫你配置映象、驅動、印表機和常用軟體。EndeavourOS 的社群規模不大卻活躍，論壇與 Discovery 文件是主要支援渠道。它適合已經瞭解 Arch 基本概念、希望快速裝好一臺可用系統並繼續按 Arch 方式維護的使用者；如果你完全不想接觸命令列，Manjaro 或 Mint 更合適。",
+    "highlights": [
+      "使用 Arch 官方倉庫，幾乎不引入延遲",
+      "圖形安裝器 + 可自選桌面環境",
+      "歡迎工具集中處理映象、驅動與常用配置",
+      "活躍而友善的小型社群"
+    ],
+    "pros": [
+      "比純 Arch 安裝省時",
+      "軟體新、與 Arch 文件通用",
+      "預設系統輕量，不塞冗餘軟體"
+    ],
+    "cons": [
+      "仍要求使用者理解 Arch 維護方式",
+      "專案規模小，支援依賴社群",
+      "圖形化工具覆蓋面有限"
+    ],
+    "similar": [
+      "arch-linux",
+      "manjaro",
+      "cachyos"
+    ],
+    "target_user": "想快速裝好 Arch、又願意按 Arch 方式維護的使用者",
+    "tags": [
+      "desktop",
+      "lightweight",
+      "hobby"
+    ],
+    "popularity": 4,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "garuda",
+    "name": "Garuda Linux",
+    "name_zh": "Garuda Linux",
+    "family": "arch",
+    "secondary_families": [
+      "gaming"
+    ],
+    "upstream": "Arch Linux",
+    "based_on_since": 2020,
+    "first_release": 2020,
+    "latest_version": "滾動更新",
+    "latest_release_date": null,
+    "release_model": "rolling",
+    "release_cycle": "貼近 Arch 滾動，定期重新整理 ISO",
+    "package_manager": "pacman + Pamac",
+    "update_command": "sudo pacman -Syu",
+    "gui_updater": "Garuda Assistant / Pamac",
+    "init_system": "systemd",
+    "default_desktop": [
+      "KDE Plasma",
+      "GNOME",
+      "Xfce",
+      "Cinnamon 等"
+    ],
+    "supported_arch": [
+      "x86_64"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，專注效能與遊戲體驗",
+    "maintainer_type": "community",
+    "maintainer": "Garuda Linux 團隊",
+    "founder": "Librewish（社群暱稱）等",
+    "founded_year": 2020,
+    "org": "Garuda Linux 社群",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "proprietary",
+    "commercial_edition": "無",
+    "official_site": "https://garudalinux.org/",
+    "docs": "https://wiki.garudalinux.org/",
+    "download": "https://garudalinux.org/downloads",
+    "repo": "https://gitlab.com/garuda-linux",
+    "wiki": "https://wiki.garudalinux.org/",
+    "forum": "https://forum.garudalinux.org/",
+    "chat": "https://discord.gg/garudalinux",
+    "reddit": "https://www.reddit.com/r/GarudaLinux/",
+    "intro": "Garuda Linux 是 2020 年出現的 Arch 衍生版，以“開箱即用的效能與視覺體驗”著稱。它在 Arch 基礎上預裝了大量調優：Btrfs 檔案系統配合 Snapper 自動快照、zram、CPU 排程器與遊戲相關元件，並提供 Garuda Assistant、Garuda Gamer 等圖形工具，讓使用者能集中管理系統維護、驅動和遊戲平臺。官方最主流的版本使用 KDE Plasma，同時也提供 GNOME、Xfce、Cinnamon、Sway 等風味。它的視覺風格比較鮮明，預設主題、視窗裝飾和圖示都經過統一設計。Garuda 適合希望獲得較新軟體、不想自己搭建快照與遊戲環境、能接受較重視覺與預裝軟體的桌面使用者。需要注意的是，它比 EndeavourOS 更“重”，預裝元件更多；滾動更新和深度定製也意味著故障排查時不能完全照搬 Arch Wiki。專案由社群運營，不含付費商業版。",
+    "highlights": [
+      "Btrfs 快照與系統回滾開箱即用",
+      "Garuda Gamer 集中管理遊戲平臺與工具",
+      "效能調優與 zram 預設啟用",
+      "統一而鮮明的桌面視覺設計"
+    ],
+    "pros": [
+      "遊戲與桌面體驗配置完整",
+      "快照回滾降低折騰風險",
+      "軟體版本跟隨 Arch，較新"
+    ],
+    "cons": [
+      "預裝內容多，系統偏重",
+      "深度定製導致排障路徑不同於原版 Arch",
+      "視覺風格個人色彩較強"
+    ],
+    "similar": [
+      "cachyos",
+      "manjaro",
+      "endeavouros"
+    ],
+    "target_user": "想要高效能、開箱即用的 Arch 遊戲桌面使用者",
+    "tags": [
+      "desktop",
+      "gaming",
+      "multimedia"
+    ],
+    "popularity": 4,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "cachyos",
+    "name": "CachyOS",
+    "name_zh": "CachyOS",
+    "family": "arch",
+    "secondary_families": [
+      "gaming"
+    ],
+    "upstream": "Arch Linux",
+    "based_on_since": 2016,
+    "first_release": 2016,
+    "latest_version": "滾動更新",
+    "latest_release_date": null,
+    "release_model": "rolling",
+    "release_cycle": "持續滾動，安裝映象定期更新",
+    "package_manager": "pacman + paru",
+    "update_command": "sudo pacman -Syu",
+    "gui_updater": "CachyOS Hello / Octopi（可選）",
+    "init_system": "systemd",
+    "default_desktop": [
+      "KDE Plasma",
+      "GNOME",
+      "Xfce",
+      "Hyprland 等"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "x86_64-v3"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，專注效能最佳化",
+    "maintainer_type": "community",
+    "maintainer": "CachyOS 團隊",
+    "founder": null,
+    "founded_year": 2016,
+    "org": "CachyOS 社群",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "proprietary",
+    "commercial_edition": "無",
+    "official_site": "https://cachyos.org/",
+    "docs": "https://wiki.cachyos.org/",
+    "download": "https://cachyos.org/download/",
+    "repo": "https://github.com/CachyOS",
+    "wiki": "https://wiki.cachyos.org/",
+    "forum": "https://discuss.cachyos.org/",
+    "chat": "https://discord.gg/cachyos",
+    "reddit": "https://www.reddit.com/r/cachyos/",
+    "intro": "CachyOS 是一個 2016 年起發展的 Arch 衍生版，核心賣點是“為效能而調優”。它提供經過編譯最佳化的核心與軟體包，支援 x86-64-v3 等指令集級別，並針對桌面響應、遊戲和低延遲場景調整排程器、記憶體管理與 CPU 頻率策略。安裝器允許使用者選擇 KDE Plasma、GNOME、Xfce、Hyprland 等桌面，預設整合 paru、CachyOS Hello 與常用驅動工具。與 Garuda 相比，CachyOS 更強調底層效能引數與可選調優，而不是大量預裝應用；它仍然使用 Arch 倉庫和 AUR 生態，因此 Arch Wiki 與 AUR 經驗可以複用。它適合追求幀率、編譯效能或低延遲、願意接受滾動更新的使用者，也適合把 Linux 作為主力遊戲系統的人。需要注意，最佳化核心和第三方倉庫可能增加排查複雜度；對穩定性要求極高的生產伺服器，仍應優先選擇固定版本發行版。",
+    "highlights": [
+      "面向效能最佳化的核心與使用者空間軟體包",
+      "支援 x86-64-v3 等微架構最佳化",
+      "桌面與遊戲場景的排程器調優",
+      "保留 Arch 倉庫與 AUR 生態"
+    ],
+    "pros": [
+      "效能取向下預設配置較完整",
+      "桌面選擇豐富，安裝流程現代",
+      "與 Arch 生態相容，資料可複用"
+    ],
+    "cons": [
+      "最佳化選項增加排障變數",
+      "滾動更新仍需主動維護",
+      "部分效能收益依硬體與負載而異"
+    ],
+    "similar": [
+      "garuda",
+      "endeavouros",
+      "arch-linux"
+    ],
+    "target_user": "追求效能與遊戲體驗的 Arch 使用者",
+    "tags": [
+      "desktop",
+      "gaming",
+      "multimedia"
+    ],
+    "popularity": 4,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "artix",
+    "name": "Artix Linux",
+    "name_zh": "Artix Linux",
+    "family": "arch",
+    "secondary_families": [],
+    "upstream": "Arch Linux",
+    "based_on_since": 2017,
+    "first_release": 2017,
+    "latest_version": "滾動更新",
+    "latest_release_date": null,
+    "release_model": "rolling",
+    "release_cycle": "持續滾動，提供多種 init 變體",
+    "package_manager": "pacman",
+    "update_command": "sudo pacman -Syu",
+    "gui_updater": "Octopi（可選）",
+    "init_system": "openrc / runit / s6 / dinit",
+    "default_desktop": [
+      "Xfce",
+      "KDE Plasma",
+      "LXQt",
+      "MATE 等"
+    ],
+    "supported_arch": [
+      "x86_64"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，提供無 systemd 的 Arch 變體",
+    "maintainer_type": "community",
+    "maintainer": "Artix Linux 團隊",
+    "founder": null,
+    "founded_year": 2017,
+    "org": "Artix Linux 社群",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "firmware",
+    "commercial_edition": "無",
+    "official_site": "https://artixlinux.org/",
+    "docs": "https://wiki.artixlinux.org/",
+    "download": "https://artixlinux.org/download.php",
+    "repo": "https://gitea.artixlinux.org/",
+    "wiki": "https://wiki.artixlinux.org/",
+    "forum": "https://forum.artixlinux.org/",
+    "chat": "https://matrix.to/#/#artix:matrix.org",
+    "reddit": "https://www.reddit.com/r/artixlinux/",
+    "intro": "Artix Linux 是 2017 年從 Arch Linux 分叉出的發行版，最鮮明的特徵是“去 systemd 化”。它保留 pacman、Arch 的包格式與滾動更新方式，但把初始化系統替換為 OpenRC、runit、s6 或 dinit，使用者可以在安裝時選擇。Artix 維護自己的倉庫，許多 Arch 軟體包需要重新構建以移除 systemd 依賴或適配其他 init；AUR 包則不一定能直接使用，需要自行檢查。它提供 Xfce、KDE Plasma、LXQt、MATE 等多種桌面 ISO，也適合搭建輕量伺服器或嵌入式裝置。Artix 適合對 init 系統有明確偏好、理解服務管理差異、願意處理依賴適配的使用者；如果你只是不喜歡 systemd 但不想折騰，Devuan 可能是更成熟的替代。Artix 的社群規模不大，文件和論壇是主要支援來源，部分冷門軟體可能缺少現成包。",
+    "highlights": [
+      "同一發行版提供 OpenRC、runit、s6、dinit 四種 init",
+      "保留 pacman 與 Arch 滾動更新模型",
+      "輕量，適合伺服器與老硬體",
+      "獨立倉庫，移除 systemd 依賴"
+    ],
+    "pros": [
+      "init 選擇自由，系統可控",
+      "比 Devuan 更貼近 Arch 的新軟體",
+      "輕量且無 systemd 耦合"
+    ],
+    "cons": [
+      "軟體包適配工作量較大",
+      "AUR 相容性不穩定",
+      "社群與文件規模有限"
+    ],
+    "similar": [
+      "devuan",
+      "arch-linux",
+      "void"
+    ],
+    "target_user": "希望使用 Arch 生態但拒絕 systemd 的使用者",
+    "tags": [
+      "desktop",
+      "server",
+      "lightweight",
+      "hobby"
+    ],
+    "popularity": 3,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "blackarch",
+    "name": "BlackArch Linux",
+    "name_zh": "BlackArch Linux",
+    "family": "arch",
+    "secondary_families": [
+      "security"
+    ],
+    "upstream": "Arch Linux",
+    "based_on_since": 2012,
+    "first_release": 2012,
+    "latest_version": "滾動更新",
+    "latest_release_date": null,
+    "release_model": "rolling",
+    "release_cycle": "持續滾動，安全工具倉庫持續擴充",
+    "package_manager": "pacman",
+    "update_command": "sudo pacman -Syu",
+    "gui_updater": "Octopi（可選）",
+    "init_system": "systemd",
+    "default_desktop": [
+      "Xfce",
+      "Openbox",
+      "Fluxbox",
+      "i3 等"
+    ],
+    "supported_arch": [
+      "x86_64"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，安全測試工具倉庫持續更新",
+    "maintainer_type": "community",
+    "maintainer": "BlackArch 團隊",
+    "founder": null,
+    "founded_year": 2012,
+    "org": "BlackArch 社群",
+    "license": "GPL-2.0-or-later 等（工具許可證各異）",
+    "openness": "proprietary",
+    "commercial_edition": "無",
+    "official_site": "https://blackarch.org/",
+    "docs": "https://wiki.blackarch.org/",
+    "download": "https://blackarch.org/downloads.html",
+    "repo": "https://github.com/BlackArch",
+    "wiki": "https://wiki.blackarch.org/",
+    "forum": null,
+    "chat": "https://discord.gg/blackarch",
+    "reddit": "https://www.reddit.com/r/blackarch/",
+    "intro": "BlackArch Linux 是面向安全測試與滲透測試的 Arch 衍生版，2012 年啟動。它最大的特點是維護一個規模龐大的安全工具倉庫，涵蓋資訊收集、漏洞分析、Web 測試、無線、逆向、取證等門類；這些工具以 pacman 包的形式提供，可以獨立安裝到已有的 Arch 系統，而不必重灌整個發行版。官方 ISO 提供 Xfce、Openbox、Fluxbox、i3 等輕量桌面或視窗管理器，避免為安全工具再疊加厚重桌面。BlackArch 遵循 Arch 的滾動更新和 KISS 風格，適合已經熟悉 Arch、需要可隨時擴充工具鏈的安全從業者與 CTF 玩家。必須強調：這些工具只應在獲得授權的環境中使用；專案本身也明確反對任何非法用途。由於工具數量龐大，倉庫質量與維護狀態並不完全一致，部分包可能長期未更新。",
+    "highlights": [
+      "大型安全工具倉庫，可按需安裝",
+      "可疊加在現有 Arch 系統之上",
+      "輕量桌面與視窗管理器選擇",
+      "遵循 Arch 滾動更新與 pacman 工作流"
+    ],
+    "pros": [
+      "安全工具覆蓋面廣",
+      "無需重灌即可在 Arch 上使用倉庫",
+      "桌面輕量，資源佔用可控"
+    ],
+    "cons": [
+      "工具質量與維護狀態參差",
+      "不適合作為日常通用桌面首選",
+      "使用場景受法律與授權嚴格限制"
+    ],
+    "similar": [
+      "kali",
+      "parrot",
+      "arch-linux"
+    ],
+    "target_user": "已熟悉 Arch 的授權安全測試人員",
+    "tags": [
+      "security",
+      "desktop",
+      "hobby"
+    ],
+    "popularity": 3,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "archcraft",
+    "name": "Archcraft",
+    "name_zh": "Archcraft",
+    "family": "arch",
+    "secondary_families": [],
+    "upstream": "Arch Linux",
+    "based_on_since": 2020,
+    "first_release": 2020,
+    "latest_version": "滾動更新",
+    "latest_release_date": null,
+    "release_model": "rolling",
+    "release_cycle": "持續滾動，ISO 定期更新",
+    "package_manager": "pacman + yay",
+    "update_command": "sudo pacman -Syu",
+    "gui_updater": "無官方圖形更新器",
+    "init_system": "systemd",
+    "default_desktop": [
+      "bspwm",
+      "Openbox",
+      "i3",
+      "Hyprland 等"
+    ],
+    "supported_arch": [
+      "x86_64"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，專注極簡視窗管理器美學",
+    "maintainer_type": "individual",
+    "maintainer": "Aditya Shakya",
+    "founder": "Aditya Shakya",
+    "founded_year": 2020,
+    "org": "Archcraft 專案",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "firmware",
+    "commercial_edition": "無",
+    "official_site": "https://archcraft.io/",
+    "docs": "https://wiki.archcraft.io/",
+    "download": "https://archcraft.io/download.html",
+    "repo": "https://github.com/archcraft-os",
+    "wiki": "https://wiki.archcraft.io/",
+    "forum": "https://github.com/archcraft-os/archcraft/issues",
+    "chat": "https://discord.gg/archcraft",
+    "reddit": "https://www.reddit.com/r/archcraft/",
+    "intro": "Archcraft 由 Aditya Shakya 於 2020 年創立，是一個把 Arch Linux 與精心配置的輕量視窗管理器結合起來的桌面發行版。它的預設環境通常使用 bspwm 或 Openbox，提供一整套統一配色、狀態列、通知、啟動器與快捷鍵方案，開箱即得極簡而完整的平鋪/堆疊桌面。與追求“純淨 Arch”的 EndeavourOS 不同，Archcraft 的重點是視覺與互動設計；它同時保留 pacman、AUR 和 Arch 倉庫，因此底層仍是標準的 Arch 工作流。專案還提供 Hyprland、i3、awesome 等社群版 ISO，適合喜歡鍵盤驅動、低資源佔用、又不想從零配置 dotfiles 的使用者。需要注意的是，預配置主題和指令碼會增加系統複雜度，升級視窗管理器或修改配置前應做好備份；它也不適合期待完整 GNOME/KDE 功能的使用者。",
+    "highlights": [
+      "預配置 bspwm/Openbox 等極簡桌面",
+      "統一的視覺主題、狀態列與快捷鍵",
+      "底層仍是標準 Arch + pacman/AUR",
+      "低資源佔用，適合老機器與鍵盤流"
+    ],
+    "pros": [
+      "開箱即用的精緻極簡桌面",
+      "高度可定製，配置參考完整",
+      "輕量、啟動快"
+    ],
+    "cons": [
+      "預配置複雜，升級需謹慎",
+      "不適合需要完整桌面套件的使用者",
+      "主要依賴單人/小團隊維護"
+    ],
+    "similar": [
+      "arch-linux",
+      "endeavouros",
+      "artix"
+    ],
+    "target_user": "喜歡平鋪視窗管理器與極簡美學的 Arch 使用者",
+    "tags": [
+      "desktop",
+      "lightweight",
+      "hobby"
+    ],
+    "popularity": 3,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "steamos",
+    "name": "SteamOS",
+    "name_zh": "SteamOS",
+    "family": "arch",
+    "secondary_families": [
+      "gaming",
+      "immutable"
+    ],
+    "upstream": "Arch Linux（3.0 起）",
+    "based_on_since": 2022,
+    "first_release": 2013,
+    "latest_version": "滾動更新（隨 Steam 客戶端推送）",
+    "latest_release_date": null,
+    "release_model": "rolling",
+    "release_cycle": "Valve 按批次推送系統映象更新",
+    "package_manager": "pacman（只讀根分割槽）+ Flatpak",
+    "update_command": "通過 Steam 客戶端「設定 → 系統」檢查更新",
+    "gui_updater": "Steam 客戶端系統更新",
+    "init_system": "systemd",
+    "default_desktop": [
+      "KDE Plasma（遊戲模式 + 桌面模式）"
+    ],
+    "supported_arch": [
+      "x86_64"
+    ],
+    "status": "active",
+    "status_note": "隨 Steam Deck 與 Valve 硬體持續更新",
+    "maintainer_type": "company",
+    "maintainer": "Valve",
+    "founder": "Valve",
+    "founded_year": 2013,
+    "org": "Valve Corporation",
+    "license": "GPL-2.0-or-later 等（含專有 Steam 客戶端）",
+    "openness": "proprietary",
+    "commercial_edition": "Steam Deck 預裝系統",
+    "official_site": "https://store.steampowered.com/steamos",
+    "docs": "https://help.steampowered.com/",
+    "download": "https://store.steampowered.com/steamos",
+    "repo": null,
+    "wiki": "https://wiki.archlinux.org/title/SteamOS",
+    "forum": "https://steamcommunity.com/discussions/",
+    "chat": null,
+    "reddit": "https://www.reddit.com/r/SteamOS/",
+    "intro": "SteamOS 是 Valve 為遊戲場景打造的作業系統，最早於 2013 年以 Debian 為基礎釋出，2022 年隨 Steam Deck 推出的 3.0 版本改為基於 Arch Linux。它採用不可變系統映象，根檔案系統只讀，系統更新由 Valve 整體推送，從而降低使用者誤操作導致系統損壞的風險；需要安裝額外軟體時，官方路徑是 Flatpak，開發者模式則可臨時解鎖 pacman。SteamOS 的核心體驗是遊戲模式：開機直接進入 Steam 大屏介面，手柄操作，Proton 相容層負責執行大量 Windows 遊戲；切換到桌面模式後則是 KDE Plasma。它適合以遊戲為主、希望“像遊戲機一樣”使用 PC 的使用者，也適合想在掌機或客廳裝置上獲得低維護成本體驗的人。需要注意，SteamOS 官方主要支援 Valve 自家硬體，第三方裝置安裝可能缺少驅動或功能；它也不是通用桌面發行版。",
+    "highlights": [
+      "不可變系統映象，更新由 Valve 整體推送",
+      "遊戲模式 + KDE Plasma 桌面模式",
+      "Proton 相容層覆蓋大量 Windows 遊戲",
+      "針對 Steam Deck 手柄與電源管理最佳化"
+    ],
+    "pros": [
+      "遊戲體驗接近遊戲機，維護成本低",
+      "系統更新原子化，不易被使用者改壞",
+      "桌面模式可完成常規輕辦公"
+    ],
+    "cons": [
+      "官方硬體支援範圍有限",
+      "只讀系統限制深度定製",
+      "非遊戲用途的軟體生態依賴 Flatpak"
+    ],
+    "similar": [
+      "chimeraos",
+      "bazzite",
+      "garuda"
+    ],
+    "target_user": "以遊戲為主、想要低維護客廳/掌機系統的玩家",
+    "tags": [
+      "gaming",
+      "desktop",
+      "immutable"
+    ],
+    "popularity": 5,
+    "data_as_of": "2026-11-18",
+    "verified": false
+  },
+  {
+    "id": "chimeraos",
+    "name": "ChimeraOS",
+    "name_zh": "ChimeraOS",
+    "family": "arch",
+    "secondary_families": [
+      "gaming",
+      "immutable"
+    ],
+    "upstream": "Arch Linux",
+    "based_on_since": 2019,
+    "first_release": 2019,
+    "latest_version": "滾動更新",
+    "latest_release_date": null,
+    "release_model": "rolling",
+    "release_cycle": "持續滾動，系統映象按版本釋出",
+    "package_manager": "pacman（只讀根分割槽）+ Flatpak",
+    "update_command": "sudo frzr-deploy  # 或通過系統更新介面",
+    "gui_updater": "ChimeraOS 系統更新",
+    "init_system": "systemd",
+    "default_desktop": [
+      "Steam 大屏模式 / GNOME"
+    ],
+    "supported_arch": [
+      "x86_64"
+    ],
+    "status": "active",
+    "status_note": "活躍維護的客廳遊戲系統",
+    "maintainer_type": "community",
+    "maintainer": "ChimeraOS 團隊",
+    "founder": null,
+    "founded_year": 2019,
+    "org": "ChimeraOS 社群",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "proprietary",
+    "commercial_edition": "無",
+    "official_site": "https://chimeraos.org/",
+    "docs": "https://chimeraos.org/faq/",
+    "download": "https://chimeraos.org/download/",
+    "repo": "https://github.com/ChimeraOS",
+    "wiki": "https://github.com/ChimeraOS/chimeraos/wiki",
+    "forum": null,
+    "chat": "https://discord.gg/chimeraos",
+    "reddit": "https://www.reddit.com/r/ChimeraOS/",
+    "intro": "ChimeraOS 是一個把 PC 變成客廳遊戲機的 Arch 衍生版，前身是 2019 年出現的 GamerOS，後更名為 ChimeraOS。它採用不可變系統設計，預設啟動進入 Steam 大屏模式，也提供 GNOME 桌面用於日常操作；支援 Steam、Epic、GOG 等平臺，並通過 Proton 與 Lutris 等工具擴充套件遊戲相容性。系統更新以原子映象方式部署，使用者不需要像普通 Arch 那樣逐包升級，從而減少客廳裝置“越用越壞”的機率。ChimeraOS 適合連線電視、使用手柄、希望開機即玩的使用者，也適合把舊 PC 改造成遊戲主機。與 SteamOS 相比，它更開放地支援第三方硬體和更多啟動方式，但硬體相容性仍取決於具體配置；部分反作弊遊戲無法在 Linux 上執行，這是所有 Linux 遊戲系統共同的限制。",
+    "highlights": [
+      "開機直達 Steam 大屏模式",
+      "不可變系統與原子更新",
+      "支援第三方 PC 與多種遊戲平臺",
+      "GNOME 桌面模式可完成日常操作"
+    ],
+    "pros": [
+      "客廳遊戲體驗完整",
+      "系統更新簡單、回滾方便",
+      "對非 Valve 硬體更開放"
+    ],
+    "cons": [
+      "硬體相容性仍需逐機驗證",
+      "反作弊遊戲支援受限",
+      "社群規模小於 SteamOS"
+    ],
+    "similar": [
+      "steamos",
+      "bazzite",
+      "batocera"
+    ],
+    "target_user": "想把舊 PC 變成客廳遊戲機的玩家",
+    "tags": [
+      "gaming",
+      "desktop",
+      "immutable"
+    ],
+    "popularity": 3,
+    "data_as_of": "2026-11-18",
+    "verified": false
+  },
+  {
+    "id": "parabola",
+    "name": "Parabola GNU/Linux-libre",
+    "name_zh": "Parabola GNU/Linux-libre",
+    "family": "arch",
+    "secondary_families": [
+      "free"
+    ],
+    "upstream": "Arch Linux",
+    "based_on_since": 2009,
+    "first_release": 2009,
+    "latest_version": "滾動更新",
+    "latest_release_date": null,
+    "release_model": "rolling",
+    "release_cycle": "持續滾動，僅收錄自由軟體",
+    "package_manager": "pacman",
+    "update_command": "sudo pacman -Syu",
+    "gui_updater": "無官方圖形更新器",
+    "init_system": "systemd",
+    "default_desktop": [
+      "無預設桌面（使用者自選自由軟體桌面）"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "i686",
+      "armv7"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，FSF 認可的完全自由發行版",
+    "maintainer_type": "community",
+    "maintainer": "Parabola 團隊",
+    "founder": null,
+    "founded_year": 2009,
+    "org": "Parabola GNU/Linux-libre 社群",
+    "license": "GPL-2.0-or-later 等（僅自由許可證）",
+    "openness": "free",
+    "commercial_edition": "無",
+    "official_site": "https://www.parabola.nu/",
+    "docs": "https://wiki.parabola.nu/",
+    "download": "https://www.parabola.nu/download/",
+    "repo": "https://git.parabola.nu/",
+    "wiki": "https://wiki.parabola.nu/",
+    "forum": "https://labs.parabola.nu/",
+    "chat": "https://matrix.to/#/#parabola:matrix.org",
+    "reddit": "https://www.reddit.com/r/parabola/",
+    "intro": "Parabola GNU/Linux-libre 是 Arch Linux 的完全自由軟體衍生版，2009 年開始開發，並獲得自由軟體基金會（FSF）的認可。它沿用 pacman、滾動更新和 Arch 的包格式，但會移除或替換所有不符合自由軟體定義的元件，包括專有韌體、二進位制 blob 和非自由驅動；核心使用 Linux-libre，瀏覽器等軟體也會替換為自由版本。因此，一些依賴專有韌體的無線網絡卡、顯示卡或硬體加速功能可能無法工作，這是使用者選擇 Parabola 時必須接受的取捨。它適合重視軟體自由、願意為硬體相容性做出妥協、並且熟悉 Arch 維護方式的使用者，也常用於自由軟體宣傳與教學環境。Parabola 的社群規模較小，軟體包更新可能略慢於 Arch；遇到硬體問題時，官方 Wiki 和郵件列表是主要支援渠道。",
+    "highlights": [
+      "FSF 認可的完全自由 GNU/Linux 發行版",
+      "基於 Arch，保留 pacman 與滾動更新",
+      "移除專有韌體、blob 與非自由軟體",
+      "使用 Linux-libre 核心"
+    ],
+    "pros": [
+      "軟體自由原則貫徹徹底",
+      "可複用 Arch 的包管理與文件",
+      "適合自由軟體教學與研究"
+    ],
+    "cons": [
+      "硬體相容性明顯受限",
+      "軟體包更新可能滯後",
+      "社群規模小，支援資源有限"
+    ],
+    "similar": [
+      "trisquel",
+      "guix",
+      "arch-linux"
+    ],
+    "target_user": "堅持完全自由軟體、能接受硬體限制的使用者",
+    "tags": [
+      "free",
+      "desktop",
+      "education",
+      "hobby"
+    ],
+    "popularity": 2,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "archlinux-arm",
+    "name": "Arch Linux ARM",
+    "name_zh": "Arch Linux ARM",
+    "family": "arch",
+    "secondary_families": [
+      "embedded"
+    ],
+    "upstream": "Arch Linux",
+    "based_on_since": 2011,
+    "first_release": 2011,
+    "latest_version": "滾動更新",
+    "latest_release_date": null,
+    "release_model": "rolling",
+    "release_cycle": "持續滾動，按裝置提供安裝映象",
+    "package_manager": "pacman",
+    "update_command": "sudo pacman -Syu",
+    "gui_updater": "無官方圖形更新器",
+    "init_system": "systemd",
+    "default_desktop": [
+      "無預設桌面（使用者自選）"
+    ],
+    "supported_arch": [
+      "aarch64",
+      "armv7"
+    ],
+    "status": "active",
+    "status_note": "活躍維護的 Arch ARM 移植專案",
+    "maintainer_type": "community",
+    "maintainer": "Arch Linux ARM 團隊",
+    "founder": null,
+    "founded_year": 2011,
+    "org": "Arch Linux ARM 社群",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "firmware",
+    "commercial_edition": "無",
+    "official_site": "https://archlinuxarm.org/",
+    "docs": "https://archlinuxarm.org/about",
+    "download": "https://archlinuxarm.org/platforms",
+    "repo": "https://github.com/archlinuxarm",
+    "wiki": "https://archlinuxarm.org/",
+    "forum": "https://archlinuxarm.org/forum",
+    "chat": null,
+    "reddit": "https://www.reddit.com/r/archlinuxarm/",
+    "intro": "Arch Linux ARM 是 Arch Linux 社群於 2011 年啟動的 ARM 移植專案，目標是把 Arch 的 pacman、滾動更新與 AUR 生態帶到樹莓派、Pine64、Rockchip、Odroid 等 ARM 單板計算機上。它維護針對不同板卡的 U-Boot、核心與安裝映象，使用者可以通過官方平臺頁面選擇裝置並寫入儲存卡。系統本身保持 Arch 的極簡風格，不預裝桌面，ARM 裝置上的桌面、驅動和服務需要使用者自行配置。Arch Linux ARM 適合已經熟悉 Arch、希望在 ARM 板卡上執行最新軟體或搭建輕量伺服器的使用者，也適合嵌入式 Linux 學習者。需要注意的是，不同板卡的支援質量與核心版本差異很大，部分裝置需要社群補丁；ARM 平臺的硬體加速與影片解碼支援通常不如 x86_64 成熟。它不提供商業版，由社群維護，更新前應備份並可回滾。",
+    "highlights": [
+      "Arch 的 ARM 官方社群移植",
+      "覆蓋樹莓派、Pine64、Odroid 等板卡",
+      "保留 pacman、滾動更新與 AUR",
+      "極簡系統，桌面與服務自選"
+    ],
+    "pros": [
+      "ARM 板卡可複用 Arch 生態",
+      "軟體版本新",
+      "系統精簡、可控"
+    ],
+    "cons": [
+      "板卡支援質量差異大",
+      "ARM 硬體加速有限",
+      "需要熟悉 Arch 維護方式"
+    ],
+    "similar": [
+      "armbian",
+      "arch-linux",
+      "postmarketos"
+    ],
+    "target_user": "熟悉 Arch、想在 ARM 板卡上跑新軟體的使用者",
+    "tags": [
+      "embedded",
+      "server",
+      "lightweight",
+      "hobby"
+    ],
+    "popularity": 3,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "rhel",
+    "name": "Red Hat Enterprise Linux",
+    "name_zh": "紅帽企業 Linux",
+    "family": "rh",
+    "secondary_families": [
+      "enterprise"
+    ],
+    "upstream": "Fedora",
+    "based_on_since": 2003,
+    "first_release": 2002,
+    "latest_version": "10.3",
+    "latest_release_date": "2026-11-11",
+    "release_model": "lts",
+    "release_cycle": "約 3 年一個大版本，每個大版本提供約 10 年生命週期",
+    "package_manager": "dnf / rpm",
+    "update_command": "sudo dnf upgrade",
+    "gui_updater": "GNOME Software（受訂閱與倉庫限制）",
+    "init_system": "systemd",
+    "default_desktop": [
+      "GNOME",
+      "無（伺服器安裝選項）"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "aarch64",
+      "ppc64le",
+      "s390x"
+    ],
+    "status": "lts",
+    "status_note": "RHEL 10 於 2025 年釋出，標準支援至 2030 年，擴充套件生命週期支援更久",
+    "maintainer_type": "company",
+    "maintainer": "Red Hat, Inc.",
+    "founder": "Bob Young、Marc Ewing（Red Hat）",
+    "founded_year": 1993,
+    "org": "Red Hat（IBM 旗下）",
+    "license": "GPL-2.0-or-later 等（訂閱制商業發行版）",
+    "openness": "commercial",
+    "commercial_edition": "RHEL 訂閱（Server、Workstation、Developer 等）",
+    "official_site": "https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux",
+    "docs": "https://docs.redhat.com/",
+    "download": "https://developers.redhat.com/products/rhel/download",
+    "repo": "https://gitlab.com/redhat/",
+    "wiki": "https://access.redhat.com/documentation/",
+    "forum": "https://access.redhat.com/discussions",
+    "chat": "https://matrix.to/#/#rhel:matrix.org",
+    "reddit": "https://www.reddit.com/r/redhat/",
+    "intro": "Red Hat Enterprise Linux（RHEL）是企業 Linux 的事實標準之一。Red Hat 於 1993 年成立，2002 年推出 RHEL 2.1，此後確立了“Fedora 創新、RHEL 穩定、CentOS Stream 銜接”的分層模式。RHEL 以約三年一個大版本的節奏釋出，每個大版本提供約十年生命週期，涵蓋核心、systemd、SELinux、Podman、Ansible 與完整認證生態。它通過訂閱提供二進位制訪問、安全公告、知識庫與商業支援，因此不是傳統意義上的免費下載發行版；開發者可通過 Red Hat Developer 計劃免費獲取。RHEL 適合需要長期穩定、硬體與軟體認證、合規審計和廠商支援的企業，尤其是金融、電信、政府與雲基礎設施。對個人桌面使用者而言，RHEL 往往過於保守且訂閱流程繁瑣；Fedora 或 Rocky、Alma 等相容重建版更合適。",
+    "highlights": [
+      "約 10 年生命週期與企業級支援",
+      "SELinux、Podman、Ansible 深度整合",
+      "廣泛的硬體與 ISV 認證",
+      "穩定的 ABI/API 與長期安全更新"
+    ],
+    "pros": [
+      "企業支援與合規能力強",
+      "生命週期長，升級路徑清晰",
+      "生態認證與文件體系成熟"
+    ],
+    "cons": [
+      "需要訂閱，個人使用門檻較高",
+      "軟體版本保守",
+      "社群免費支援有限"
+    ],
+    "similar": [
+      "rocky",
+      "alma",
+      "oracle-linux"
+    ],
+    "target_user": "需要長期穩定與商業支援的企業 IT 團隊",
+    "tags": [
+      "server",
+      "enterprise",
+      "security"
+    ],
+    "popularity": 5,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "fedora",
+    "name": "Fedora",
+    "name_zh": "Fedora Linux",
+    "family": "rh",
+    "secondary_families": [
+      "desktop"
+    ],
+    "upstream": "獨立開發（RHEL 的上游）",
+    "based_on_since": null,
+    "first_release": 2003,
+    "latest_version": "45",
+    "latest_release_date": "2026-11-03",
+    "release_model": "fixed",
+    "release_cycle": "約每 6 個月釋出一版，每版支援約 13 個月",
+    "package_manager": "dnf / rpm-ostree（Atomic 版）",
+    "update_command": "sudo dnf upgrade --refresh",
+    "gui_updater": "GNOME Software",
+    "init_system": "systemd",
+    "default_desktop": [
+      "GNOME",
+      "KDE Plasma",
+      "Xfce",
+      "Budgie 等"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "aarch64",
+      "ppc64le",
+      "s390x"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，是 RHEL 與 CentOS Stream 的上游",
+    "maintainer_type": "foundation",
+    "maintainer": "Fedora Project",
+    "founder": "Warren Togami、Red Hat 等",
+    "founded_year": 2003,
+    "org": "Fedora Project（Red Hat 支援）",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "firmware",
+    "commercial_edition": "無",
+    "official_site": "https://fedoraproject.org/",
+    "docs": "https://docs.fedoraproject.org/",
+    "download": "https://fedoraproject.org/workstation/download/",
+    "repo": "https://src.fedoraproject.org/",
+    "wiki": "https://fedoraproject.org/wiki/",
+    "forum": "https://discussion.fedoraproject.org/",
+    "chat": "https://matrix.to/#/#fedora:fedoraproject.org",
+    "reddit": "https://www.reddit.com/r/Fedora/",
+    "intro": "Fedora 是 Red Hat 贊助的社群發行版，2003 年從 Red Hat Linux 的消費級產品線演化而來，如今是 RHEL 與 CentOS Stream 的上游。它每約六個月釋出一版，採用較新的核心、GNOME、systemd 與容器工具，同時保持對自由軟體政策的堅持。Fedora Workstation 是預設桌面，另有 KDE、Xfce、Budgie、Sway 等 Spin，以及面向伺服器、雲、IoT 和 Atomic 桌面的版本。Fedora 適合希望使用較新軟體、參與上游生態、又需要相對可靠釋出節奏的開發者和桌面使用者；它的 SELinux 預設啟用、Wayland 支援積極，也常被用作新技術試驗場。代價是每個版本支援期約 13 個月，使用者需要定期升級；部分多媒體編解碼器與 NVIDIA 驅動需要額外配置。Fedora 不提供商業版，但由 Red Hat 提供基礎設施與工程支援。",
+    "highlights": [
+      "約 6 個月釋出週期，軟體貼近上游",
+      "RHEL 與 CentOS Stream 的上游",
+      "預設啟用 SELinux 與 Wayland",
+      "Workstation、Atomic、Server、IoT 多形態"
+    ],
+    "pros": [
+      "軟體新且釋出節奏可預期",
+      "上游參與度高，文件完善",
+      "桌面體驗現代、硬體支援積極"
+    ],
+    "cons": [
+      "版本支援期較短，需要定期升級",
+      "多媒體編解碼器需額外處理",
+      "部分新特性早期可能存在相容問題"
+    ],
+    "similar": [
+      "rhel",
+      "centos-stream",
+      "nobara"
+    ],
+    "target_user": "喜歡較新軟體與上游生態的開發者、桌面使用者",
+    "tags": [
+      "desktop",
+      "server",
+      "enterprise"
+    ],
+    "popularity": 5,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "fedora-silverblue",
+    "name": "Fedora Silverblue / Kinoite",
+    "name_zh": "Fedora Silverblue / Kinoite",
+    "family": "rh",
+    "secondary_families": [
+      "immutable",
+      "desktop"
+    ],
+    "upstream": "Fedora",
+    "based_on_since": 2018,
+    "first_release": 2018,
+    "latest_version": "45",
+    "latest_release_date": "2026-11-03",
+    "release_model": "fixed",
+    "release_cycle": "跟隨 Fedora 每 6 個月釋出，原子映象持續更新",
+    "package_manager": "rpm-ostree + Flatpak + Toolbox",
+    "update_command": "sudo rpm-ostree upgrade",
+    "gui_updater": "GNOME Software（rpm-ostree 後端）",
+    "init_system": "systemd",
+    "default_desktop": [
+      "GNOME（Silverblue）",
+      "KDE Plasma（Kinoite）"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "aarch64"
+    ],
+    "status": "active",
+    "status_note": "Fedora Atomic 桌面版，活躍維護",
+    "maintainer_type": "foundation",
+    "maintainer": "Fedora Project",
+    "founder": "Fedora Atomic Working Group",
+    "founded_year": 2018,
+    "org": "Fedora Project",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "firmware",
+    "commercial_edition": "無",
+    "official_site": "https://fedoraproject.org/atomic-desktops/",
+    "docs": "https://docs.fedoraproject.org/en-US/fedora-silverblue/",
+    "download": "https://fedoraproject.org/atomic-desktops/silverblue/download/",
+    "repo": "https://pagure.io/workstation-ostree-config",
+    "wiki": "https://fedoraproject.org/wiki/Changes/Silverblue",
+    "forum": "https://discussion.fedoraproject.org/",
+    "chat": "https://matrix.to/#/#silverblue:fedoraproject.org",
+    "reddit": "https://www.reddit.com/r/Fedora/",
+    "intro": "Fedora Silverblue 是 Fedora 的不可變桌面版本，2018 年以 Atomic Workstation 的名義出現，後來更名為 Silverblue；Kinoite 則是同一套技術棧上的 KDE Plasma 版本。它的根檔案系統以只讀 OSTree 映象提供，系統更新是原子性的：新版本部署在獨立快照中，重啟後生效，出問題可回滾到上一版本。日常應用主要通過 Flatpak 安裝，開發工具則放進 Toolbox 或 Distrobox 容器，避免汙染基礎系統。這種模式適合希望系統長期穩定、不被包管理操作破壞、又能使用較新 Fedora 軟體的使用者，尤其適合開發者、運維和給家人使用的桌面。代價是傳統 rpm 包的安裝方式受限，需要適應 rpm-ostree 與容器工作流；某些驅動、輸入法和系統級工具仍需 layering 或額外配置。Silverblue 不是“不能改”，而是把修改變成顯式、可回滾的操作。",
+    "highlights": [
+      "只讀根檔案系統與原子更新",
+      "更新失敗可回滾到上一個部署",
+      "Flatpak + Toolbox/Distrobox 應用工作流",
+      "Silverblue（GNOME）與 Kinoite（KDE）雙形態"
+    ],
+    "pros": [
+      "系統穩定性高，升級風險低",
+      "回滾機制清晰",
+      "適合容器化開發與日常桌面"
+    ],
+    "cons": [
+      "傳統 rpm 軟體安裝不直觀",
+      "系統級定製需要額外學習",
+      "部分驅動與輸入法配置更復雜"
+    ],
+    "similar": [
+      "fedora",
+      "vanilla",
+      "steamos"
+    ],
+    "target_user": "追求穩定、可回滾桌面的開發者與進階使用者",
+    "tags": [
+      "desktop",
+      "immutable",
+      "developer"
+    ],
+    "popularity": 4,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "centos-stream",
+    "name": "CentOS Stream",
+    "name_zh": "CentOS Stream",
+    "family": "rh",
+    "secondary_families": [
+      "enterprise"
+    ],
+    "upstream": "Fedora",
+    "based_on_since": 2019,
+    "first_release": 2019,
+    "latest_version": "10",
+    "latest_release_date": "2024-12-12",
+    "release_model": "rolling",
+    "release_cycle": "大版本內持續滾動，位於 Fedora 與 RHEL 之間",
+    "package_manager": "dnf / rpm",
+    "update_command": "sudo dnf upgrade",
+    "gui_updater": "GNOME Software（可選）",
+    "init_system": "systemd",
+    "default_desktop": [
+      "GNOME",
+      "無（伺服器）"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "aarch64",
+      "ppc64le",
+      "s390x"
+    ],
+    "status": "active",
+    "status_note": "RHEL 的上游開發分支，CentOS Stream 10 持續維護",
+    "maintainer_type": "foundation",
+    "maintainer": "CentOS Project",
+    "founder": "Red Hat / CentOS 社群",
+    "founded_year": 2019,
+    "org": "CentOS Project（Red Hat 贊助）",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "firmware",
+    "commercial_edition": "無",
+    "official_site": "https://www.centos.org/centos-stream/",
+    "docs": "https://docs.centos.org/",
+    "download": "https://www.centos.org/download/",
+    "repo": "https://gitlab.com/redhat/centos-stream",
+    "wiki": "https://wiki.centos.org/",
+    "forum": "https://centos.org/community/",
+    "chat": "https://matrix.to/#/#centos:matrix.org",
+    "reddit": "https://www.reddit.com/r/CentOS/",
+    "intro": "CentOS Stream 是 2019 年隨 CentOS 戰略調整推出的發行版，定位在 Fedora 與 RHEL 之間：它持續接收準備進入下一個 RHEL 小版本的更新，因此可以被視為 RHEL 的“上游滾動分支”。與舊 CentOS 那樣重建 RHEL 二進位制不同，Stream 的版本通常領先於對應 RHEL 小版本，適合希望提前驗證相容性、參與 RHEL 生態開發或免費獲得企業級軟體棧的使用者。它使用 dnf、systemd 與 SELinux，生命週期與對應 RHEL 大版本接近。CentOS Stream 不適合要求“與 RHEL 完全二進位制一致”的生產環境；這類需求應選擇 Rocky Linux、AlmaLinux 或購買 RHEL 訂閱。對開發者而言，Stream 是瞭解 RHEL 下一步變化、測試軟體包和容器映象的低成本途徑，但滾動的性質意味著偶爾會遇到尚未穩定的更新。",
+    "highlights": [
+      "位於 Fedora 與 RHEL 之間的持續交付分支",
+      "可提前驗證 RHEL 下一小版本的變化",
+      "免費使用企業級軟體棧與 SELinux",
+      "與 RHEL 生命週期大致對齊"
+    ],
+    "pros": [
+      "免費獲取 RHEL 上游程式碼與生態",
+      "適合預驗證與開發測試",
+      "軟體棧穩定、企業工具齊全"
+    ],
+    "cons": [
+      "不是 RHEL 的二進位制重建版",
+      "滾動更新可能引入未穩定變更",
+      "不適合要求完全一致性的生產環境"
+    ],
+    "similar": [
+      "rhel",
+      "rocky",
+      "alma"
+    ],
+    "target_user": "需要預驗證 RHEL 生態的開發者與生態夥伴",
+    "tags": [
+      "server",
+      "enterprise",
+      "developer"
+    ],
+    "popularity": 4,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "centos",
+    "name": "CentOS Linux",
+    "name_zh": "CentOS Linux（已終止）",
+    "family": "rh",
+    "secondary_families": [
+      "enterprise",
+      "retro"
+    ],
+    "upstream": "RHEL",
+    "based_on_since": 2004,
+    "first_release": 2004,
+    "latest_version": "8.5.2111",
+    "latest_release_date": "2021-11-16",
+    "release_model": "fixed",
+    "release_cycle": "已終止；原為跟隨 RHEL 的重建版",
+    "package_manager": "dnf / yum / rpm",
+    "update_command": "sudo dnf upgrade  # 倉庫已停止更新",
+    "gui_updater": "GNOME Software（歷史版本）",
+    "init_system": "systemd",
+    "default_desktop": [
+      "GNOME",
+      "無（伺服器）"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "aarch64",
+      "ppc64le"
+    ],
+    "status": "eol",
+    "status_note": "CentOS Linux 8 於 2021-12-31 提前停止維護，專案轉向 CentOS Stream；CentOS 7 於 2024-06-30 EOL",
+    "maintainer_type": "community",
+    "maintainer": "CentOS Project",
+    "founder": "CentOS 社群",
+    "founded_year": 2004,
+    "org": "CentOS Project（原 Red Hat 贊助）",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "firmware",
+    "commercial_edition": "無",
+    "official_site": "https://www.centos.org/",
+    "docs": "https://docs.centos.org/",
+    "download": "https://vault.centos.org/",
+    "repo": "https://git.centos.org/",
+    "wiki": "https://wiki.centos.org/",
+    "forum": "https://centos.org/community/",
+    "chat": null,
+    "reddit": "https://www.reddit.com/r/CentOS/",
+    "intro": "CentOS Linux 曾是 RHEL 最著名的免費重建版，2004 年出現，通過重新編譯 RHEL 原始碼提供與 RHEL 高度相容的二進位制發行版。它不包含 Red Hat 的商標與商業支援，卻繼承了 RHEL 的穩定 ABI、SELinux 與十年生命週期，因此在 Web 託管、科研叢集和企業內部系統中極為流行。2020 年底，Red Hat 宣佈 CentOS Linux 8 將於 2021 年底提前結束，專案重心轉向 CentOS Stream；CentOS 7 則按原計劃在 2024 年 6 月 30 日停止維護。這一決定直接催生了 Rocky Linux 與 AlmaLinux 等新重建版。CentOS Linux 如今只應出現在歷史環境或離線歸檔中；繼續使用已 EOL 的版本會失去安全更新，若需要遷移，應評估 Rocky、Alma、Oracle Linux 或直接購買 RHEL 訂閱。",
+    "highlights": [
+      "曾是最廣泛使用的 RHEL 免費重建版",
+      "與 RHEL 高度二進位制相容",
+      "十年生命週期與 SELinux 企業棧",
+      "2021 年轉向 CentOS Stream 的歷史節點"
+    ],
+    "pros": [
+      "歷史上穩定、相容性好",
+      "企業軟體與文件可直接複用",
+      "無訂閱成本"
+    ],
+    "cons": [
+      "已停止安全更新",
+      "8 系列提前 EOL 造成遷移衝擊",
+      "舊版本軟體棧陳舊"
+    ],
+    "similar": [
+      "rocky",
+      "alma",
+      "centos-stream"
+    ],
+    "target_user": "僅適合歷史研究、離線歸檔或遷移評估",
+    "tags": [
+      "server",
+      "enterprise",
+      "retro"
+    ],
+    "popularity": 3,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "rocky",
+    "name": "Rocky Linux",
+    "name_zh": "Rocky Linux",
+    "family": "rh",
+    "secondary_families": [
+      "enterprise"
+    ],
+    "upstream": "RHEL",
+    "based_on_since": 2021,
+    "first_release": 2021,
+    "latest_version": "10.3",
+    "latest_release_date": "2026-11-16",
+    "release_model": "lts",
+    "release_cycle": "跟隨 RHEL 大版本，提供約 10 年生命週期",
+    "package_manager": "dnf / rpm",
+    "update_command": "sudo dnf upgrade --refresh",
+    "gui_updater": "GNOME Software（可選）",
+    "init_system": "systemd",
+    "default_desktop": [
+      "GNOME",
+      "無（伺服器）"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "aarch64",
+      "ppc64le",
+      "s390x"
+    ],
+    "status": "lts",
+    "status_note": "活躍維護，RHEL 相容重建版，由社群基金會治理",
+    "maintainer_type": "foundation",
+    "maintainer": "Rocky Enterprise Software Foundation",
+    "founder": "Gregory Kurtzer",
+    "founded_year": 2021,
+    "org": "Rocky Enterprise Software Foundation",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "firmware",
+    "commercial_edition": "無（提供第三方支援生態）",
+    "official_site": "https://rockylinux.org/",
+    "docs": "https://docs.rockylinux.org/",
+    "download": "https://rockylinux.org/download",
+    "repo": "https://git.rockylinux.org/",
+    "wiki": "https://wiki.rockylinux.org/",
+    "forum": "https://forums.rockylinux.org/",
+    "chat": "https://matrix.to/#/#rockylinux:matrix.org",
+    "reddit": "https://www.reddit.com/r/RockyLinux/",
+    "intro": "Rocky Linux 由 CentOS 聯合創始人 Gregory Kurtzer 於 2020 年底發起、2021 年釋出，目標是在 CentOS Linux 轉向 Stream 後繼續提供與 RHEL 二進位制相容的免費重建版。它通過重新構建 RHEL 原始碼生成軟體包，保持與 RHEL 相同的 ABI、SELinux 策略、dnf 工具鏈與生命週期，並承諾由社群基金會治理、不讓單一廠商控制。Rocky 提供 x86_64、aarch64、ppc64le、s390x 等架構，適合從 CentOS 遷移的伺服器、虛擬化節點、HPC 與企業內部應用。它與 AlmaLinux 的定位高度重疊：兩者都追求 RHEL 相容，差異更多在治理結構、釋出節奏、雲映象與支援夥伴。Rocky 不提供官方商業訂閱，但生態中有第三方支援服務。若你依賴某個只在 RHEL 認證矩陣中出現的軟體，仍應核對 Rocky 的相容性宣告。",
+    "highlights": [
+      "RHEL 二進位制相容的社群重建版",
+      "社群基金會治理，避免單一廠商控制",
+      "約 10 年生命週期與企業級工具鏈",
+      "多架構伺服器與雲映象"
+    ],
+    "pros": [
+      "免費獲得 RHEL 相容棧",
+      "遷移 CentOS 成本較低",
+      "治理結構透明"
+    ],
+    "cons": [
+      "生態認證不如 RHEL 完整",
+      "社群支援依賴論壇與第三方",
+      "軟體版本跟隨 RHEL，較保守"
+    ],
+    "similar": [
+      "alma",
+      "rhel",
+      "centos-stream"
+    ],
+    "target_user": "需要免費 RHEL 相容伺服器的企業與非營利組織",
+    "tags": [
+      "server",
+      "enterprise",
+      "cloud"
+    ],
+    "popularity": 4,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "alma",
+    "name": "AlmaLinux",
+    "name_zh": "AlmaLinux",
+    "family": "rh",
+    "secondary_families": [
+      "enterprise"
+    ],
+    "upstream": "RHEL",
+    "based_on_since": 2021,
+    "first_release": 2021,
+    "latest_version": "10.3",
+    "latest_release_date": "2026-11-16",
+    "release_model": "lts",
+    "release_cycle": "跟隨 RHEL 大版本，提供約 10 年生命週期",
+    "package_manager": "dnf / rpm",
+    "update_command": "sudo dnf upgrade --refresh",
+    "gui_updater": "GNOME Software（可選）",
+    "init_system": "systemd",
+    "default_desktop": [
+      "GNOME",
+      "無（伺服器）"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "aarch64",
+      "ppc64le",
+      "s390x"
+    ],
+    "status": "lts",
+    "status_note": "活躍維護，由 AlmaLinux OS Foundation 治理",
+    "maintainer_type": "foundation",
+    "maintainer": "AlmaLinux OS Foundation",
+    "founder": "CloudLinux 團隊",
+    "founded_year": 2021,
+    "org": "AlmaLinux OS Foundation",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "firmware",
+    "commercial_edition": "無（CloudLinux 提供相關商業支援）",
+    "official_site": "https://almalinux.org/",
+    "docs": "https://wiki.almalinux.org/",
+    "download": "https://almalinux.org/get-almalinux/",
+    "repo": "https://git.almalinux.org/",
+    "wiki": "https://wiki.almalinux.org/",
+    "forum": "https://almalinux.discourse.group/",
+    "chat": "https://chat.almalinux.org/",
+    "reddit": "https://www.reddit.com/r/AlmaLinux/",
+    "intro": "AlmaLinux 由 CloudLinux 團隊於 2021 年推出，是 CentOS Linux 停止後的另一條 RHEL 相容路線。它通過重建 RHEL 原始碼提供免費的企業級發行版，保持 dnf、SELinux、systemd 與 RHEL 生命週期一致，並逐步轉由 AlmaLinux OS Foundation 治理。Alma 的特色包括較積極的雲映象與容器映象釋出、對 EPEL 等第三方倉庫的友好支援，以及面向遷移的工具。它與 Rocky Linux 在技術定位上非常接近，選擇時通常取決於組織對治理、支援夥伴、雲平臺預裝映象和釋出節奏的偏好。AlmaLinux 適合 Web 伺服器、資料庫、虛擬化、科研與企業內部系統，也常被用作 RHEL 的開發和測試環境。和所有重建版一樣，它不包含 Red Hat 的官方支援與商標授權；遇到認證軟體問題時，需要確認供應商是否接受 AlmaLinux。",
+    "highlights": [
+      "RHEL 二進位制相容，免費使用",
+      "雲映象與容器映象釋出積極",
+      "基金會治理與開放構建流程",
+      "提供遷移工具與豐富文件"
+    ],
+    "pros": [
+      "與 RHEL 相容性好，遷移方便",
+      "雲與容器場景支援完善",
+      "免費且生命週期長"
+    ],
+    "cons": [
+      "認證生態仍不及 RHEL",
+      "與 Rocky 同質化明顯",
+      "企業級支援需另找供應商"
+    ],
+    "similar": [
+      "rocky",
+      "rhel",
+      "oracle-linux"
+    ],
+    "target_user": "尋找免費 RHEL 相容棧的雲與企業使用者",
+    "tags": [
+      "server",
+      "enterprise",
+      "cloud"
+    ],
+    "popularity": 4,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "oracle-linux",
+    "name": "Oracle Linux",
+    "name_zh": "Oracle Linux",
+    "family": "rh",
+    "secondary_families": [
+      "enterprise"
+    ],
+    "upstream": "RHEL",
+    "based_on_since": 2006,
+    "first_release": 2006,
+    "latest_version": "10.1",
+    "latest_release_date": "2025-12-06",
+    "release_model": "lts",
+    "release_cycle": "跟隨 RHEL 大版本，提供長期支援",
+    "package_manager": "dnf / rpm",
+    "update_command": "sudo dnf upgrade",
+    "gui_updater": "GNOME Software（可選）",
+    "init_system": "systemd",
+    "default_desktop": [
+      "GNOME",
+      "無（伺服器）"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "aarch64"
+    ],
+    "status": "lts",
+    "status_note": "活躍維護，提供免費與付費支援選項",
+    "maintainer_type": "company",
+    "maintainer": "Oracle",
+    "founder": "Oracle",
+    "founded_year": 2006,
+    "org": "Oracle Corporation",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "firmware",
+    "commercial_edition": "Oracle Linux 支援訂閱、Oracle Cloud 映象",
+    "official_site": "https://www.oracle.com/linux/",
+    "docs": "https://docs.oracle.com/en/operating-systems/oracle-linux/",
+    "download": "https://yum.oracle.com/oracle-linux-isos.html",
+    "repo": "https://github.com/oracle/",
+    "wiki": "https://docs.oracle.com/en/operating-systems/",
+    "forum": "https://community.oracle.com/",
+    "chat": null,
+    "reddit": "https://www.reddit.com/r/oracle/",
+    "intro": "Oracle Linux 是 Oracle 自 2006 年起提供的企業 Linux，基於 RHEL 原始碼重建，並與 Oracle 資料庫、中介軟體和雲基礎設施深度整合。它提供兩種核心：與 RHEL 相容的 Red Hat Compatible Kernel，以及針對 Oracle 工作負載最佳化的 Unbreakable Enterprise Kernel（UEK）。Oracle Linux 可免費下載和使用，安全更新與 Errata 免費提供，商業支援則通過 Oracle 訂閱購買。它適合執行 Oracle Database、Oracle Cloud Infrastructure 例項、以及需要 RHEL 相容性的企業應用；UEK 在部分 I/O、虛擬化和資料庫場景中有額外最佳化。需要注意的是，Oracle Linux 的免費支援範圍與 RHEL 訂閱不同，複雜問題仍需商業支援；同時它與 Oracle 生態繫結較深，非 Oracle 使用者可能更傾向 Rocky 或 AlmaLinux。",
+    "highlights": [
+      "RHEL 相容核心與 UEK 雙核心選擇",
+      "免費下載與安全更新",
+      "與 Oracle Database、OCI 深度整合",
+      "企業級生命週期與支援訂閱"
+    ],
+    "pros": [
+      "免費獲得 RHEL 相容棧",
+      "UEK 對 Oracle 工作負載最佳化",
+      "與 Oracle 雲和資料庫整合好"
+    ],
+    "cons": [
+      "與 Oracle 生態繫結較深",
+      "免費支援範圍有限",
+      "社群活躍度不如 Rocky/Alma"
+    ],
+    "similar": [
+      "rhel",
+      "rocky",
+      "alma"
+    ],
+    "target_user": "執行 Oracle 資料庫或 OCI 工作負載的企業",
+    "tags": [
+      "server",
+      "enterprise",
+      "database"
+    ],
+    "popularity": 3,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "amazon-linux",
+    "name": "Amazon Linux",
+    "name_zh": "Amazon Linux",
+    "family": "rh",
+    "secondary_families": [
+      "cloud",
+      "enterprise"
+    ],
+    "upstream": "Fedora / RHEL 生態",
+    "based_on_since": 2011,
+    "first_release": 2011,
+    "latest_version": "2023.12.20261112.0",
+    "latest_release_date": "2026-11-17",
+    "release_model": "lts",
+    "release_cycle": "Amazon Linux 2023 提供確定性的長期支援與季度更新",
+    "package_manager": "dnf / rpm",
+    "update_command": "sudo dnf upgrade --refresh",
+    "gui_updater": "無（面向雲與伺服器）",
+    "init_system": "systemd",
+    "default_desktop": [
+      "無（伺服器/雲）"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "aarch64"
+    ],
+    "status": "lts",
+    "status_note": "Amazon Linux 2023 支援至 2029 年，AWS 持續提供更新",
+    "maintainer_type": "company",
+    "maintainer": "Amazon Web Services",
+    "founder": "Amazon Web Services",
+    "founded_year": 2011,
+    "org": "Amazon.com, Inc.",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "firmware",
+    "commercial_edition": "AWS 雲服務與支援計劃",
+    "official_site": "https://aws.amazon.com/linux/",
+    "docs": "https://docs.aws.amazon.com/linux/",
+    "download": "https://aws.amazon.com/linux/amazon-linux-2023/",
+    "repo": "https://github.com/amazonlinux/",
+    "wiki": "https://docs.aws.amazon.com/linux/",
+    "forum": "https://repost.aws/",
+    "chat": null,
+    "reddit": "https://www.reddit.com/r/aws/",
+    "intro": "Amazon Linux 是 AWS 為雲環境最佳化的 Linux 發行版，最早於 2011 年推出，經歷了 Amazon Linux AMI、Amazon Linux 2 與 Amazon Linux 2023 三代。它基於 Fedora/RHEL 生態的 rpm 與 dnf 工具鏈，但針對 EC2、Lambda、ECS、EKS 等 AWS 服務做了核心、啟動速度、安全代理和雲工具整合。Amazon Linux 2023 採用更明確的版本策略：每季度釋出更新，提供五年支援，並通過倉庫鎖定避免意外的大版本漂移。它適合在 AWS 上執行 Web 服務、容器節點和批處理任務，也常作為 CI 映象與自動擴縮容的基礎。需要注意，Amazon Linux 主要面向 AWS 環境，離開 AWS 後部分整合工具與支援渠道會失效；其軟體源與 RHEL 並不完全相容，不能把它當作通用 RHEL 重建版使用。",
+    "highlights": [
+      "為 AWS 雲環境最佳化的核心與啟動流程",
+      "季度更新與明確的五年支援週期",
+      "預整合 AWS CLI、SSM 與雲代理",
+      "x86_64 與 aarch64 雙架構"
+    ],
+    "pros": [
+      "在 AWS 上開箱即用",
+      "更新策略可預測",
+      "與 AWS 服務整合緊密"
+    ],
+    "cons": [
+      "離開 AWS 後價值下降",
+      "軟體源與 RHEL 不完全相容",
+      "桌面與通用場景支援有限"
+    ],
+    "similar": [
+      "rhel",
+      "rocky",
+      "alma"
+    ],
+    "target_user": "在 AWS 上部署服務的雲工程師",
+    "tags": [
+      "server",
+      "cloud",
+      "enterprise"
+    ],
+    "popularity": 4,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "nobara",
+    "name": "Nobara",
+    "name_zh": "Nobara Linux",
+    "family": "rh",
+    "secondary_families": [
+      "gaming",
+      "desktop"
+    ],
+    "upstream": "Fedora",
+    "based_on_since": 2022,
+    "first_release": 2022,
+    "latest_version": null,
+    "latest_release_date": null,
+    "release_model": "fixed",
+    "release_cycle": "跟隨 Fedora 釋出，通常在新 Fedora 後數月內更新",
+    "package_manager": "dnf / rpm",
+    "update_command": "sudo dnf upgrade --refresh",
+    "gui_updater": "GNOME Software / Nobara Updater",
+    "init_system": "systemd",
+    "default_desktop": [
+      "GNOME",
+      "KDE Plasma"
+    ],
+    "supported_arch": [
+      "x86_64"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，面向遊戲與內容創作的 Fedora 衍生版",
+    "maintainer_type": "individual",
+    "maintainer": "GloriousEggroll（Thomas Crider）",
+    "founder": "Thomas Crider",
+    "founded_year": 2022,
+    "org": "Nobara Project",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "proprietary",
+    "commercial_edition": "無",
+    "official_site": "https://nobaraproject.org/",
+    "docs": "https://nobaraproject.org/docs/",
+    "download": "https://nobaraproject.org/download-nobara/",
+    "repo": "https://github.com/Nobara-Project",
+    "wiki": "https://nobaraproject.org/docs/",
+    "forum": "https://discord.gg/nobara",
+    "chat": "https://discord.gg/nobara",
+    "reddit": "https://www.reddit.com/r/NobaraProject/",
+    "intro": "Nobara 是 Fedora 的遊戲與內容創作向衍生版，由 Proton-GE 的維護者 Thomas Crider（GloriousEggroll）於 2022 年發起。它在 Fedora 基礎上預裝了大量遊戲相關元件：Steam、Proton、Wine、Mangohud、Gamescope、OBS Studio、多媒體編解碼器與 NVIDIA 驅動工具，並預設啟用一些 Fedora 因政策或穩定性原因未收錄的補丁。Nobara 提供 GNOME 與 KDE Plasma 版本，安裝後即可較完整地運行遊戲與直播工作流，省去很多手工配置。它適合不想折騰驅動、Proton 和 OBS 的 Linux 遊戲玩家與內容創作者，也適合把 Fedora 作為主力系統但需要更強開箱體驗的人。需要注意，Nobara 是個人主導專案，釋出節奏可能滯後於 Fedora，部分定製包與官方倉庫存在差異；升級大版本前應閱讀公告並備份資料。",
+    "highlights": [
+      "Proton-GE、Wine、Mangohud 等遊戲元件預裝",
+      "OBS Studio 與多媒體創作工具整合",
+      "NVIDIA 驅動與編解碼器開箱配置",
+      "GNOME / KDE Plasma 雙版本"
+    ],
+    "pros": [
+      "遊戲與直播開箱體驗強",
+      "省去大量 Fedora 後配置",
+      "緊跟 Proton 生態"
+    ],
+    "cons": [
+      "個人主導，長期可持續性存疑",
+      "版本更新可能滯後 Fedora",
+      "定製包增加升級複雜度"
+    ],
+    "similar": [
+      "fedora",
+      "bazzite",
+      "garuda"
+    ],
+    "target_user": "想在 Fedora 上開箱即玩、即錄的遊戲玩家",
+    "tags": [
+      "gaming",
+      "desktop",
+      "multimedia"
+    ],
+    "popularity": 3,
+    "data_as_of": "2026-11-18",
+    "verified": false
+  },
+  {
+    "id": "bazzite",
+    "name": "Bazzite",
+    "name_zh": "Bazzite",
+    "family": "rh",
+    "secondary_families": [
+      "gaming",
+      "immutable"
+    ],
+    "upstream": "Fedora Atomic",
+    "based_on_since": 2023,
+    "first_release": 2023,
+    "latest_version": null,
+    "latest_release_date": null,
+    "release_model": "fixed",
+    "release_cycle": "跟隨 Fedora Atomic 釋出，映象持續更新",
+    "package_manager": "rpm-ostree + Flatpak",
+    "update_command": "sudo rpm-ostree upgrade  # 或 ujust update",
+    "gui_updater": "GNOME Software / Bazzite Portal",
+    "init_system": "systemd",
+    "default_desktop": [
+      "KDE Plasma",
+      "GNOME"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "aarch64（部分裝置）"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，基於 Fedora Atomic 的遊戲與掌機系統",
+    "maintainer_type": "community",
+    "maintainer": "Universal Blue 社群",
+    "founder": "Universal Blue 團隊",
+    "founded_year": 2023,
+    "org": "Universal Blue",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "proprietary",
+    "commercial_edition": "無",
+    "official_site": "https://bazzite.gg/",
+    "docs": "https://docs.bazzite.gg/",
+    "download": "https://bazzite.gg/#image-picker",
+    "repo": "https://github.com/ublue-os/bazzite",
+    "wiki": "https://docs.bazzite.gg/",
+    "forum": "https://discord.gg/bazzite",
+    "chat": "https://discord.gg/bazzite",
+    "reddit": "https://www.reddit.com/r/Bazzite/",
+    "intro": "Bazzite 是 Universal Blue 社群在 Fedora Atomic 之上構建的不可變系統，2023 年出現，目標是讓 PC 掌機、客廳主機和普通桌面都能獲得接近 SteamOS 的遊戲體驗，同時保留 Fedora 的桌面能力。它預裝 Steam、Proton、Gamescope、Mangohud、Lutris、EmuDeck 等工具，並提供 KDE Plasma 與 GNOME 版本，以及針對 Steam Deck、ROG Ally 等裝置的映象。Bazzite 使用 rpm-ostree 的原子更新，系統回滾方便，應用主要通過 Flatpak 安裝；“ujust” 命令集成了大量常用維護與調優操作。它適合想要“遊戲機式”低維護體驗、又不想被鎖在 Valve 硬體上的玩家，也適合希望桌面與遊戲雙修的 Fedora 使用者。需要注意，第三方硬體相容性仍需逐機確認，部分反作弊遊戲無法執行，社群映象的更新節奏也與 Fedora 官方並不完全同步。",
+    "highlights": [
+      "Fedora Atomic 不可變底座與原子更新",
+      "掌機、客廳與桌面多種映象",
+      "Steam、Proton、EmuDeck 等預配置",
+      "ujust 命令集簡化維護"
+    ],
+    "pros": [
+      "硬體覆蓋面比 SteamOS 更廣",
+      "系統可回滾，維護成本低",
+      "遊戲工具鏈完整"
+    ],
+    "cons": [
+      "映象體積較大",
+      "非官方硬體仍需驗證",
+      "反作弊遊戲支援受限"
+    ],
+    "similar": [
+      "steamos",
+      "chimeraos",
+      "fedora-silverblue"
+    ],
+    "target_user": "想在多種 PC 硬體上獲得 SteamOS 式體驗的玩家",
+    "tags": [
+      "gaming",
+      "desktop",
+      "immutable"
+    ],
+    "popularity": 4,
+    "data_as_of": "2026-11-18",
+    "verified": false
+  },
+  {
+    "id": "openeuler",
+    "name": "openEuler",
+    "name_zh": "openEuler",
+    "family": "rh",
+    "secondary_families": [
+      "chinese",
+      "enterprise"
+    ],
+    "upstream": "獨立開發（源自 EulerOS / CentOS 生態）",
+    "based_on_since": null,
+    "first_release": 2019,
+    "latest_version": "24.03 LTS",
+    "latest_release_date": "2024-06-06",
+    "release_model": "lts",
+    "release_cycle": "約每兩年一個 LTS 版本，社群持續提供更新",
+    "package_manager": "dnf / rpm",
+    "update_command": "sudo dnf upgrade",
+    "gui_updater": "GNOME Software（可選）",
+    "init_system": "systemd",
+    "default_desktop": [
+      "GNOME",
+      "UKUI（部分版本）",
+      "無（伺服器）"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "aarch64",
+      "riscv64",
+      "loongarch64"
+    ],
+    "status": "lts",
+    "status_note": "活躍維護，開放原子開源基金會孵化的伺服器作業系統",
+    "maintainer_type": "foundation",
+    "maintainer": "openEuler 社群",
+    "founder": "華為等貢獻者",
+    "founded_year": 2019,
+    "org": "開放原子開源基金會",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "firmware",
+    "commercial_edition": "多家廠商的商業發行版（如麒麟、統信等生態產品）",
+    "official_site": "https://www.openeuler.org/",
+    "docs": "https://docs.openeuler.org/",
+    "download": "https://www.openeuler.org/zh/download/",
+    "repo": "https://gitee.com/openeuler",
+    "wiki": "https://docs.openeuler.org/",
+    "forum": "https://forum.openeuler.org/",
+    "chat": null,
+    "reddit": null,
+    "intro": "openEuler 是 2019 年由華為發起、後捐獻給開放原子開源基金會的伺服器作業系統社群，定位於企業級通用 Linux 平臺。它吸收 EulerOS 的工程積累，並使用 rpm/dnf 工具鏈，支援 x86_64、aarch64、riscv64、loongarch64 等多種架構，在鯤鵬、昇騰等國產硬體生態中應用廣泛。openEuler 採用約兩年一個 LTS 的節奏，社群提供核心、虛擬化、容器、資料庫與雲原生元件的長期維護，並衍生出麒麟、統信等商業發行版。它適合需要國產化適配、ARM 伺服器、雲基礎設施或長期支援的企業與機構。與 RHEL 系相比，openEuler 有獨立的軟體源與版本節奏，不能直接套用 RHEL 認證結論；社群文件以中文為主，對國內使用者友好。選擇前應確認目標硬體、資料庫和中介軟體是否在 openEuler 的相容性列表中。",
+    "highlights": [
+      "支援 x86、ARM、RISC-V、LoongArch 多架構",
+      "兩年一個 LTS，企業級長期維護",
+      "國產硬體與雲生態適配廣泛",
+      "開放原子開源基金會治理"
+    ],
+    "pros": [
+      "國產化與 ARM 伺服器適配好",
+      "中文文件與社群支援",
+      "多架構覆蓋領先"
+    ],
+    "cons": [
+      "國際生態與認證仍在建設中",
+      "與 RHEL 認證不通用",
+      "部分商業能力依賴下游廠商"
+    ],
+    "similar": [
+      "rhel",
+      "centos-stream",
+      "openkylin"
+    ],
+    "target_user": "需要國產化、多架構伺服器平臺的企業與機構",
+    "tags": [
+      "server",
+      "enterprise",
+      "chinese",
+      "cloud"
+    ],
+    "popularity": 3,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "scientific-linux",
+    "name": "Scientific Linux",
+    "name_zh": "Scientific Linux（已終止）",
+    "family": "rh",
+    "secondary_families": [
+      "enterprise",
+      "retro",
+      "education"
+    ],
+    "upstream": "RHEL",
+    "based_on_since": 2004,
+    "first_release": 2004,
+    "latest_version": "7.9",
+    "latest_release_date": "2020-10-20",
+    "release_model": "fixed",
+    "release_cycle": "已終止；原為跟隨 RHEL 的科研重建版",
+    "package_manager": "yum / rpm",
+    "update_command": "sudo yum update  # 倉庫已停止更新",
+    "gui_updater": "GNOME Software（歷史版本）",
+    "init_system": "systemd",
+    "default_desktop": [
+      "GNOME",
+      "無（伺服器/科研叢集）"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "i386"
+    ],
+    "status": "eol",
+    "status_note": "Fermilab 於 2024-06-30 結束支援，專案建議遷移至 AlmaLinux、Rocky Linux 等",
+    "maintainer_type": "foundation",
+    "maintainer": "Fermilab / 科研機構聯盟",
+    "founder": "Fermilab 等",
+    "founded_year": 2004,
+    "org": "Fermilab",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "firmware",
+    "commercial_edition": "無",
+    "official_site": "https://www.scientificlinux.org/",
+    "docs": "https://www.scientificlinux.org/documentation/",
+    "download": "https://www.scientificlinux.org/downloads/",
+    "repo": null,
+    "wiki": "https://www.scientificlinux.org/documentation/",
+    "forum": null,
+    "chat": null,
+    "reddit": null,
+    "intro": "Scientific Linux 是由 Fermilab、CERN 等科研機構於 2004 年聯合維護的 RHEL 重建版，目標是為高能物理、實驗室叢集和科研計算提供穩定、可預測的免費平臺。它移除了 Red Hat 商標，加入少量科研常用驅動與工具，並保持與 RHEL 的高度相容；在 CentOS 之外，它曾是許多實驗室和大學機房的預設系統。隨著 CentOS 生態變化與維護成本上升，Fermilab 宣佈在 7.9 之後停止開發，並於 2024 年 6 月 30 日結束支援，建議使用者遷移到 AlmaLinux、Rocky Linux 或其他受支援的平臺。Scientific Linux 如今適合作為歷史案例與離線環境研究物件，不應再用於聯網生產系統。它體現了科研機構對“長期可復現環境”的需求，也提醒使用者：社群發行版的可持續性同樣需要評估。",
+    "highlights": [
+      "Fermilab、CERN 等科研機構聯合維護",
+      "與 RHEL 高度相容的科研計算平臺",
+      "曾廣泛用於實驗室與大學叢集",
+      "2024 年正式結束支援"
+    ],
+    "pros": [
+      "歷史上穩定、適合科研叢集",
+      "與 RHEL 軟體棧相容",
+      "免費且可預測"
+    ],
+    "cons": [
+      "已停止安全更新",
+      "遷移路徑有限",
+      "軟體包陳舊"
+    ],
+    "similar": [
+      "centos",
+      "rhel",
+      "alma"
+    ],
+    "target_user": "僅適合歷史研究、歸檔或遷移評估",
+    "tags": [
+      "server",
+      "enterprise",
+      "education",
+      "retro"
+    ],
+    "popularity": 2,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "debian",
+    "name": "Debian",
+    "name_zh": "Debian GNU/Linux",
+    "family": "debian",
+    "secondary_families": [
+      "community"
+    ],
+    "upstream": "獨立開發",
+    "based_on_since": null,
+    "first_release": 1993,
+    "latest_version": "13.7",
+    "latest_release_date": "2026-09-12",
+    "release_model": "lts",
+    "release_cycle": "約每 2 年釋出穩定版，穩定版支援約 5 年（含 LTS）",
+    "package_manager": "apt / dpkg",
+    "update_command": "sudo apt update && sudo apt full-upgrade",
+    "gui_updater": "GNOME Software / Discover（視桌面而定）",
+    "init_system": "systemd（可選 sysvinit 等）",
+    "default_desktop": [
+      "GNOME",
+      "KDE Plasma",
+      "Xfce",
+      "LXQt 等"
+    ],
+    "supported_arch": [
+      "amd64",
+      "arm64",
+      "armhf",
+      "i386",
+      "ppc64el",
+      "s390x",
+      "riscv64"
+    ],
+    "status": "lts",
+    "status_note": "Debian 13（Trixie）為當前穩定版，LTS 支援延續至 2030 年代",
+    "maintainer_type": "foundation",
+    "maintainer": "Debian Project",
+    "founder": "Ian Murdock",
+    "founded_year": 1993,
+    "org": "Software in the Public Interest（SPI）",
+    "license": "DFSG 自由軟體許可證（GPL、MIT、BSD 等）",
+    "openness": "firmware",
+    "commercial_edition": "無",
+    "official_site": "https://www.debian.org/",
+    "docs": "https://www.debian.org/doc/",
+    "download": "https://www.debian.org/download",
+    "repo": "https://salsa.debian.org/",
+    "wiki": "https://wiki.debian.org/",
+    "forum": "https://www.debian.org/support",
+    "chat": "https://www.debian.org/support#irc",
+    "reddit": "https://www.reddit.com/r/debian/",
+    "intro": "Debian GNU/Linux 由 Ian Murdock 於 1993 年建立，是最早也是最完整的社群發行版之一。它由全球志願者通過 Debian 社會契約與自由軟體指導方針（DFSG）協作維護，以穩定性、軟體倉庫規模和架構覆蓋著稱。Debian 的釋出流程嚴謹：測試版經過長期凍結與缺陷修復後才成為穩定版，因此軟體版本通常不算新，卻非常適合伺服器、科研和長期執行的系統。apt/dpkg 是它的包管理基礎，Debian 系幾乎所有發行版都繼承或參考了這套工具。Debian 預設提供 GNOME，也提供 KDE、Xfce、LXQt 等安裝選項；main 倉庫只含自由軟體，non-free 與 firmware 需使用者明確啟用。它適合願意接受“穩定優先”策略、重視社群治理與軟體自由、並希望獲得極長生命週期的使用者。相比 Ubuntu，Debian 更純粹、更慢，也更少商業干預。",
+    "highlights": [
+      "全球志願者治理的社群發行版",
+      "龐大的軟體倉庫與多架構支援",
+      "穩定版生命週期長，適合伺服器",
+      "DFSG 自由軟體準則影響深遠"
+    ],
+    "pros": [
+      "極其穩定，升級路徑可靠",
+      "軟體包數量與架構覆蓋廣",
+      "社群治理透明、無廠商鎖定"
+    ],
+    "cons": [
+      "穩定版軟體版本較舊",
+      "安裝器與桌面配置偏傳統",
+      "韌體與專有驅動需額外啟用"
+    ],
+    "similar": [
+      "ubuntu",
+      "devuan",
+      "mx-linux"
+    ],
+    "target_user": "重視穩定、自由與社群治理的伺服器和桌面使用者",
+    "tags": [
+      "server",
+      "desktop",
+      "education",
+      "community"
+    ],
+    "popularity": 5,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "mx-linux",
+    "name": "MX Linux",
+    "name_zh": "MX Linux",
+    "family": "debian",
+    "secondary_families": [
+      "desktop"
+    ],
+    "upstream": "Debian stable",
+    "based_on_since": 2014,
+    "first_release": 2014,
+    "latest_version": "25.3",
+    "latest_release_date": "2026-09-20",
+    "release_model": "fixed",
+    "release_cycle": "跟隨 Debian stable，提供定期點版本更新",
+    "package_manager": "apt / dpkg",
+    "update_command": "sudo apt update && sudo apt full-upgrade",
+    "gui_updater": "MX Updater",
+    "init_system": "systemd（可選擇 sysvinit）",
+    "default_desktop": [
+      "Xfce",
+      "KDE Plasma",
+      "Fluxbox"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "i386（部分版本）"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，基於 Debian stable 的桌面發行版",
+    "maintainer_type": "community",
+    "maintainer": "MX Linux 團隊",
+    "founder": "MX Linux 團隊",
+    "founded_year": 2014,
+    "org": "MX Linux 社群",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "firmware",
+    "commercial_edition": "無",
+    "official_site": "https://mxlinux.org/",
+    "docs": "https://mxlinux.org/wiki/",
+    "download": "https://mxlinux.org/download-links/",
+    "repo": "https://github.com/MX-Linux",
+    "wiki": "https://mxlinux.org/wiki/",
+    "forum": "https://forum.mxlinux.org/",
+    "chat": "https://matrix.to/#/#mxlinux:matrix.org",
+    "reddit": "https://www.reddit.com/r/MXLinux/",
+    "intro": "MX Linux 是 2014 年由 MEPIS 與 antiX 社群合作誕生的 Debian stable 衍生版，長期位居 DistroWatch 關注度前列。它預設使用 Xfce，也提供 KDE Plasma 與 Fluxbox 版本，系統輕量、啟動快，同時通過 MX Tools 提供一系列圖形化維護工具：快照、啟動修復、核心安裝、包管理、驅動與使用者設定都可以點選完成。MX 還允許使用者選擇 systemd 或 sysvinit 啟動，兼顧現代軟體與舊式服務管理。它基於 Debian stable，因此軟體版本相對保守，但穩定性和硬體相容性較好，適合老電腦、辦公桌面、家庭使用者和從 Windows 遷移的人。需要注意，MX 的定製工具和 Debian 原生流程並存，遇到問題時需要說明自己使用的是哪套機制；其預設主題與互動也偏傳統，不是追求最新視覺風格的系統。",
+    "highlights": [
+      "MX Tools 提供豐富圖形化維護工具",
+      "基於 Debian stable，穩定且相容性好",
+      "可在 systemd 與 sysvinit 間選擇",
+      "Xfce 輕量桌面，適合老硬體"
+    ],
+    "pros": [
+      "開箱即用且對新手友好",
+      "老電腦與低配裝置體驗好",
+      "快照與修復工具實用"
+    ],
+    "cons": [
+      "軟體版本偏舊",
+      "預設視覺風格較傳統",
+      "定製工具增加學習面"
+    ],
+    "similar": [
+      "antix",
+      "debian",
+      "linux-mint"
+    ],
+    "target_user": "想要穩定、輕量、易維護桌面的普通使用者",
+    "tags": [
+      "desktop",
+      "lightweight",
+      "education"
+    ],
+    "popularity": 4,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "antix",
+    "name": "antiX",
+    "name_zh": "antiX",
+    "family": "debian",
+    "secondary_families": [
+      "lightweight",
+      "retro"
+    ],
+    "upstream": "Debian stable",
+    "based_on_since": 2007,
+    "first_release": 2007,
+    "latest_version": null,
+    "latest_release_date": null,
+    "release_model": "fixed",
+    "release_cycle": "跟隨 Debian stable，點版本不定期釋出",
+    "package_manager": "apt / dpkg",
+    "update_command": "sudo apt update && sudo apt full-upgrade",
+    "gui_updater": "antiX Updater",
+    "init_system": "sysvinit（可選 runit）",
+    "default_desktop": [
+      "IceWM",
+      "Fluxbox",
+      "JWM"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "i386"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，輕量級 Debian 衍生版",
+    "maintainer_type": "community",
+    "maintainer": "antiX 團隊",
+    "founder": "antiX 社群",
+    "founded_year": 2007,
+    "org": "antiX 社群",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "firmware",
+    "commercial_edition": "無",
+    "official_site": "https://antixlinux.com/",
+    "docs": "https://antixlinux.com/documentation/",
+    "download": "https://antixlinux.com/download/",
+    "repo": "https://github.com/antiX-Linux",
+    "wiki": "https://antixlinux.com/documentation/",
+    "forum": "https://www.antixforum.com/",
+    "chat": null,
+    "reddit": "https://www.reddit.com/r/antiX/",
+    "intro": "antiX 是 2007 年從 MEPIS 社群分化出的輕量級 Debian 衍生版，以“在老硬體上也能流暢執行”為核心目標。它預設使用 IceWM，也提供 Fluxbox 與 JWM 等極輕視窗管理器，不依賴 systemd，預設使用 sysvinit，並可選擇 runit。antiX 基於 Debian stable，使用 apt/dpkg，但預裝軟體經過精簡，記憶體佔用低，適合 32 位老機器、上網本、回收電腦和教學環境。它提供 live 模式、持久化儲存與 remaster 工具，可以直接從 U 盤執行。antiX 適合願意接受較樸素介面、需要低資源佔用和可預測穩定性的使用者；如果你想要現代桌面和完整應用套件，MX Linux 或 Linux Mint 更合適。需要注意的是，antiX 的軟體版本較舊，部分現代網頁和影片應用在老硬體上仍會吃力。",
+    "highlights": [
+      "極低資源佔用，支援 32 位老機器",
+      "IceWM/Fluxbox/JWM 輕量桌面",
+      "預設 sysvinit，可選 runit",
+      "Live 持久化與 remaster 工具"
+    ],
+    "pros": [
+      "老硬體復活能力強",
+      "系統精簡、啟動快",
+      "基於 Debian stable，可靠"
+    ],
+    "cons": [
+      "介面樸素，學習曲線存在",
+      "現代重型應用體驗受限",
+      "軟體版本較舊"
+    ],
+    "similar": [
+      "mx-linux",
+      "puppy",
+      "devuan"
+    ],
+    "target_user": "老電腦使用者、輕量桌面愛好者與教學環境",
+    "tags": [
+      "lightweight",
+      "retro",
+      "desktop",
+      "education"
+    ],
+    "popularity": 3,
+    "data_as_of": "2026-11-18",
+    "verified": false
+  },
+  {
+    "id": "devuan",
+    "name": "Devuan",
+    "name_zh": "Devuan GNU/Linux",
+    "family": "debian",
+    "secondary_families": [
+      "free"
+    ],
+    "upstream": "Debian",
+    "based_on_since": 2017,
+    "first_release": 2017,
+    "latest_version": null,
+    "latest_release_date": null,
+    "release_model": "fixed",
+    "release_cycle": "跟隨 Debian 穩定版，釋出節奏略滯後",
+    "package_manager": "apt / dpkg",
+    "update_command": "sudo apt update && sudo apt full-upgrade",
+    "gui_updater": "GNOME Software / Synaptic",
+    "init_system": "sysvinit / openrc",
+    "default_desktop": [
+      "Xfce",
+      "KDE Plasma",
+      "GNOME",
+      "LXQt 等"
+    ],
+    "supported_arch": [
+      "amd64",
+      "arm64",
+      "armhf",
+      "i386"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，Debian 的無 systemd 分支",
+    "maintainer_type": "community",
+    "maintainer": "Devuan 團隊",
+    "founder": "Veteran Unix Admins 集體",
+    "founded_year": 2014,
+    "org": "Devuan 社群",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "firmware",
+    "commercial_edition": "無",
+    "official_site": "https://www.devuan.org/",
+    "docs": "https://devuan.org/os/documentation/",
+    "download": "https://www.devuan.org/get-devuan",
+    "repo": "https://git.devuan.org/",
+    "wiki": "https://devuan.org/os/documentation/",
+    "forum": "https://dev1galaxy.org/",
+    "chat": "https://matrix.to/#/#devuan:matrix.org",
+    "reddit": "https://www.reddit.com/r/devuan/",
+    "intro": "Devuan 是 2014 年由一群 Debian 開發者與系統管理員發起的 Debian 分支，2017 年釋出首個穩定版，目標是提供一個不強制使用 systemd 的 Debian 相容系統。它保留 apt/dpkg、Debian 軟體倉庫結構與社會契約，但預設改用 sysvinit，也支援 openrc 等替代 init；許多依賴 systemd 的軟體包需要重新打包或改用替代方案。Devuan 適合對 systemd 有明確技術或理念異議、又希望繼續使用 Debian 生態的使用者，也適合嵌入式、容器與老式服務管理場景。與 Artix 相比，Devuan 更接近 Debian 的釋出節奏與包管理習慣，但軟體版本同樣偏保守。需要注意的是，Devuan 的軟體包與 Debian 並非完全二進位制相容，安裝第三方 .deb 或使用 Ubuntu PPA 時可能遇到依賴問題；桌面環境與硬體支援也略滯後。",
+    "highlights": [
+      "Debian 的無 systemd 分支",
+      "預設 sysvinit，可選 openrc",
+      "保留 apt/dpkg 與 Debian 生態",
+      "社群治理，強調 init 自由"
+    ],
+    "pros": [
+      "Debian 使用者遷移成本較低",
+      "init 選擇符合傳統 Unix 習慣",
+      "穩定、可預測"
+    ],
+    "cons": [
+      "軟體包與 Debian 不完全相容",
+      "部分現代軟體依賴 systemd",
+      "釋出節奏偏慢"
+    ],
+    "similar": [
+      "debian",
+      "artix",
+      "antix"
+    ],
+    "target_user": "拒絕 systemd、但想留在 Debian 生態的使用者",
+    "tags": [
+      "server",
+      "desktop",
+      "free",
+      "hobby"
+    ],
+    "popularity": 3,
+    "data_as_of": "2026-11-18",
+    "verified": false
+  },
+  {
+    "id": "kali",
+    "name": "Kali Linux",
+    "name_zh": "Kali Linux",
+    "family": "debian",
+    "secondary_families": [
+      "security"
+    ],
+    "upstream": "Debian testing",
+    "based_on_since": 2013,
+    "first_release": 2013,
+    "latest_version": "滾動更新",
+    "latest_release_date": null,
+    "release_model": "rolling",
+    "release_cycle": "基於 Debian testing 持續滾動，季度映象更新",
+    "package_manager": "apt / dpkg",
+    "update_command": "sudo apt update && sudo apt full-upgrade",
+    "gui_updater": "Kali Updater / GNOME Software",
+    "init_system": "systemd",
+    "default_desktop": [
+      "Xfce",
+      "GNOME",
+      "KDE Plasma",
+      "i3 等"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "aarch64",
+      "armhf"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，OffSec 支援的安全測試平臺",
+    "maintainer_type": "company",
+    "maintainer": "OffSec",
+    "founder": "Mati Aharoni、Devon Kearns",
+    "founded_year": 2013,
+    "org": "OffSec",
+    "license": "GPL-2.0-or-later 等（工具許可證各異）",
+    "openness": "proprietary",
+    "commercial_edition": "Kali 培訓與認證、企業支援",
+    "official_site": "https://www.kali.org/",
+    "docs": "https://www.kali.org/docs/",
+    "download": "https://www.kali.org/get-kali/",
+    "repo": "https://gitlab.com/kalilinux",
+    "wiki": "https://www.kali.org/docs/",
+    "forum": "https://forums.kali.org/",
+    "chat": "https://discord.gg/kali",
+    "reddit": "https://www.reddit.com/r/Kalilinux/",
+    "intro": "Kali Linux 由 OffSec（原 Offensive Security）於 2013 年釋出，前身是 BackTrack，是滲透測試與安全審計領域最知名的發行版之一。它基於 Debian testing 滾動更新，預裝數百種安全工具，覆蓋資訊收集、漏洞掃描、Web 測試、無線攻擊、逆向工程、取證與報告等環節。Kali 提供 Xfce、GNOME、KDE 等桌面版本，也提供 WSL、ARM、容器與雲映象，方便在不同環境中開展授權測試。它強調“平臺”而非“日常桌面”：預設配置、核心與工具鏈都服務於安全測試，普通辦公使用並不是它的最佳化目標。Kali 適合安全專業學生、滲透測試人員、CTF 選手和需要可攜帶工具集的安全團隊。必須強調，所有工具只能在獲得明確授權的目標上使用。Kali 的商業版主要是培訓、認證與支援服務，發行版本身可免費下載。",
+    "highlights": [
+      "預裝大量安全測試與取證工具",
+      "基於 Debian testing 滾動更新",
+      "WSL、ARM、容器、雲映象齊全",
+      "OffSec 的培訓與認證生態"
+    ],
+    "pros": [
+      "安全工具覆蓋全面",
+      "文件與培訓資源豐富",
+      "多種平臺形態便於攜帶"
+    ],
+    "cons": [
+      "不適合作為普通日常桌面",
+      "工具數量多，需自行甄別",
+      "滾動更新可能引入相容問題"
+    ],
+    "similar": [
+      "parrot",
+      "blackarch",
+      "debian"
+    ],
+    "target_user": "獲得授權的安全測試人員與網路安全學生",
+    "tags": [
+      "security",
+      "education",
+      "desktop"
+    ],
+    "popularity": 5,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "parrot",
+    "name": "Parrot OS",
+    "name_zh": "Parrot OS",
+    "family": "debian",
+    "secondary_families": [
+      "security",
+      "privacy"
+    ],
+    "upstream": "Debian testing",
+    "based_on_since": 2013,
+    "first_release": 2013,
+    "latest_version": "滾動更新",
+    "latest_release_date": null,
+    "release_model": "rolling",
+    "release_cycle": "基於 Debian testing 持續滾動",
+    "package_manager": "apt / dpkg",
+    "update_command": "sudo apt update && sudo apt full-upgrade",
+    "gui_updater": "Parrot Updater",
+    "init_system": "systemd",
+    "default_desktop": [
+      "MATE",
+      "KDE Plasma",
+      "Xfce"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "aarch64"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，安全與隱私並重的 Debian 衍生版",
+    "maintainer_type": "company",
+    "maintainer": "Parrot Security",
+    "founder": "Lorenzo Faletra",
+    "founded_year": 2013,
+    "org": "Parrot Security",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "proprietary",
+    "commercial_edition": "Parrot 企業支援與培訓",
+    "official_site": "https://parrotsec.org/",
+    "docs": "https://parrotsec.org/docs/",
+    "download": "https://parrotsec.org/download/",
+    "repo": "https://github.com/ParrotSec",
+    "wiki": "https://parrotsec.org/docs/",
+    "forum": "https://parrotsec.org/community/",
+    "chat": "https://discord.gg/parrotsec",
+    "reddit": "https://www.reddit.com/r/ParrotOS/",
+    "intro": "Parrot OS（Parrot Security OS）是 2013 年出現的 Debian testing 衍生版，與 Kali 同屬安全測試領域，但更強調“安全 + 隱私 + 日常可用”的平衡。它預裝滲透測試、數字取證、逆向工程和匿名通訊工具，同時提供較完整的桌面環境與開發工具，預設桌面曾長期使用 MATE，也提供 KDE Plasma 與 Xfce 版本。Parrot 的 Home 版面向日常使用，Security 版則更偏向測試工作流；系統內建 Tor、AnonSurf、防火牆與加密工具，適合關注隱私的使用者。它適合安全學生、滲透測試人員、隱私倡導者，以及希望一臺機器兼顧開發與安全實驗的人。需要注意，Parrot 同樣是滾動更新，工具和桌面元件可能隨 Debian testing 變化；安全工具的使用必須遵守法律與授權範圍。Parrot 的商業收入主要來自支援、培訓與企業服務。",
+    "highlights": [
+      "安全測試與隱私工具並重",
+      "基於 Debian testing 滾動更新",
+      "Home / Security 等不同用途版本",
+      "內建 Tor、AnonSurf 與加密工具"
+    ],
+    "pros": [
+      "兼顧安全實驗與日常使用",
+      "隱私工具整合度高",
+      "桌面體驗比部分安全發行版完整"
+    ],
+    "cons": [
+      "滾動更新需要主動維護",
+      "安全工具同樣需授權使用",
+      "企業支援生態小於 Kali"
+    ],
+    "similar": [
+      "kali",
+      "tails",
+      "blackarch"
+    ],
+    "target_user": "關注隱私、需要安全工具的安全從業者",
+    "tags": [
+      "security",
+      "privacy",
+      "desktop"
+    ],
+    "popularity": 4,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "deepin",
+    "name": "deepin",
+    "name_zh": "深度作業系統",
+    "family": "debian",
+    "secondary_families": [
+      "chinese",
+      "desktop"
+    ],
+    "upstream": "Debian",
+    "based_on_since": 2004,
+    "first_release": 2004,
+    "latest_version": null,
+    "latest_release_date": null,
+    "release_model": "fixed",
+    "release_cycle": "按年度釋出大版本，持續提供更新",
+    "package_manager": "apt / dpkg + 深度商店",
+    "update_command": "sudo apt update && sudo apt full-upgrade",
+    "gui_updater": "深度商店 / 系統更新",
+    "init_system": "systemd",
+    "default_desktop": [
+      "Deepin Desktop Environment（DDE）"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "aarch64",
+      "loongarch64"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，中文桌面體驗見長",
+    "maintainer_type": "company",
+    "maintainer": "武漢深之度科技有限公司",
+    "founder": "劉聞歡",
+    "founded_year": 2011,
+    "org": "武漢深之度科技有限公司",
+    "license": "GPL-2.0-or-later 等（含專有元件）",
+    "openness": "proprietary",
+    "commercial_edition": "統信 UOS（生態關聯的商業發行版）",
+    "official_site": "https://www.deepin.org/",
+    "docs": "https://www.deepin.org/zh/doc/",
+    "download": "https://www.deepin.org/zh/download/",
+    "repo": "https://github.com/linuxdeepin",
+    "wiki": "https://wiki.deepin.org/",
+    "forum": "https://bbs.deepin.org/",
+    "chat": null,
+    "reddit": "https://www.reddit.com/r/deepin/",
+    "intro": "deepin（深度作業系統）源自 2004 年的 Hiweed Linux，2010 年後逐漸發展為以 Deepin Desktop Environment（DDE）為核心的桌面發行版。它基於 Debian，但提供自研的桌面外殼、控制中心、深度商店、截圖錄屏、檔案管理器等元件，視覺與互動在國產發行版中較為成熟。deepin 對中文輸入法、字型、辦公與影音場景做了較多本地化，適合希望開箱即用、介面現代、對 Linux 底層不熟悉的中文使用者。它支援 x86_64、ARM64 與 LoongArch 等架構，並提供社群版與商業生態產品。需要注意的是，deepin 倉庫中包含部分專有元件，且與 Debian 官方倉庫並非完全相容；其版本釋出節奏和上游同步策略也曾引起討論。若需要企業級支援與更長生命週期，應評估統信 UOS 等商業版本。",
+    "highlights": [
+      "自研 DDE 桌面，視覺與互動完整",
+      "中文輸入法、字型與本地化較好",
+      "深度商店提供一鍵安裝體驗",
+      "支援 x86、ARM 與 LoongArch"
+    ],
+    "pros": [
+      "對中文使用者友好，開箱即用",
+      "桌面設計成熟、元件統一",
+      "國產硬體適配較積極"
+    ],
+    "cons": [
+      "含專有元件，自由度低於 Debian",
+      "與 Debian 倉庫不完全相容",
+      "版本更新節奏曾受爭議"
+    ],
+    "similar": [
+      "ubuntu",
+      "openkylin",
+      "uos"
+    ],
+    "target_user": "希望獲得現代中文桌面體驗的普通使用者",
+    "tags": [
+      "desktop",
+      "chinese",
+      "multimedia"
+    ],
+    "popularity": 4,
+    "data_as_of": "2026-11-18",
+    "verified": false
+  },
+  {
+    "id": "q4os",
+    "name": "Q4OS",
+    "name_zh": "Q4OS",
+    "family": "debian",
+    "secondary_families": [
+      "lightweight",
+      "retro"
+    ],
+    "upstream": "Debian",
+    "based_on_since": 2013,
+    "first_release": 2013,
+    "latest_version": null,
+    "latest_release_date": null,
+    "release_model": "fixed",
+    "release_cycle": "跟隨 Debian stable，提供點版本",
+    "package_manager": "apt / dpkg",
+    "update_command": "sudo apt update && sudo apt full-upgrade",
+    "gui_updater": "Q4OS 更新管理器",
+    "init_system": "systemd",
+    "default_desktop": [
+      "Trinity Desktop Environment",
+      "KDE Plasma"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "i386",
+      "armhf"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，以 Trinity 桌面和輕量體驗為特色",
+    "maintainer_type": "community",
+    "maintainer": "Q4OS 團隊",
+    "founder": null,
+    "founded_year": 2013,
+    "org": "Q4OS 專案",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "firmware",
+    "commercial_edition": "無",
+    "official_site": "https://q4os.org/",
+    "docs": "https://q4os.org/documentation.html",
+    "download": "https://q4os.org/downloads.html",
+    "repo": "https://github.com/q4os",
+    "wiki": "https://q4os.org/documentation.html",
+    "forum": "https://q4os.org/forum/",
+    "chat": null,
+    "reddit": "https://www.reddit.com/r/q4os/",
+    "intro": "Q4OS 是 2013 年出現的 Debian 衍生版，最顯著的特點是使用 Trinity Desktop Environment（TDE）。TDE 延續了 KDE 3 的設計語言，介面緊湊、資源佔用低，對習慣傳統 Windows 或 KDE 3 的使用者非常友好。Q4OS 提供 Trinity 與 KDE Plasma 兩種桌面，支援 32 位與 ARM 裝置，系統基於 Debian stable，使用 apt/dpkg，穩定性和軟體相容性較好。它還提供“XPQ4”等主題方案，能把桌面外觀調整為更接近舊版 Windows 的風格，因此常被用於老電腦翻新、學校和辦公環境。Q4OS 適合需要輕量、穩定、傳統桌面佈局的使用者，尤其是從 Windows 遷移且不想要現代 GNOME 互動的人。需要注意的是，Trinity 的軟體生態與主流桌面有差異，部分現代應用可能缺少原生整合；Q4OS 的社群規模也較小。",
+    "highlights": [
+      "Trinity Desktop Environment 延續 KDE 3 風格",
+      "低資源佔用，適合老電腦",
+      "基於 Debian stable，穩定可靠",
+      "提供傳統 Windows 風格主題"
+    ],
+    "pros": [
+      "老硬體友好，介面熟悉",
+      "系統穩定、維護簡單",
+      "32 位支援仍有價值"
+    ],
+    "cons": [
+      "Trinity 生態較邊緣",
+      "現代應用整合有限",
+      "社群規模小"
+    ],
+    "similar": [
+      "mx-linux",
+      "antix",
+      "linux-lite"
+    ],
+    "target_user": "喜歡傳統桌面佈局的老電腦使用者",
+    "tags": [
+      "desktop",
+      "lightweight",
+      "retro"
+    ],
+    "popularity": 2,
+    "data_as_of": "2026-11-18",
+    "verified": false
+  },
+  {
+    "id": "pureos",
+    "name": "PureOS",
+    "name_zh": "PureOS",
+    "family": "debian",
+    "secondary_families": [
+      "free",
+      "privacy"
+    ],
+    "upstream": "Debian",
+    "based_on_since": 2014,
+    "first_release": 2014,
+    "latest_version": null,
+    "latest_release_date": null,
+    "release_model": "fixed",
+    "release_cycle": "跟隨 Debian stable，Purism 提供更新",
+    "package_manager": "apt / dpkg",
+    "update_command": "sudo apt update && sudo apt full-upgrade",
+    "gui_updater": "GNOME Software",
+    "init_system": "systemd",
+    "default_desktop": [
+      "GNOME",
+      "Phosh（移動裝置）"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "aarch64"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，FSF 認可的完全自由發行版",
+    "maintainer_type": "company",
+    "maintainer": "Purism",
+    "founder": "Purism",
+    "founded_year": 2014,
+    "org": "Purism SPC",
+    "license": "GPL-2.0-or-later 等（僅自由許可證）",
+    "openness": "free",
+    "commercial_edition": "Purism Librem 裝置預裝",
+    "official_site": "https://pureos.net/",
+    "docs": "https://docs.puri.sm/",
+    "download": "https://pureos.net/download/",
+    "repo": "https://source.puri.sm/",
+    "wiki": "https://wiki.puri.sm/",
+    "forum": "https://forums.puri.sm/",
+    "chat": "https://matrix.to/#/#pureos:matrix.org",
+    "reddit": "https://www.reddit.com/r/Purism/",
+    "intro": "PureOS 是 Purism 公司維護的 Debian 衍生版，2014 年出現，並獲得自由軟體基金會（FSF）的完全自由發行版認可。它預設只啟用符合自由軟體定義的倉庫，使用 Linux-libre 核心，預裝 GNOME 與一系列隱私工具，目標是讓使用者從韌體到應用都儘可能處於自由軟體生態中。PureOS 是 Purism Librem 筆記本與 Librem 5 手機的原廠系統，桌面版與移動版（基於 Phosh）共享大量元件。它適合重視隱私、軟體自由和可審計性的使用者，尤其是願意為硬體支付溢價的 Purism 客戶。需要注意的是，完全自由的硬體支援範圍有限，某些 Wi-Fi、顯示卡和加速功能可能不可用；作為公司主導專案，PureOS 的路線也與 Purism 硬體銷售緊密相關。若你只需要 Debian 的穩定與自由理念，標準 Debian 可能更靈活。",
+    "highlights": [
+      "FSF 認可的完全自由發行版",
+      "Purism Librem 裝置原廠系統",
+      "預設啟用隱私與自由軟體工具",
+      "桌面 GNOME 與移動 Phosh 並行"
+    ],
+    "pros": [
+      "自由軟體合規性高",
+      "隱私預設設定較好",
+      "與 Purism 硬體深度適配"
+    ],
+    "cons": [
+      "硬體兼容範圍有限",
+      "軟體版本偏保守",
+      "與廠商生態繫結"
+    ],
+    "similar": [
+      "trisquel",
+      "parabola",
+      "debian"
+    ],
+    "target_user": "重視隱私與軟體自由的 Purism 使用者",
+    "tags": [
+      "free",
+      "privacy",
+      "desktop",
+      "mobile"
+    ],
+    "popularity": 2,
+    "data_as_of": "2026-11-18",
+    "verified": false
+  },
+  {
+    "id": "tails",
+    "name": "Tails",
+    "name_zh": "Tails",
+    "family": "debian",
+    "secondary_families": [
+      "privacy",
+      "security"
+    ],
+    "upstream": "Debian",
+    "based_on_since": 2009,
+    "first_release": 2009,
+    "latest_version": null,
+    "latest_release_date": null,
+    "release_model": "fixed",
+    "release_cycle": "約每 4–8 周釋出安全更新版本",
+    "package_manager": "apt / dpkg（系統更新由 Tails Updater 管理）",
+    "update_command": "通過 Tails Updater 進行增量升級",
+    "gui_updater": "Tails Updater",
+    "init_system": "systemd",
+    "default_desktop": [
+      "GNOME"
+    ],
+    "supported_arch": [
+      "x86_64"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，面向匿名通訊與隱私保護的便攜系統",
+    "maintainer_type": "foundation",
+    "maintainer": "Tails Project",
+    "founder": "Tails 團隊",
+    "founded_year": 2009,
+    "org": "Tails Project",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "firmware",
+    "commercial_edition": "無",
+    "official_site": "https://tails.net/",
+    "docs": "https://tails.net/doc/",
+    "download": "https://tails.net/install/",
+    "repo": "https://gitlab.tails.boum.org/",
+    "wiki": "https://tails.net/doc/",
+    "forum": "https://tails.net/support/",
+    "chat": "https://tails.net/support/",
+    "reddit": "https://www.reddit.com/r/tails/",
+    "intro": "Tails（The Amnesic Incognito Live System）是一個以隱私和匿名通訊為核心的可啟動 live 系統，2009 年出現。它從 U 盤或 DVD 啟動，預設將所有網路流量經由 Tor 轉發，關閉後不保留會話痕跡；使用者可以選擇加密持久化儲存來儲存少量檔案或配置。Tails 基於 Debian，預裝 Tor Browser、密碼管理器、加密工具與辦公軟體，設計目標是降低普通使用者進行安全通訊的門檻。它被記者、活動人士、隱私研究者以及需要處理敏感資訊的人廣泛使用。Tails 適合在不可信電腦上臨時使用、需要規避本地痕跡的場景，不適合作為日常主力桌面，也不提供傳統意義上的安裝到硬碟。需要注意的是，Tails 不能防範所有威脅，硬體級後門、流量關聯分析和使用者操作失誤仍可能暴露身份；使用前應閱讀官方威脅模型與安全指南。",
+    "highlights": [
+      "預設通過 Tor 轉發全部網路流量",
+      "無痕 live 系統，關閉即清除會話",
+      "可選加密持久化儲存",
+      "內建 Tor Browser、加密與辦公工具"
+    ],
+    "pros": [
+      "隱私與匿名保護預設開啟",
+      "便攜、可在不可信電腦使用",
+      "安全更新節奏明確"
+    ],
+    "cons": [
+      "不適合作為日常系統",
+      "效能和硬體相容性受限",
+      "無法抵禦所有威脅"
+    ],
+    "similar": [
+      "qubes",
+      "parrot",
+      "debian"
+    ],
+    "target_user": "記者、活動人士與需要匿名通訊的使用者",
+    "tags": [
+      "privacy",
+      "security",
+      "live"
+    ],
+    "popularity": 4,
+    "data_as_of": "2026-11-18",
+    "verified": false
+  },
+  {
+    "id": "vanilla",
+    "name": "Vanilla OS",
+    "name_zh": "Vanilla OS",
+    "family": "debian",
+    "secondary_families": [
+      "immutable",
+      "desktop"
+    ],
+    "upstream": "Debian unstable / sid",
+    "based_on_since": 2022,
+    "first_release": 2022,
+    "latest_version": "2.0 Orchid",
+    "latest_release_date": "2024-07-28",
+    "release_model": "fixed",
+    "release_cycle": "按大版本釋出，系統更新以原子映象推送",
+    "package_manager": "apt（容器內）+ Flatpak + apx",
+    "update_command": "sudo abroot upgrade",
+    "gui_updater": "Vanilla OS Control Center",
+    "init_system": "systemd",
+    "default_desktop": [
+      "GNOME"
+    ],
+    "supported_arch": [
+      "x86_64"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，基於 Debian 的不可變桌面系統",
+    "maintainer_type": "community",
+    "maintainer": "Vanilla OS 團隊",
+    "founder": null,
+    "founded_year": 2022,
+    "org": "Vanilla OS 社群",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "proprietary",
+    "commercial_edition": "無",
+    "official_site": "https://vanillaos.org/",
+    "docs": "https://docs.vanillaos.org/",
+    "download": "https://vanillaos.org/download",
+    "repo": "https://github.com/Vanilla-OS",
+    "wiki": "https://docs.vanillaos.org/",
+    "forum": "https://discord.gg/vanillaos",
+    "chat": "https://discord.gg/vanillaos",
+    "reddit": "https://www.reddit.com/r/vanillaos/",
+    "intro": "Vanilla OS 是 2022 年出現的桌面發行版，最初基於 Ubuntu，2.0 “Orchid” 起轉向 Debian unstable，並採用 ABRoot 實現不可變系統與原子更新。它的核心理念是“乾淨的宿主系統 + 按需容器”：基礎系統保持只讀和可回滾，應用與開發環境可以裝在 Distrobox/APX 容器中，避免依賴衝突汙染主系統。Vanilla OS 預設使用 GNOME，提供控制中心、第一方應用與 Flatpak 支援，介面接近原生 GNOME 但更強調易用性。它適合希望獲得 Debian 軟體生態、又想要不可變系統穩定性的桌面使用者，尤其是開發者與喜歡嘗試新工作流的人。需要注意，Vanilla OS 的容器化工作流與傳統的 “apt install” 習慣不同；它也不是 Debian 官方專案，2.0 的架構變化較大，早期文件與社群經驗可能已過時。關於它屬於 Debian 還是 Ubuntu 系存在爭議，這裡按 2.0 的實際上游歸入 Debian 系。",
+    "highlights": [
+      "ABRoot 不可變系統與原子更新",
+      "APX/Distrobox 容器化應用工作流",
+      "基於 Debian unstable 的較新軟體",
+      "GNOME 桌面與控制中心"
+    ],
+    "pros": [
+      "系統穩定、可回滾",
+      "宿主系統乾淨，依賴衝突少",
+      "桌面體驗現代簡潔"
+    ],
+    "cons": [
+      "與傳統 apt 工作流差異大",
+      "專案年輕，文件仍在演進",
+      "容器化增加資源與學習成本"
+    ],
+    "similar": [
+      "fedora-silverblue",
+      "nixos",
+      "debian"
+    ],
+    "target_user": "想嘗試不可變 Debian 桌面的開發者和進階使用者",
+    "tags": [
+      "desktop",
+      "immutable",
+      "developer"
+    ],
+    "popularity": 3,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "armbian",
+    "name": "Armbian",
+    "name_zh": "Armbian",
+    "family": "debian",
+    "secondary_families": [
+      "embedded"
+    ],
+    "upstream": "Debian / Ubuntu",
+    "based_on_since": 2015,
+    "first_release": 2015,
+    "latest_version": null,
+    "latest_release_date": null,
+    "release_model": "rolling",
+    "release_cycle": "持續釋出板卡映象與核心更新",
+    "package_manager": "apt / dpkg",
+    "update_command": "sudo apt update && sudo apt full-upgrade",
+    "gui_updater": "armbian-config",
+    "init_system": "systemd",
+    "default_desktop": [
+      "無（伺服器）",
+      "Xfce",
+      "GNOME（可選）"
+    ],
+    "supported_arch": [
+      "aarch64",
+      "armv7",
+      "riscv64"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，面向 ARM 單板計算機的發行版",
+    "maintainer_type": "community",
+    "maintainer": "Armbian 團隊",
+    "founder": "Igor Pečovnik 等",
+    "founded_year": 2015,
+    "org": "Armbian 社群",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "firmware",
+    "commercial_edition": "Armbian 支援服務（社群/合作）",
+    "official_site": "https://www.armbian.com/",
+    "docs": "https://docs.armbian.com/",
+    "download": "https://www.armbian.com/download/",
+    "repo": "https://github.com/armbian",
+    "wiki": "https://docs.armbian.com/",
+    "forum": "https://forum.armbian.com/",
+    "chat": "https://discord.gg/armbian",
+    "reddit": "https://www.reddit.com/r/armbian/",
+    "intro": "Armbian 是 2015 年出現的 ARM 單板計算機發行版構建框架與映象集合，支援樹莓派、Orange Pi、Rock Pi、Banana Pi、Odroid 等大量板卡，底層可選擇 Debian 或 Ubuntu。它提供最小化伺服器映象與帶 Xfce 的桌面映象，並整合 armbian-config 工具，用於配置網路、SSH、核心、 overlays 與板載硬體。Armbian 的價值在於把上游核心、U-Boot 與板卡補丁組合成可啟動、可維護的映象，省去使用者手工移植的工作量；它也提供 nightly 與穩定版通道，適合 NAS、家庭伺服器、邊緣計算與物聯網原型。需要注意，不同板卡的支援質量差異很大，部分映象依賴社群維護，核心升級可能影響硬體功能；在生產環境使用前應先在目標板卡上驗證。Armbian 不是單一桌面發行版，而更像“ARM 板卡的系統發行平臺”。",
+    "highlights": [
+      "覆蓋大量 ARM 單板計算機",
+      "Debian / Ubuntu 雙底層選擇",
+      "armbian-config 集中配置硬體與服務",
+      "伺服器與輕量桌面映象兼備"
+    ],
+    "pros": [
+      "省去 ARM 板卡移植工作",
+      "板卡覆蓋廣，社群活躍",
+      "適合 NAS、邊緣與物聯網"
+    ],
+    "cons": [
+      "不同板卡支援質量不一",
+      "核心與 U-Boot 升級風險較高",
+      "文件分散在板卡與版本之間"
+    ],
+    "similar": [
+      "raspberry-pi-os",
+      "postmarketos",
+      "debian"
+    ],
+    "target_user": "使用 ARM 單板計算機搭建伺服器或原型的使用者",
+    "tags": [
+      "embedded",
+      "server",
+      "lightweight"
+    ],
+    "popularity": 4,
+    "data_as_of": "2026-11-18",
+    "verified": false
+  },
+  {
+    "id": "raspberry-pi-os",
+    "name": "Raspberry Pi OS",
+    "name_zh": "樹莓派系統",
+    "family": "debian",
+    "secondary_families": [
+      "embedded",
+      "education"
+    ],
+    "upstream": "Debian",
+    "based_on_since": 2012,
+    "first_release": 2012,
+    "latest_version": null,
+    "latest_release_date": null,
+    "release_model": "fixed",
+    "release_cycle": "跟隨 Debian stable，按需釋出映象更新",
+    "package_manager": "apt / dpkg",
+    "update_command": "sudo apt update && sudo apt full-upgrade",
+    "gui_updater": "Raspberry Pi OS 更新器",
+    "init_system": "systemd",
+    "default_desktop": [
+      "LXDE（PIXEL）",
+      "Labwc/Wayland（新版）"
+    ],
+    "supported_arch": [
+      "arm64",
+      "armhf"
+    ],
+    "status": "active",
+    "status_note": "Raspberry Pi Ltd 維護，官方硬體預裝系統",
+    "maintainer_type": "company",
+    "maintainer": "Raspberry Pi Ltd",
+    "founder": "Raspberry Pi Foundation / Raspbian 社群",
+    "founded_year": 2012,
+    "org": "Raspberry Pi Ltd",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "proprietary",
+    "commercial_edition": "Raspberry Pi 硬體預裝與配件",
+    "official_site": "https://www.raspberrypi.com/software/",
+    "docs": "https://www.raspberrypi.com/documentation/computers/os.html",
+    "download": "https://www.raspberrypi.com/software/",
+    "repo": "https://github.com/raspberrypi",
+    "wiki": "https://www.raspberrypi.com/documentation/",
+    "forum": "https://forums.raspberrypi.com/",
+    "chat": null,
+    "reddit": "https://www.reddit.com/r/raspberry_pi/",
+    "intro": "Raspberry Pi OS 是樹莓派基金會為自家單板計算機提供的官方系統，前身是 2012 年出現的 Raspbian，2020 年更名為 Raspberry Pi OS。它基於 Debian，使用 apt/dpkg，針對樹莓派的 VideoCore GPU、GPIO、相機與電源管理做了專門適配，提供桌面版與 Lite 伺服器版。桌面環境長期採用 LXDE 定製的 PIXEL，新版逐步轉向 Wayland/Labwc；系統還附帶 raspi-config、樹莓派 Imager 與豐富的教育軟體。它適合學生、教師、創客、家庭伺服器使用者和第一次接觸 Linux 的人，也是樹莓派硬體生態的預設入口。需要注意的是，Raspberry Pi OS 的軟體版本跟隨 Debian stable，較新的桌面與核心特性可能滯後；在非樹莓派硬體上，部分驅動與工具不可用。它是官方免費系統，商業價值主要來自硬體銷售。",
+    "highlights": [
+      "樹莓派官方系統，硬體適配完整",
+      "桌面版與 Lite 伺服器版",
+      "raspi-config、相機與 GPIO 工具齊全",
+      "教育軟體與創客生態豐富"
+    ],
+    "pros": [
+      "樹莓派開箱即用",
+      "硬體與 GPIO 支援完善",
+      "教程與社群資源豐富"
+    ],
+    "cons": [
+      "軟體版本跟隨 Debian，較舊",
+      "主要面向樹莓派硬體",
+      "桌面效能受限於板卡"
+    ],
+    "similar": [
+      "armbian",
+      "debian",
+      "ubuntu"
+    ],
+    "target_user": "樹莓派使用者、學生、教師與創客",
+    "tags": [
+      "embedded",
+      "education",
+      "desktop",
+      "lightweight"
+    ],
+    "popularity": 5,
+    "data_as_of": "2026-11-18",
+    "verified": false
+  },
+  {
+    "id": "knoppix",
+    "name": "Knoppix",
+    "name_zh": "Knoppix（休眠）",
+    "family": "debian",
+    "secondary_families": [
+      "live",
+      "retro"
+    ],
+    "upstream": "Debian",
+    "based_on_since": 2000,
+    "first_release": 2000,
+    "latest_version": "9.1",
+    "latest_release_date": "2021-01-03",
+    "release_model": "fixed",
+    "release_cycle": "已長期未釋出新版本",
+    "package_manager": "apt / dpkg",
+    "update_command": "sudo apt update && sudo apt full-upgrade",
+    "gui_updater": "Synaptic（歷史版本）",
+    "init_system": "systemd",
+    "default_desktop": [
+      "LXDE",
+      "KDE（歷史版本）"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "i386"
+    ],
+    "status": "dormant",
+    "status_note": "自 2021 年 9.1 後長期未更新，專案處於休眠狀態",
+    "maintainer_type": "individual",
+    "maintainer": "Klaus Knopper",
+    "founder": "Klaus Knopper",
+    "founded_year": 2000,
+    "org": "Knoppix 專案",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "firmware",
+    "commercial_edition": "無",
+    "official_site": "https://www.knopper.net/knoppix/",
+    "docs": "https://www.knopper.net/knoppix/",
+    "download": "https://www.knopper.net/knoppix-mirrors/",
+    "repo": null,
+    "wiki": "https://www.knopper.net/knoppix/",
+    "forum": "https://www.knopper.net/knoppix/",
+    "chat": null,
+    "reddit": null,
+    "intro": "Knoppix 由德國開發者 Klaus Knopper 於 2000 年釋出，是最早把“完整 Linux 桌面放進 live CD”這一理念普及開來的發行版之一。它基於 Debian，啟動時自動檢測硬體，曾經能在不安裝系統的情況下提供瀏覽器、辦公套件、網路工具與救援環境，對後來的 Ubuntu Live CD、Tails 等產生了深遠影響。Knoppix 還支援持久化儲存與硬碟安裝，長期被用於系統救援、教學演示和舊電腦體驗。隨著 live 系統成為主流、Knoppix 更新節奏放緩，專案自 2021 年的 9.1 版本後長期沒有新版本，已進入休眠狀態。它如今更適合作為 Linux 歷史與 live 技術的研究物件；如果需要在現代硬體上使用救援系統，應考慮 GParted Live、SystemRescue 或 Tails 等仍在維護的方案。",
+    "highlights": [
+      "最早普及 live CD 桌面的發行版之一",
+      "硬體自動檢測與系統救援能力強",
+      "基於 Debian，支援持久化儲存",
+      "深刻影響後續 live 系統"
+    ],
+    "pros": [
+      "歷史意義大，設計理念先進",
+      "無需安裝即可體驗完整桌面",
+      "系統救援場景實用"
+    ],
+    "cons": [
+      "長期未更新，安全風險高",
+      "現代硬體支援不足",
+      "軟體版本陳舊"
+    ],
+    "similar": [
+      "debian",
+      "tails",
+      "puppy"
+    ],
+    "target_user": "Linux 歷史研究者、離線救援與教學演示",
+    "tags": [
+      "live",
+      "retro",
+      "education"
+    ],
+    "popularity": 2,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "ubuntu",
+    "name": "Ubuntu",
+    "name_zh": "Ubuntu",
+    "family": "ubuntu",
+    "secondary_families": [
+      "desktop",
+      "server"
+    ],
+    "upstream": "Debian",
+    "based_on_since": 2004,
+    "first_release": 2004,
+    "latest_version": "26.10",
+    "latest_release_date": "2026-10-15",
+    "release_model": "fixed",
+    "release_cycle": "每 6 個月一版；每 2 年一個 LTS，LTS 支援 5–10 年",
+    "package_manager": "apt / dpkg + snap",
+    "update_command": "sudo apt update && sudo apt full-upgrade",
+    "gui_updater": "Software Updater / Ubuntu Software",
+    "init_system": "systemd",
+    "default_desktop": [
+      "GNOME",
+      "Kubuntu（KDE）",
+      "Xubuntu（Xfce）",
+      "Lubuntu（LXQt）等官方風味"
+    ],
+    "supported_arch": [
+      "amd64",
+      "arm64",
+      "armhf",
+      "ppc64el",
+      "s390x",
+      "riscv64"
+    ],
+    "status": "lts",
+    "status_note": "LTS 版本提供 5 年標準支援，可擴充套件至 10–12 年；非 LTS 支援 9 個月",
+    "maintainer_type": "company",
+    "maintainer": "Canonical",
+    "founder": "Mark Shuttleworth",
+    "founded_year": 2004,
+    "org": "Canonical Ltd.",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "proprietary",
+    "commercial_edition": "Ubuntu Pro（擴充套件安全維護與合規服務）",
+    "official_site": "https://ubuntu.com/",
+    "docs": "https://help.ubuntu.com/",
+    "download": "https://ubuntu.com/download",
+    "repo": "https://git.launchpad.net/",
+    "wiki": "https://wiki.ubuntu.com/",
+    "forum": "https://discourse.ubuntu.com/",
+    "chat": "https://matrix.to/#/#ubuntu:ubuntu.com",
+    "reddit": "https://www.reddit.com/r/Ubuntu/",
+    "intro": "Ubuntu 由 Mark Shuttleworth 創立的 Canonical 於 2004 年釋出，基於 Debian，目標是把自由軟體做得“對普通人也可用”。它確立了每 6 個月釋出一版、每 2 年一個 LTS 的節奏，並提供 5 年標準支援（可擴充套件至 10 年以上）。Ubuntu 預設使用 GNOME，擁有 Kubuntu、Xubuntu、Lubuntu、Ubuntu MATE、Ubuntu Budgie、Ubuntu Studio、Ubuntu Kylin 等官方風味版，覆蓋不同桌面與語言需求。apt 與 snap 並存，軟體生態龐大，硬體相容性和雲映象支援都非常成熟。它適合從個人桌面、開發機到企業伺服器的廣泛場景，也是許多下游發行版的基座。爭議主要圍繞 snap 的預設推廣、部分專有元件與 Canonical 的商業策略；如果偏好純社群或完全自由軟體，Debian、Trisquel 可能更合適。Ubuntu 本身免費，Ubuntu Pro 提供付費的擴充套件安全維護。",
+    "highlights": [
+      "6 個月釋出節奏 + 2 年 LTS",
+      "官方風味版豐富，桌面選擇多",
+      "雲映象、伺服器與開發者生態成熟",
+      "Canonical 提供商業支援與 Ubuntu Pro"
+    ],
+    "pros": [
+      "軟硬體相容性好，資料豐富",
+      "LTS 生命週期長，企業採用廣",
+      "官方風味版覆蓋多種桌面偏好"
+    ],
+    "cons": [
+      "snap 預設策略存在爭議",
+      "部分元件含專有內容",
+      "非 LTS 支援期較短"
+    ],
+    "similar": [
+      "linux-mint",
+      "pop-os",
+      "debian"
+    ],
+    "target_user": "從新手到企業使用者都適用的通用 Linux 平臺",
+    "tags": [
+      "desktop",
+      "server",
+      "cloud",
+      "education",
+      "enterprise"
+    ],
+    "popularity": 5,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "linux-mint",
+    "name": "Linux Mint",
+    "name_zh": "Linux Mint",
+    "family": "ubuntu",
+    "secondary_families": [
+      "desktop"
+    ],
+    "upstream": "Ubuntu LTS / Debian（LMDE）",
+    "based_on_since": 2006,
+    "first_release": 2006,
+    "latest_version": "22.3",
+    "latest_release_date": "2026-01-11",
+    "release_model": "lts",
+    "release_cycle": "跟隨 Ubuntu LTS，約每年一個點版本，支援至 2029 年",
+    "package_manager": "apt / dpkg",
+    "update_command": "sudo apt update && sudo apt upgrade",
+    "gui_updater": "Update Manager",
+    "init_system": "systemd",
+    "default_desktop": [
+      "Cinnamon",
+      "MATE",
+      "Xfce"
+    ],
+    "supported_arch": [
+      "x86_64"
+    ],
+    "status": "lts",
+    "status_note": "Linux Mint 22.x 基於 Ubuntu 24.04 LTS，支援至 2029 年",
+    "maintainer_type": "community",
+    "maintainer": "Linux Mint 團隊",
+    "founder": "Clement Lefebvre",
+    "founded_year": 2006,
+    "org": "Linux Mint 專案",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "proprietary",
+    "commercial_edition": "無",
+    "official_site": "https://linuxmint.com/",
+    "docs": "https://linuxmint.com/documentation.php",
+    "download": "https://linuxmint.com/download.php",
+    "repo": "https://github.com/linuxmint",
+    "wiki": "https://linuxmint.com/documentation.php",
+    "forum": "https://forums.linuxmint.com/",
+    "chat": "https://matrix.to/#/#linuxmint:matrix.org",
+    "reddit": "https://www.reddit.com/r/linuxmint/",
+    "intro": "Linux Mint 由 Clement Lefebvre 於 2006 年創立，是最受 Windows 遷移使用者歡迎的發行版之一。它基於 Ubuntu LTS（另有基於 Debian 的 LMDE），但重新設計了桌面體驗：Cinnamon、MATE 與 Xfce 三種官方版本都提供傳統工作列、開始選單和熟悉的窗口布局，同時保留 apt 生態與 Ubuntu 的軟體倉庫。Mint 自帶 Update Manager、軟體管理器、備份工具與主題設定，預設不強制 snap，更新策略相對保守，強調“穩定、易用、不打擾”。它適合家庭使用者、辦公桌面、老電腦和第一次接觸 Linux 的人。需要注意的是，Mint 的軟體版本跟隨 Ubuntu LTS，通常比 Fedora 或 Arch 舊；Cinnamon 的 Wayland 支援仍在推進，部分新硬體或高分屏適配不如 GNOME 成熟。Linux Mint 不提供商業版，由社群團隊維護。",
+    "highlights": [
+      "Cinnamon/MATE/Xfce 三種傳統桌面",
+      "基於 Ubuntu LTS，穩定且支援週期長",
+      "Update Manager 與 Mint 工具鏈易用",
+      "預設不強制 snap，尊重使用者選擇"
+    ],
+    "pros": [
+      "對 Windows 遷移使用者最友好",
+      "穩定、開箱即用",
+      "桌面體驗一致、文件豐富"
+    ],
+    "cons": [
+      "軟體版本偏舊",
+      "Wayland 與部分新硬體支援滯後",
+      "主要面向 x86_64"
+    ],
+    "similar": [
+      "ubuntu",
+      "zorin",
+      "pop-os"
+    ],
+    "target_user": "從 Windows 遷移、想要穩定易用桌面的使用者",
+    "tags": [
+      "desktop",
+      "education",
+      "lightweight"
+    ],
+    "popularity": 5,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "pop-os",
+    "name": "Pop!_OS",
+    "name_zh": "Pop!_OS",
+    "family": "ubuntu",
+    "secondary_families": [
+      "desktop",
+      "developer"
+    ],
+    "upstream": "Ubuntu",
+    "based_on_since": 2017,
+    "first_release": 2017,
+    "latest_version": null,
+    "latest_release_date": null,
+    "release_model": "lts",
+    "release_cycle": "跟隨 Ubuntu LTS，System76 提供定製更新",
+    "package_manager": "apt / dpkg + Flatpak",
+    "update_command": "sudo apt update && sudo apt full-upgrade",
+    "gui_updater": "Pop!_Shop / 系統更新",
+    "init_system": "systemd",
+    "default_desktop": [
+      "COSMIC",
+      "GNOME（歷史版本）"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "aarch64"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，System76 的桌面與硬體最佳化發行版",
+    "maintainer_type": "company",
+    "maintainer": "System76",
+    "founder": "System76",
+    "founded_year": 2017,
+    "org": "System76, Inc.",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "proprietary",
+    "commercial_edition": "System76 硬體預裝與支援",
+    "official_site": "https://pop.system76.com/",
+    "docs": "https://support.system76.com/",
+    "download": "https://pop.system76.com/",
+    "repo": "https://github.com/pop-os",
+    "wiki": "https://support.system76.com/",
+    "forum": "https://discourse.system76.com/",
+    "chat": "https://discord.gg/system76",
+    "reddit": "https://www.reddit.com/r/pop_os/",
+    "intro": "Pop!_OS 是 System76 於 2017 年推出的 Ubuntu 衍生版，最初為自己的 Linux 筆記本與桌上型電腦提供更好的開箱體驗，後來成為面向開發者和創作者的通用桌面。它跟隨 Ubuntu LTS，提供加密安裝、混合顯示卡切換、韌體更新與 Pop!_Shop 等定製工具，並長期以“少干擾、鍵盤友好”的互動著稱。Pop!_OS 曾使用深度定製的 GNOME，後來轉向自研的 COSMIC 桌面環境，強調效能、可定製與 Rust 技術棧。它適合開發者、資料科學使用者、遊戲玩家和希望獲得較新硬體支援的 Linux 使用者。需要注意的是，COSMIC 仍在持續演進，部分功能與第三方擴充套件生態不如 GNOME 成熟；Pop!_OS 的更新節奏也與 Ubuntu LTS 繫結，軟體版本不會特別新。System76 通過硬體銷售與支援服務盈利，系統本身可免費下載。",
+    "highlights": [
+      "System76 硬體最佳化與韌體工具",
+      "自研 COSMIC 桌面，鍵盤友好",
+      "加密安裝與混合顯示卡切換",
+      "基於 Ubuntu LTS，生態相容"
+    ],
+    "pros": [
+      "開發者與創作者體驗好",
+      "硬體相容性與驅動支援積極",
+      "桌面互動高效"
+    ],
+    "cons": [
+      "COSMIC 生態仍在成長",
+      "軟體版本跟隨 LTS，較保守",
+      "主要面向 System76 與 x86_64"
+    ],
+    "similar": [
+      "ubuntu",
+      "elementary",
+      "linux-mint"
+    ],
+    "target_user": "開發者、創作者與 System76 硬體使用者",
+    "tags": [
+      "desktop",
+      "developer",
+      "gaming"
+    ],
+    "popularity": 4,
+    "data_as_of": "2026-11-18",
+    "verified": false
+  },
+  {
+    "id": "elementary",
+    "name": "elementary OS",
+    "name_zh": "elementary OS",
+    "family": "ubuntu",
+    "secondary_families": [
+      "desktop"
+    ],
+    "upstream": "Ubuntu LTS",
+    "based_on_since": 2011,
+    "first_release": 2011,
+    "latest_version": null,
+    "latest_release_date": null,
+    "release_model": "lts",
+    "release_cycle": "跟隨 Ubuntu LTS，按大版本釋出",
+    "package_manager": "apt / dpkg + Flatpak",
+    "update_command": "sudo apt update && sudo apt full-upgrade",
+    "gui_updater": "AppCenter / 系統設定",
+    "init_system": "systemd",
+    "default_desktop": [
+      "Pantheon"
+    ],
+    "supported_arch": [
+      "x86_64"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，專注一致性的桌面體驗",
+    "maintainer_type": "foundation",
+    "maintainer": "elementary, Inc.",
+    "founder": "Daniel Foré",
+    "founded_year": 2011,
+    "org": "elementary, Inc.",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "proprietary",
+    "commercial_edition": "無（接受捐贈與付費應用）",
+    "official_site": "https://elementary.io/",
+    "docs": "https://docs.elementary.io/",
+    "download": "https://elementary.io/",
+    "repo": "https://github.com/elementary",
+    "wiki": "https://docs.elementary.io/",
+    "forum": "https://elementary.io/community/",
+    "chat": "https://matrix.to/#/#elementary:matrix.org",
+    "reddit": "https://www.reddit.com/r/elementaryos/",
+    "intro": "elementary OS 由 Daniel Foré 於 2011 年發起，基於 Ubuntu LTS，最鮮明的特色是自研的 Pantheon 桌面。它追求類似 macOS 的簡潔互動：頂部面板、底部 Dock、全域性選單、統一的圖示與 Human Interface Guidelines，讓第一方應用在視覺和行為上高度一致。elementary 的 AppCenter 同時提供免費與付費應用，鼓勵開發者為開源軟體獲得收入；系統預設支援 Flatpak，並通過精心挑選的預裝軟體減少雜亂。它適合重視設計一致性、希望獲得安靜優雅桌面體驗的使用者，也適合作為送給非技術使用者的 Linux 系統。需要注意的是，elementary 的硬體相容性依賴 Ubuntu LTS，軟體版本較舊；Pantheon 的擴充套件生態與 GNOME 相比較小，部分專業應用可能需要額外配置。專案通過捐贈、應用分成與企業支援維持運營。",
+    "highlights": [
+      "自研 Pantheon 桌面，互動統一",
+      "AppCenter 支援付費與免費應用",
+      "基於 Ubuntu LTS，穩定可靠",
+      "嚴格的設計規範與視覺一致性"
+    ],
+    "pros": [
+      "介面精緻、互動一致",
+      "對非技術使用者友好",
+      "應用中心體驗完整"
+    ],
+    "cons": [
+      "軟體版本跟隨 LTS，較舊",
+      "Pantheon 擴充套件生態有限",
+      "硬體相容性依賴 Ubuntu"
+    ],
+    "similar": [
+      "ubuntu",
+      "pop-os",
+      "zorin"
+    ],
+    "target_user": "重視設計一致性與簡潔體驗的桌面使用者",
+    "tags": [
+      "desktop",
+      "education",
+      "design"
+    ],
+    "popularity": 3,
+    "data_as_of": "2026-11-18",
+    "verified": false
+  },
+  {
+    "id": "zorin",
+    "name": "Zorin OS",
+    "name_zh": "Zorin OS",
+    "family": "ubuntu",
+    "secondary_families": [
+      "desktop"
+    ],
+    "upstream": "Ubuntu LTS",
+    "based_on_since": 2009,
+    "first_release": 2009,
+    "latest_version": null,
+    "latest_release_date": null,
+    "release_model": "lts",
+    "release_cycle": "跟隨 Ubuntu LTS，按大版本釋出",
+    "package_manager": "apt / dpkg + Flatpak / Snap",
+    "update_command": "sudo apt update && sudo apt full-upgrade",
+    "gui_updater": "Zorin 更新器 / GNOME Software",
+    "init_system": "systemd",
+    "default_desktop": [
+      "GNOME（深度定製）"
+    ],
+    "supported_arch": [
+      "x86_64"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，面向 Windows/macOS 遷移使用者",
+    "maintainer_type": "company",
+    "maintainer": "Zorin Group",
+    "founder": "Artyom Zorin、Kirill Zorin",
+    "founded_year": 2009,
+    "org": "Zorin Group",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "proprietary",
+    "commercial_edition": "Zorin OS Pro",
+    "official_site": "https://zorin.com/os/",
+    "docs": "https://help.zorin.com/",
+    "download": "https://zorin.com/os/download/",
+    "repo": "https://github.com/ZorinOS",
+    "wiki": "https://help.zorin.com/",
+    "forum": "https://forum.zorin.com/",
+    "chat": "https://discord.gg/zorinos",
+    "reddit": "https://www.reddit.com/r/zorinos/",
+    "intro": "Zorin OS 由 Zorin 兄弟於 2009 年創立，基於 Ubuntu LTS，目標非常明確：讓 Windows 和 macOS 使用者無痛遷移到 Linux。它提供高度定製的 GNOME 桌面，可通過 Zorin Appearance 一鍵切換成類似 Windows 11、Windows 7、macOS 或 Ubuntu 的佈局；Zorin Connect 讓手機與電腦協同，內建 Wine 輔助與 Windows 應用安裝入口，預裝軟體也儘量貼近遷移者的使用習慣。Zorin OS 有免費 Core 版與付費 Pro 版，Pro 版包含更多桌面佈局、應用與安裝支援，是少數採用“付費增值”模式的桌面發行版。它適合家庭使用者、辦公人員和學校，尤其是第一次接觸 Linux 的人。需要注意的是，Zorin 的軟體版本跟隨 Ubuntu LTS，通常較舊；深度定製桌面在升級大版本時可能需要重新適配，部分高階功能需要購買 Pro。",
+    "highlights": [
+      "一鍵切換 Windows/macOS 風格佈局",
+      "Zorin Connect 手機協同",
+      "基於 Ubuntu LTS，穩定易用",
+      "免費 Core + 付費 Pro 模式"
+    ],
+    "pros": [
+      "遷移使用者學習成本低",
+      "桌面佈局靈活",
+      "預裝軟體貼近日常需求"
+    ],
+    "cons": [
+      "軟體版本偏舊",
+      "高階功能需付費",
+      "深度定製增加升級適配成本"
+    ],
+    "similar": [
+      "linux-mint",
+      "ubuntu",
+      "elementary"
+    ],
+    "target_user": "從 Windows/macOS 遷移的普通桌面使用者",
+    "tags": [
+      "desktop",
+      "education"
+    ],
+    "popularity": 4,
+    "data_as_of": "2026-11-18",
+    "verified": false
+  },
+  {
+    "id": "kde-neon",
+    "name": "KDE neon",
+    "name_zh": "KDE neon",
+    "family": "ubuntu",
+    "secondary_families": [
+      "desktop"
+    ],
+    "upstream": "Ubuntu LTS + KDE 倉庫",
+    "based_on_since": 2016,
+    "first_release": 2016,
+    "latest_version": "滾動更新（KDE Plasma）",
+    "latest_release_date": null,
+    "release_model": "rolling",
+    "release_cycle": "Ubuntu LTS 底座 + 持續更新的 KDE 軟體倉庫",
+    "package_manager": "apt / dpkg",
+    "update_command": "sudo apt update && sudo apt full-upgrade",
+    "gui_updater": "Discover",
+    "init_system": "systemd",
+    "default_desktop": [
+      "KDE Plasma"
+    ],
+    "supported_arch": [
+      "x86_64"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，KDE 官方面向 Plasma 的展示發行版",
+    "maintainer_type": "foundation",
+    "maintainer": "KDE 社群",
+    "founder": "KDE 社群",
+    "founded_year": 2016,
+    "org": "KDE e.V.",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "firmware",
+    "commercial_edition": "無",
+    "official_site": "https://neon.kde.org/",
+    "docs": "https://neon.kde.org/faq",
+    "download": "https://neon.kde.org/download",
+    "repo": "https://invent.kde.org/neon",
+    "wiki": "https://community.kde.org/Neon",
+    "forum": "https://discuss.kde.org/",
+    "chat": "https://matrix.to/#/#neon:kde.org",
+    "reddit": "https://www.reddit.com/r/kdeneon/",
+    "intro": "KDE neon 是 KDE 社群於 2016 年推出的發行版，定位不是“又一個通用 Linux”，而是“體驗最新 KDE Plasma 的官方視窗”。它使用 Ubuntu LTS 作為穩定底座，再疊加 KDE 持續更新的軟體倉庫，因此係統底層相對穩定，而 Plasma 桌面、KDE Frameworks 與第一方應用可以快速獲得新版本。Neon 提供 User Edition、Testing、Unstable 等通道，適合想第一時間體驗 Plasma 新功能、又不想自己編譯或滾動整個系統的使用者。它適合 KDE 愛好者、桌面定製玩家、Qt/KDE 開發者，以及希望獲得現代 Plasma 桌面但不想用 Arch 的人。需要注意的是，Neon 的“滾動”僅限 KDE 軟體層，Ubuntu 底座仍是 LTS；混用第三方 PPA 可能破壞依賴，升級 Plasma 大版本時也可能遇到主題或外掛相容問題。它不適合追求完全滾動更新或長期不折騰的使用者。",
+    "highlights": [
+      "Ubuntu LTS 底座 + 最新 KDE Plasma",
+      "KDE 官方維護，更新節奏快",
+      "Discover 圖形化軟體管理",
+      "適合 KDE 開發者與愛好者"
+    ],
+    "pros": [
+      "Plasma 新版本獲取快",
+      "底層 Ubuntu LTS 較穩定",
+      "KDE 官方支援，文件直接"
+    ],
+    "cons": [
+      "KDE 層滾動可能引入迴歸",
+      "第三方 PPA 相容性風險",
+      "並非完整滾動發行版"
+    ],
+    "similar": [
+      "ubuntu",
+      "opensuse-tumbleweed",
+      "solus"
+    ],
+    "target_user": "想第一時間體驗最新 KDE Plasma 的使用者",
+    "tags": [
+      "desktop",
+      "developer",
+      "hobby"
+    ],
+    "popularity": 3,
+    "data_as_of": "2026-11-18",
+    "verified": false
+  },
+  {
+    "id": "bodhi",
+    "name": "Bodhi Linux",
+    "name_zh": "Bodhi Linux",
+    "family": "ubuntu",
+    "secondary_families": [
+      "lightweight"
+    ],
+    "upstream": "Ubuntu LTS",
+    "based_on_since": 2010,
+    "first_release": 2010,
+    "latest_version": null,
+    "latest_release_date": null,
+    "release_model": "lts",
+    "release_cycle": "跟隨 Ubuntu LTS，按大版本釋出",
+    "package_manager": "apt / dpkg",
+    "update_command": "sudo apt update && sudo apt full-upgrade",
+    "gui_updater": "Bodhi 更新管理器",
+    "init_system": "systemd",
+    "default_desktop": [
+      "Moksha（Enlightenment 分支）"
+    ],
+    "supported_arch": [
+      "x86_64"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，以 Moksha 桌面和低佔用著稱",
+    "maintainer_type": "community",
+    "maintainer": "Bodhi Linux 團隊",
+    "founder": "Jeff Hoogland",
+    "founded_year": 2010,
+    "org": "Bodhi Linux 社群",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "firmware",
+    "commercial_edition": "無",
+    "official_site": "https://www.bodhilinux.com/",
+    "docs": "https://www.bodhilinux.com/w/wiki/",
+    "download": "https://www.bodhilinux.com/download/",
+    "repo": "https://github.com/BodhiLinux",
+    "wiki": "https://www.bodhilinux.com/w/wiki/",
+    "forum": "https://www.bodhilinux.com/forums/",
+    "chat": "https://discord.gg/bodhilinux",
+    "reddit": "https://www.reddit.com/r/BodhiLinux/",
+    "intro": "Bodhi Linux 由 Jeff Hoogland 於 2010 年創立，基於 Ubuntu LTS，使用自 Enlightenment 分支而來的 Moksha 桌面。它的設計哲學是“最小化預裝、把選擇權交給使用者”：系統只提供基礎應用，其餘通過 Bodhi AppCenter 按需安裝，因此映象小、記憶體佔用低，適合老電腦和喜歡自己搭建環境的使用者。Moksha 提供模組化面板、桌面小部件和獨特的視窗管理體驗，視覺上與傳統 GNOME/KDE 很不一樣。Bodhi 適合輕量桌面愛好者、舊硬體使用者和願意花時間定製的玩家。需要注意的是，Moksha 的生態與主流桌面相比較小，部分現代應用的主題與高分屏適配不完善；Bodhi 的軟體版本跟隨 Ubuntu LTS，較新的硬體支援可能滯後。它不提供商業版，由社群維護。",
+    "highlights": [
+      "Moksha 桌面，模組化且輕量",
+      "極簡預裝，按需安裝應用",
+      "基於 Ubuntu LTS，穩定",
+      "適合老硬體與定製玩家"
+    ],
+    "pros": [
+      "資源佔用低",
+      "系統乾淨，可自由搭建",
+      "Ubuntu 生態相容"
+    ],
+    "cons": [
+      "Moksha 生態較小",
+      "預設應用少，新手需自行配置",
+      "現代硬體適配可能滯後"
+    ],
+    "similar": [
+      "linux-lite",
+      "antix",
+      "mx-linux"
+    ],
+    "target_user": "喜歡輕量、模組化桌面的老電腦使用者",
+    "tags": [
+      "desktop",
+      "lightweight",
+      "hobby"
+    ],
+    "popularity": 2,
+    "data_as_of": "2026-11-18",
+    "verified": false
+  },
+  {
+    "id": "trisquel",
+    "name": "Trisquel",
+    "name_zh": "Trisquel GNU/Linux",
+    "family": "ubuntu",
+    "secondary_families": [
+      "free",
+      "education"
+    ],
+    "upstream": "Ubuntu LTS",
+    "based_on_since": 2007,
+    "first_release": 2007,
+    "latest_version": null,
+    "latest_release_date": null,
+    "release_model": "lts",
+    "release_cycle": "跟隨 Ubuntu LTS，但僅保留自由軟體",
+    "package_manager": "apt / dpkg",
+    "update_command": "sudo apt update && sudo apt full-upgrade",
+    "gui_updater": "GNOME Software / Synaptic",
+    "init_system": "systemd",
+    "default_desktop": [
+      "GNOME",
+      "MATE",
+      "KDE（歷史版本）"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "i386（歷史版本）"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，FSF 認可的完全自由發行版",
+    "maintainer_type": "foundation",
+    "maintainer": "Trisquel 專案",
+    "founder": "Rubén Rodríguez",
+    "founded_year": 2007,
+    "org": "Trisquel 專案",
+    "license": "GPL-2.0-or-later 等（僅自由許可證）",
+    "openness": "free",
+    "commercial_edition": "無",
+    "official_site": "https://trisquel.info/",
+    "docs": "https://trisquel.info/en/documentation",
+    "download": "https://trisquel.info/en/download",
+    "repo": "https://gitlab.trisquel.org/",
+    "wiki": "https://trisquel.info/en/wiki",
+    "forum": "https://trisquel.info/en/forum",
+    "chat": "https://trisquel.info/en/irc",
+    "reddit": "https://www.reddit.com/r/trisquel/",
+    "intro": "Trisquel GNU/Linux 由 Rubén Rodríguez 於 2007 年創立，是基於 Ubuntu LTS 的完全自由軟體發行版，並獲得自由軟體基金會（FSF）認可。它移除了 Ubuntu 中的專有韌體、二進位制 blob、受限制的驅動與部分非自由軟體，只保留符合自由軟體定義的元件；核心使用 Linux-libre，瀏覽器等也替換為自由版本。Trisquel 的目標是讓使用者從系統到應用都擁有審計、修改和再分發的自由，因此非常適合自由軟體教學、公共機構和對軟體倫理有要求的使用者。代價是硬體相容性明顯受限：依賴專有韌體的 Wi-Fi、顯示卡和加速功能可能無法使用。Trisquel 的軟體版本跟隨 Ubuntu LTS，較為保守；社群規模不大，文件與支援以英文為主。它不提供商業版，由志願者維護。若你只是想要穩定的 Ubuntu 體驗，標準 Ubuntu 或 Debian 更實用。",
+    "highlights": [
+      "FSF 認可的完全自由 Ubuntu 衍生版",
+      "移除專有韌體與二進位制 blob",
+      "使用 Linux-libre 核心",
+      "適合自由軟體教學與公共機構"
+    ],
+    "pros": [
+      "自由軟體合規性徹底",
+      "Ubuntu 生態與文件可參考",
+      "系統穩定、長期支援"
+    ],
+    "cons": [
+      "硬體相容性受限",
+      "軟體版本較舊",
+      "社群規模小"
+    ],
+    "similar": [
+      "ubuntu",
+      "parabola",
+      "pureos"
+    ],
+    "target_user": "堅持完全自由軟體的教育機構與個人",
+    "tags": [
+      "free",
+      "education",
+      "desktop"
+    ],
+    "popularity": 2,
+    "data_as_of": "2026-11-18",
+    "verified": false
+  },
+  {
+    "id": "linux-lite",
+    "name": "Linux Lite",
+    "name_zh": "Linux Lite",
+    "family": "ubuntu",
+    "secondary_families": [
+      "lightweight",
+      "desktop"
+    ],
+    "upstream": "Ubuntu LTS",
+    "based_on_since": 2012,
+    "first_release": 2012,
+    "latest_version": null,
+    "latest_release_date": null,
+    "release_model": "lts",
+    "release_cycle": "跟隨 Ubuntu LTS，按大版本釋出",
+    "package_manager": "apt / dpkg",
+    "update_command": "sudo apt update && sudo apt full-upgrade",
+    "gui_updater": "Lite Update Manager",
+    "init_system": "systemd",
+    "default_desktop": [
+      "Xfce"
+    ],
+    "supported_arch": [
+      "x86_64"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，面向 Windows 遷移與低配裝置",
+    "maintainer_type": "community",
+    "maintainer": "Linux Lite 團隊",
+    "founder": "Jerry Bezencon",
+    "founded_year": 2012,
+    "org": "Linux Lite 專案",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "proprietary",
+    "commercial_edition": "無",
+    "official_site": "https://www.linuxliteos.com/",
+    "docs": "https://www.linuxliteos.com/manual/",
+    "download": "https://www.linuxliteos.com/download.html",
+    "repo": "https://github.com/linuxlite",
+    "wiki": "https://www.linuxliteos.com/manual/",
+    "forum": "https://www.linuxliteos.com/forums/",
+    "chat": null,
+    "reddit": "https://www.reddit.com/r/LinuxLite/",
+    "intro": "Linux Lite 由 Jerry Bezencon 於 2012 年創立，基於 Ubuntu LTS，使用 Xfce 桌面，目標使用者非常明確：從 Windows 遷移、硬體配置不高的普通使用者。它提供熟悉的桌面佈局、 Lite 系列工具（更新管理器、軟體中心、系統資訊、備份）以及詳細的英文手冊，安裝後即可完成上網、辦公、影音等日常任務。Linux Lite 對最低硬體要求較友好，系統資源佔用低於 Ubuntu 預設 GNOME，適合舊筆記本、辦公機與學校機房。它跟隨 Ubuntu LTS，因此軟體版本較保守，但穩定性和驅動相容性較好。需要注意的是，Linux Lite 主要面向 x86_64，社群規模較小，部分本地化與中文支援不如 deepin、Ubuntu Kylin 完善；其預設外觀也偏傳統。它不提供商業版，由社群維護。",
+    "highlights": [
+      "Xfce 輕量桌面，適合低配硬體",
+      "Linux Lite 工具鏈簡化日常維護",
+      "基於 Ubuntu LTS，驅動相容性好",
+      "詳細手冊，適合 Windows 遷移者"
+    ],
+    "pros": [
+      "低配電腦體驗流暢",
+      "遷移使用者容易上手",
+      "系統穩定、維護簡單"
+    ],
+    "cons": [
+      "軟體版本偏舊",
+      "中文本地化一般",
+      "社群規模較小"
+    ],
+    "similar": [
+      "linux-mint",
+      "mx-linux",
+      "zorin"
+    ],
+    "target_user": "硬體較舊、從 Windows 遷移的普通使用者",
+    "tags": [
+      "desktop",
+      "lightweight",
+      "education"
+    ],
+    "popularity": 3,
+    "data_as_of": "2026-11-18",
+    "verified": false
+  },
+  {
+    "id": "ubuntu-touch",
+    "name": "Ubuntu Touch",
+    "name_zh": "Ubuntu Touch",
+    "family": "ubuntu",
+    "secondary_families": [
+      "mobile",
+      "privacy"
+    ],
+    "upstream": "Ubuntu",
+    "based_on_since": 2013,
+    "first_release": 2013,
+    "latest_version": null,
+    "latest_release_date": null,
+    "release_model": "rolling",
+    "release_cycle": "UBports 持續釋出 OTA 更新",
+    "package_manager": "apt + Click/Snap 封裝",
+    "update_command": "系統設定 → 更新",
+    "gui_updater": "系統更新",
+    "init_system": "systemd",
+    "default_desktop": [
+      "Lomiri"
+    ],
+    "supported_arch": [
+      "arm64",
+      "armhf",
+      "x86_64（部分裝置）"
+    ],
+    "status": "active",
+    "status_note": "UBports 社群維護，持續為部分手機與平板提供 OTA",
+    "maintainer_type": "foundation",
+    "maintainer": "UBports Foundation",
+    "founder": "Canonical（原專案）/ UBports",
+    "founded_year": 2013,
+    "org": "UBports Foundation",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "firmware",
+    "commercial_edition": "無",
+    "official_site": "https://ubports.com/",
+    "docs": "https://docs.ubports.com/",
+    "download": "https://ubports.com/en/get-ubuntu-touch",
+    "repo": "https://gitlab.com/ubports",
+    "wiki": "https://docs.ubports.com/",
+    "forum": "https://forums.ubports.com/",
+    "chat": "https://matrix.to/#/#ubports:matrix.org",
+    "reddit": "https://www.reddit.com/r/UbuntuTouch/",
+    "intro": "Ubuntu Touch 是 Canonical 於 2013 年推出的移動作業系統，2017 年 Canonical 退出手機業務後由 UBports 社群接手。它基於 Ubuntu，使用自研的 Lomiri 桌面環境，強調觸控手勢、聚合式應用（手機接顯示器可變桌面）與開源生態。UBports 持續為部分 Fairphone、Google Pixel、OnePlus、PinePhone 等裝置提供 OTA 更新，並提供安裝器與文件。它適合希望擺脫 Android/iOS 封閉生態、願意接受應用數量有限、並願意刷機的使用者，也適合移動 Linux 開發者與隱私倡導者。需要注意的是，Ubuntu Touch 的硬體支援高度依賴具體機型，相機、VoLTE、指紋等功能可能不完整；應用生態以 Web 應用、Qt 應用和 Android 相容層為主，無法與主流移動平臺相比。它不提供商業版，由 UBports 基金會與志願者維護。",
+    "highlights": [
+      "Lomiri 觸控介面與聚合式桌面",
+      "UBports 持續提供 OTA 更新",
+      "支援部分 Fairphone、Pixel、PinePhone",
+      "開源移動系統與隱私取向"
+    ],
+    "pros": [
+      "開源、可審計的移動系統",
+      "聚合式桌面理念獨特",
+      "社群持續維護"
+    ],
+    "cons": [
+      "應用生態有限",
+      "硬體支援依機型差異大",
+      "部分手機功能不完整"
+    ],
+    "similar": [
+      "postmarketos",
+      "android",
+      "sailfish"
+    ],
+    "target_user": "願意刷機、重視開源的移動 Linux 愛好者",
+    "tags": [
+      "mobile",
+      "privacy",
+      "hobby"
+    ],
+    "popularity": 2,
+    "data_as_of": "2026-11-18",
+    "verified": false
+  },
+  {
+    "id": "opensuse-leap",
+    "name": "openSUSE Leap",
+    "name_zh": "openSUSE Leap",
+    "family": "other",
+    "secondary_families": [
+      "suse",
+      "desktop",
+      "enterprise"
+    ],
+    "upstream": "SUSE Linux Enterprise",
+    "based_on_since": 2015,
+    "first_release": 2015,
+    "latest_version": "16.0",
+    "latest_release_date": "2025-10-01",
+    "release_model": "fixed",
+    "release_cycle": "約每年一個大版本，維護週期約 2–3 年",
+    "package_manager": "zypper / rpm",
+    "update_command": "sudo zypper update",
+    "gui_updater": "YaST 軟體管理 / Discover",
+    "init_system": "systemd",
+    "default_desktop": [
+      "KDE Plasma",
+      "GNOME",
+      "Xfce"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "aarch64"
+    ],
+    "status": "lts",
+    "status_note": "openSUSE Leap 16 於 2025 年釋出，維護至 2027 年",
+    "maintainer_type": "foundation",
+    "maintainer": "openSUSE 專案",
+    "founder": "openSUSE 社群",
+    "founded_year": 2005,
+    "org": "openSUSE Project（SUSE 贊助）",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "firmware",
+    "commercial_edition": "無（SUSE 提供企業支援）",
+    "official_site": "https://www.opensuse.org/",
+    "docs": "https://doc.opensuse.org/",
+    "download": "https://get.opensuse.org/leap/",
+    "repo": "https://github.com/openSUSE",
+    "wiki": "https://en.opensuse.org/",
+    "forum": "https://forums.opensuse.org/",
+    "chat": "https://matrix.to/#/#openSUSE:opensuse.org",
+    "reddit": "https://www.reddit.com/r/openSUSE/",
+    "intro": "openSUSE Leap 是 openSUSE 專案的固定版本分支，2015 年起以 SUSE Linux Enterprise 的原始碼為基礎，提供與 SLE 高度相容的免費系統。它使用 zypper 與 YaST，KDE Plasma 和 GNOME 都得到良好支援，適合桌面、伺服器與虛擬化場景。Leap 的釋出節奏比 Tumbleweed 保守，通常每年一個大版本，維護週期約兩到三年，因此更適合不想頻繁升級的生產環境。需要說明的是，openSUSE 雖與 Red Hat 系同屬企業 Linux 傳統，但它使用獨立的 zypper/rpm 生態與 SUSE 上游，因此在本圖譜中歸入「其他系」，並以 suse 作為次級標籤。Leap 適合需要穩定、企業相容、又不想支付 SUSE 訂閱費用的使用者；若追求最新軟體，應選擇 Tumbleweed。openSUSE 的 YaST 與 OBS 構建服務也是其生態亮點。",
+    "highlights": [
+      "基於 SUSE Linux Enterprise 原始碼",
+      "zypper + YaST 完整系統管理",
+      "KDE Plasma 支援出色",
+      "固定版本，適合生產環境"
+    ],
+    "pros": [
+      "企業相容與穩定性兼顧",
+      "YaST 功能全面",
+      "桌面與伺服器通吃"
+    ],
+    "cons": [
+      "軟體版本較保守",
+      "Leap 16 架構調整帶來遷移成本",
+      "中文社群活躍度低於 Debian 系"
+    ],
+    "similar": [
+      "opensuse-tumbleweed",
+      "sle",
+      "mageia"
+    ],
+    "target_user": "需要穩定企業相容系統的桌面與伺服器使用者",
+    "tags": [
+      "desktop",
+      "server",
+      "enterprise",
+      "suse"
+    ],
+    "popularity": 4,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "opensuse-tumbleweed",
+    "name": "openSUSE Tumbleweed",
+    "name_zh": "openSUSE Tumbleweed",
+    "family": "other",
+    "secondary_families": [
+      "suse",
+      "desktop"
+    ],
+    "upstream": "openSUSE / SUSE",
+    "based_on_since": 2014,
+    "first_release": 2014,
+    "latest_version": "滾動更新",
+    "latest_release_date": null,
+    "release_model": "rolling",
+    "release_cycle": "持續滾動，快照經 openQA 自動測試後釋出",
+    "package_manager": "zypper / rpm",
+    "update_command": "sudo zypper dup",
+    "gui_updater": "YaST 軟體管理 / Discover",
+    "init_system": "systemd",
+    "default_desktop": [
+      "KDE Plasma",
+      "GNOME",
+      "Xfce"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "aarch64"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，滾動更新由 openQA 測試保障",
+    "maintainer_type": "foundation",
+    "maintainer": "openSUSE 專案",
+    "founder": "openSUSE 社群",
+    "founded_year": 2014,
+    "org": "openSUSE Project",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "firmware",
+    "commercial_edition": "無",
+    "official_site": "https://www.opensuse.org/",
+    "docs": "https://doc.opensuse.org/",
+    "download": "https://get.opensuse.org/tumbleweed/",
+    "repo": "https://github.com/openSUSE",
+    "wiki": "https://en.opensuse.org/",
+    "forum": "https://forums.opensuse.org/",
+    "chat": "https://matrix.to/#/#openSUSE:opensuse.org",
+    "reddit": "https://www.reddit.com/r/openSUSE/",
+    "intro": "openSUSE Tumbleweed 是 openSUSE 的滾動更新版本，2014 年起成為專案主線之一。它並非簡單地把最新軟體直接推給使用者，而是通過 openQA 自動化測試對每個快照進行安裝、升級與桌面功能驗證，通過後才釋出，因此滾動更新在同類中相對穩健。Tumbleweed 使用 zypper dup 進行整體升級，支援 KDE Plasma、GNOME、Xfce 等桌面，也適合伺服器與開發環境。它的軟體版本很新，核心、編譯器、桌面環境通常緊跟上游；配合 snapper 與 Btrfs 快照，升級失敗時可以回滾。Tumbleweed 適合願意定期更新、希望使用最新軟體、又能接受偶爾處理依賴變化的桌面使用者和開發者。與 Leap 相比，它不適合要求多年不變的生產環境；與 Arch 相比，它多了自動測試與快照機制，但 zypper 的工作流需要適應。專案由社群運營，SUSE 提供支援。",
+    "highlights": [
+      "openQA 自動測試的快照式滾動更新",
+      "zypper dup + Btrfs 快照回滾",
+      "KDE Plasma 與 GNOME 均較新",
+      "適合開發與桌面前沿體驗"
+    ],
+    "pros": [
+      "軟體新且更新質量較高",
+      "快照回滾降低風險",
+      "桌面與開發工具齊全"
+    ],
+    "cons": [
+      "滾動更新仍需定期維護",
+      "zypper 學習成本",
+      "部分閉源驅動可能滯後"
+    ],
+    "similar": [
+      "opensuse-leap",
+      "arch-linux",
+      "cachyos"
+    ],
+    "target_user": "追求新軟體但希望更新更穩的桌面使用者",
+    "tags": [
+      "desktop",
+      "server",
+      "suse",
+      "developer"
+    ],
+    "popularity": 4,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "sle",
+    "name": "SUSE Linux Enterprise",
+    "name_zh": "SUSE Linux Enterprise",
+    "family": "other",
+    "secondary_families": [
+      "suse",
+      "enterprise",
+      "server"
+    ],
+    "upstream": "openSUSE / SUSE",
+    "based_on_since": 2000,
+    "first_release": 2000,
+    "latest_version": null,
+    "latest_release_date": null,
+    "release_model": "lts",
+    "release_cycle": "多年一個服務包週期，提供長期企業支援",
+    "package_manager": "zypper / rpm",
+    "update_command": "sudo zypper update",
+    "gui_updater": "YaST / SUSE Manager",
+    "init_system": "systemd",
+    "default_desktop": [
+      "GNOME（SLED）",
+      "無（SLES）"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "aarch64",
+      "ppc64le",
+      "s390x"
+    ],
+    "status": "lts",
+    "status_note": "商業企業發行版，具體版本與支援週期以 SUSE 訂閱為準",
+    "maintainer_type": "company",
+    "maintainer": "SUSE",
+    "founder": "SUSE（Gesellschaft für Software- und Systementwicklung）",
+    "founded_year": 1992,
+    "org": "SUSE Software Solutions Germany GmbH",
+    "license": "GPL-2.0-or-later 等（商業訂閱）",
+    "openness": "commercial",
+    "commercial_edition": "SUSE Linux Enterprise Server / Desktop / High Availability 等訂閱",
+    "official_site": "https://www.suse.com/",
+    "docs": "https://documentation.suse.com/",
+    "download": "https://www.suse.com/download/",
+    "repo": "https://github.com/SUSE",
+    "wiki": "https://en.opensuse.org/",
+    "forum": "https://forums.suse.com/",
+    "chat": null,
+    "reddit": "https://www.reddit.com/r/suse/",
+    "intro": "SUSE Linux Enterprise（SLE）是 SUSE 的商業企業發行版家族，包含 SLES（伺服器）、SLED（桌面）、SAP 應用、高可用與邊緣等產品線。SUSE 的歷史可追溯到 1992 年，是 Linux 商業化最早的一批公司之一；SLE 採用 zypper、YaST 與 RPM 工具鏈，提供多年生命週期、認證硬體/軟體矩陣、安全公告與 24×7 支援。它與 openSUSE Leap 共享大量原始碼：Leap 可以看作 SLE 的社群相容分支，而 Tumbleweed 則是更前沿的滾動版本。SLE 適合執行 SAP、資料庫、關鍵業務伺服器、大型機與邊緣節點的企業，尤其是需要廠商 SLA 和認證的環境。它不是免費發行版，個人使用者通常應選擇 openSUSE；此外 SLE 的軟體版本非常保守，不適合追求新特性的桌面使用者。選型時應以 SUSE 官方支援矩陣為準。",
+    "highlights": [
+      "SLES / SLED / SAP / 高可用等產品線",
+      "長期企業支援與認證矩陣",
+      "zypper + YaST + SUSE Manager",
+      "覆蓋 x86、ARM、Power、s390x"
+    ],
+    "pros": [
+      "企業級 SLA 與認證完善",
+      "長期穩定，適合關鍵業務",
+      "與 openSUSE 生態互通"
+    ],
+    "cons": [
+      "需要商業訂閱",
+      "軟體版本非常保守",
+      "個人使用者成本高"
+    ],
+    "similar": [
+      "opensuse-leap",
+      "rhel",
+      "oracle-linux"
+    ],
+    "target_user": "需要廠商支援與認證的企業關鍵業務",
+    "tags": [
+      "server",
+      "enterprise",
+      "suse",
+      "database"
+    ],
+    "popularity": 3,
+    "data_as_of": "2026-11-18",
+    "verified": false
+  },
+  {
+    "id": "gentoo",
+    "name": "Gentoo",
+    "name_zh": "Gentoo Linux",
+    "family": "other",
+    "secondary_families": [
+      "source",
+      "desktop"
+    ],
+    "upstream": "獨立開發",
+    "based_on_since": null,
+    "first_release": 2002,
+    "latest_version": "滾動更新",
+    "latest_release_date": null,
+    "release_model": "rolling",
+    "release_cycle": "持續滾動，stage 映象定期更新",
+    "package_manager": "Portage (emerge)",
+    "update_command": "sudo emerge --sync && sudo emerge -avuDN @world",
+    "gui_updater": "無官方圖形更新器（可選 Portage 前端）",
+    "init_system": "OpenRC / systemd",
+    "default_desktop": [
+      "無預設桌面（使用者自選）"
+    ],
+    "supported_arch": [
+      "amd64",
+      "arm64",
+      "x86",
+      "ppc64",
+      "riscv64 等"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，原始碼編譯與高度定製為核心",
+    "maintainer_type": "foundation",
+    "maintainer": "Gentoo Foundation",
+    "founder": "Daniel Robbins",
+    "founded_year": 2002,
+    "org": "Gentoo Foundation",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "firmware",
+    "commercial_edition": "無",
+    "official_site": "https://www.gentoo.org/",
+    "docs": "https://wiki.gentoo.org/",
+    "download": "https://www.gentoo.org/downloads/",
+    "repo": "https://git.gentoo.org/",
+    "wiki": "https://wiki.gentoo.org/",
+    "forum": "https://forums.gentoo.org/",
+    "chat": "https://matrix.to/#/#gentoo:matrix.org",
+    "reddit": "https://www.reddit.com/r/Gentoo/",
+    "intro": "Gentoo 由 Daniel Robbins 於 2002 年建立，是原始碼編譯型發行版的代表。它不提供傳統的二進位制安裝包，而是通過 Portage 與 emerge 根據使用者選擇的 USE 標誌、編譯選項和依賴關係從原始碼構建軟體，因此可以精細控制功能、體積與最佳化引數。Gentoo 的滾動更新沒有固定版本號，使用者可以長期持續升級；OpenRC 是預設 init，systemd 也可選用。它支援大量架構，文件（Gentoo Wiki）質量很高，適合想深入理解編譯、依賴與系統組成的使用者，也適合嵌入式、桌面定製和效能調優場景。代價是安裝與維護成本高：編譯耗時、依賴衝突需要手工解決、滾動更新可能要求閱讀新聞（eselect news）。Gentoo 不適合需要快速部署或不想接觸編譯器的使用者；如果只是想體驗滾動更新，Arch 或 openSUSE Tumbleweed 更省力。",
+    "highlights": [
+      "Portage/emerge 原始碼編譯與 USE 標誌",
+      "極高定製自由度與架構覆蓋",
+      "滾動更新，無固定版本號",
+      "OpenRC 預設，可選 systemd"
+    ],
+    "pros": [
+      "定製與最佳化能力極強",
+      "文件質量高，學習價值大",
+      "支援大量冷門架構"
+    ],
+    "cons": [
+      "安裝與維護門檻高",
+      "編譯耗時、資源消耗大",
+      "依賴衝突需手工處理"
+    ],
+    "similar": [
+      "arch-linux",
+      "void",
+      "nixos"
+    ],
+    "target_user": "願意編譯系統、追求極致定製的進階使用者",
+    "tags": [
+      "desktop",
+      "server",
+      "source",
+      "hobby"
+    ],
+    "popularity": 4,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "alpine",
+    "name": "Alpine Linux",
+    "name_zh": "Alpine Linux",
+    "family": "other",
+    "secondary_families": [
+      "container",
+      "embedded",
+      "server"
+    ],
+    "upstream": "獨立開發",
+    "based_on_since": null,
+    "first_release": 2005,
+    "latest_version": "3.24.4",
+    "latest_release_date": "2026-11-05",
+    "release_model": "fixed",
+    "release_cycle": "約每 6 個月釋出一版，每版支援約 2 年",
+    "package_manager": "apk",
+    "update_command": "sudo apk upgrade -U",
+    "gui_updater": "無（面向伺服器/容器）",
+    "init_system": "OpenRC",
+    "default_desktop": [
+      "無（伺服器/容器）",
+      "Xfce（可選）"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "aarch64",
+      "armv7",
+      "ppc64le",
+      "s390x",
+      "riscv64"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，容器與嵌入式場景廣泛使用",
+    "maintainer_type": "community",
+    "maintainer": "Alpine Linux 開發團隊",
+    "founder": "Natanael Copa",
+    "founded_year": 2005,
+    "org": "Alpine Linux 社群",
+    "license": "MIT / GPL-2.0-or-later 等",
+    "openness": "free",
+    "commercial_edition": "無",
+    "official_site": "https://alpinelinux.org/",
+    "docs": "https://docs.alpinelinux.org/",
+    "download": "https://alpinelinux.org/downloads/",
+    "repo": "https://gitlab.alpinelinux.org/",
+    "wiki": "https://wiki.alpinelinux.org/",
+    "forum": "https://alpinelinux.org/community/",
+    "chat": "https://matrix.to/#/#alpine-linux:matrix.org",
+    "reddit": "https://www.reddit.com/r/AlpineLinux/",
+    "intro": "Alpine Linux 於 2005 年出現，以“小、快、安全”為核心，是容器與嵌入式領域最常見的極簡發行版之一。它使用 musl libc 與 BusyBox，基礎映象只有幾 MB，包管理器 apk 簡潔快速，預設 init 為 OpenRC。Alpine 的軟體包經過安全加固（如 PIE、棧保護），適合構建 Docker 映象、路由器、VPN 閘道器、CI 環境與低資源裝置。它也提供帶 Xfce 的桌面安裝選項，但桌面體驗並非重點。Alpine 適合熟悉命令列、需要最小攻擊面和快速部署的開發者與運維人員。需要注意的是，musl 與 glibc 的差異可能導致部分預編譯二進位制無法執行，需要尋找相容包或自行編譯；軟體版本較新但生態規模小於 Debian。Alpine 不提供商業版，由社群維護，文件與 Wiki 質量較高。",
+    "highlights": [
+      "musl + BusyBox，映象體積極小",
+      "apk 包管理，安裝升級快速",
+      "OpenRC 預設，安全加固編譯",
+      "容器、路由器、嵌入式首選"
+    ],
+    "pros": [
+      "資源佔用極低",
+      "容器映象小、啟動快",
+      "安全預設設定較好"
+    ],
+    "cons": [
+      "musl 相容性問題",
+      "桌面與多媒體生態有限",
+      "軟體包數量少於 Debian"
+    ],
+    "similar": [
+      "postmarketos",
+      "void",
+      "openwrt"
+    ],
+    "target_user": "容器、嵌入式與極簡伺服器場景的開發者",
+    "tags": [
+      "server",
+      "container",
+      "embedded",
+      "lightweight"
+    ],
+    "popularity": 5,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "postmarketos",
+    "name": "postmarketOS",
+    "name_zh": "postmarketOS",
+    "family": "other",
+    "secondary_families": [
+      "mobile",
+      "embedded",
+      "free"
+    ],
+    "upstream": "Alpine Linux",
+    "based_on_since": 2017,
+    "first_release": 2017,
+    "latest_version": null,
+    "latest_release_date": null,
+    "release_model": "rolling",
+    "release_cycle": "持續滾動，按裝置維護核心與映象",
+    "package_manager": "apk",
+    "update_command": "sudo apk upgrade -U",
+    "gui_updater": "無（命令列/桌面環境自帶工具）",
+    "init_system": "OpenRC（部分裝置支援 systemd）",
+    "default_desktop": [
+      "Phosh",
+      "Plasma Mobile",
+      "Sway",
+      "GNOME 等"
+    ],
+    "supported_arch": [
+      "aarch64",
+      "armv7",
+      "x86_64（部分裝置）"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，目標是為手機提供十年生命週期",
+    "maintainer_type": "community",
+    "maintainer": "postmarketOS 社群",
+    "founder": "Oliver Smith 等",
+    "founded_year": 2017,
+    "org": "postmarketOS 社群",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "free",
+    "commercial_edition": "無",
+    "official_site": "https://postmarketos.org/",
+    "docs": "https://wiki.postmarketos.org/",
+    "download": "https://postmarketos.org/download/",
+    "repo": "https://gitlab.com/postmarketOS",
+    "wiki": "https://wiki.postmarketos.org/",
+    "forum": "https://postmarketos.org/community/",
+    "chat": "https://matrix.to/#/#postmarketos:matrix.org",
+    "reddit": "https://www.reddit.com/r/postmarketOS/",
+    "intro": "postmarketOS 於 2017 年啟動，目標是給智慧手機提供可長期維護的 Linux 系統，延長被 Android 停止支援的裝置壽命。它基於 Alpine Linux，使用 apk 包管理，通過 pmbootstrap 生成針對具體機型的映象，並允許使用者選擇 Phosh、Plasma Mobile、Sway、GNOME 等移動或桌面環境。專案強調上游優先與裝置樹（device tree）貢獻，許多裝置的主線核心支援由社群推動。postmarketOS 適合願意刷機、動手除錯、關注移動裝置軟體自由的開發者和愛好者，也適合把舊手機改造成小型伺服器、音樂播放器或實驗終端。需要注意的是，不同機型的支援成熟度差異極大：通話、相機、VoLTE、指紋等功能可能不完整，部分裝置仍處於實驗階段。它不提供商業支援，升級前應備份並閱讀裝置 Wiki。",
+    "highlights": [
+      "Alpine 底座與 apk 包管理",
+      "為舊手機延長壽命，目標十年維護",
+      "Phosh / Plasma Mobile / Sway 多環境",
+      "pmbootstrap 按裝置生成映象"
+    ],
+    "pros": [
+      "舊手機再利用價值高",
+      "移動 Linux 生態活躍",
+      "上游核心貢獻積極"
+    ],
+    "cons": [
+      "裝置支援成熟度差異大",
+      "通話與相機功能常不完整",
+      "刷機與除錯門檻高"
+    ],
+    "similar": [
+      "alpine",
+      "ubuntu-touch",
+      "sailfish"
+    ],
+    "target_user": "願意刷機除錯的移動 Linux 愛好者",
+    "tags": [
+      "mobile",
+      "embedded",
+      "free",
+      "hobby"
+    ],
+    "popularity": 3,
+    "data_as_of": "2026-11-18",
+    "verified": false
+  },
+  {
+    "id": "nixos",
+    "name": "NixOS",
+    "name_zh": "NixOS",
+    "family": "other",
+    "secondary_families": [
+      "declarative",
+      "immutable",
+      "developer"
+    ],
+    "upstream": "獨立開發",
+    "based_on_since": null,
+    "first_release": 2003,
+    "latest_version": "26.05",
+    "latest_release_date": "2026-05-30",
+    "release_model": "fixed",
+    "release_cycle": "每 6 個月釋出一版，每版支援約 7 個月",
+    "package_manager": "Nix",
+    "update_command": "sudo nixos-rebuild switch --upgrade",
+    "gui_updater": "無官方圖形更新器（可選第三方工具）",
+    "init_system": "systemd",
+    "default_desktop": [
+      "GNOME",
+      "KDE Plasma",
+      "Xfce 等（配置選擇）"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "aarch64",
+      "armv7",
+      "riscv64"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，宣告式配置與原子回滾是核心特性",
+    "maintainer_type": "foundation",
+    "maintainer": "NixOS Foundation",
+    "founder": "Eelco Dolstra",
+    "founded_year": 2003,
+    "org": "NixOS Foundation",
+    "license": "MIT / LGPL-2.1 等",
+    "openness": "firmware",
+    "commercial_edition": "無（存在第三方商業支援）",
+    "official_site": "https://nixos.org/",
+    "docs": "https://nixos.org/manual/nixos/stable/",
+    "download": "https://nixos.org/download/",
+    "repo": "https://github.com/NixOS/nixpkgs",
+    "wiki": "https://wiki.nixos.org/",
+    "forum": "https://discourse.nixos.org/",
+    "chat": "https://matrix.to/#/#nixos:matrix.org",
+    "reddit": "https://www.reddit.com/r/NixOS/",
+    "intro": "NixOS 是基於 Nix 包管理器的宣告式 Linux 發行版，2003 年由 Eelco Dolstra 在學術研究中起步。它的系統配置寫在一個可版本控制的 Nix 表示式中：使用者宣告想要的服務、桌面、使用者和軟體，執行 rebuild 後系統切換到新配置；每次切換都會生成新的啟動項，舊配置可回滾。Nix 的包儲存在內容定址的 /nix/store 中，多個版本可以並存，不會互相覆蓋，因此特別適合開發環境、可復現構建和多使用者系統。NixOS 適合開發者、運維、科研人員以及希望“基礎設施即程式碼”式管理桌面的進階使用者。代價是學習曲線陡峭：Nix 語言、模組系統和錯誤資訊都需要時間適應；一些非自由軟體或未打包應用需要額外配置。它不提供官方商業版，但生態中有第三方支援與託管服務。",
+    "highlights": [
+      "宣告式系統配置，可版本控制",
+      "原子切換與啟動項回滾",
+      "Nix 內容定址儲存，多版本並存",
+      "可復現的開發與構建環境"
+    ],
+    "pros": [
+      "系統狀態可復現、可回滾",
+      "開發環境隔離與復現能力強",
+      "配置即程式碼，適合團隊協作"
+    ],
+    "cons": [
+      "Nix 語言學習曲線陡峭",
+      "非自由軟體與冷門應用需額外打包",
+      "磁碟佔用較大"
+    ],
+    "similar": [
+      "guix",
+      "fedora-silverblue",
+      "flatcar"
+    ],
+    "target_user": "追求可復現系統與宣告式配置的開發者",
+    "tags": [
+      "developer",
+      "server",
+      "immutable",
+      "declarative"
+    ],
+    "popularity": 4,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "guix",
+    "name": "Guix System",
+    "name_zh": "Guix System",
+    "family": "other",
+    "secondary_families": [
+      "free",
+      "declarative"
+    ],
+    "upstream": "獨立開發（GNU 專案）",
+    "based_on_since": null,
+    "first_release": 2012,
+    "latest_version": null,
+    "latest_release_date": null,
+    "release_model": "rolling",
+    "release_cycle": "持續滾動，版本釋出不定期",
+    "package_manager": "GNU Guix",
+    "update_command": "guix pull && sudo guix system reconfigure /etc/config.scm",
+    "gui_updater": "無官方圖形更新器",
+    "init_system": "GNU Shepherd",
+    "default_desktop": [
+      "GNOME",
+      "Xfce",
+      "Sway 等（配置選擇）"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "aarch64",
+      "armv7",
+      "riscv64"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，GNU 專案的宣告式自由軟體系統",
+    "maintainer_type": "foundation",
+    "maintainer": "GNU Guix 社群",
+    "founder": "Ludovic Courtès",
+    "founded_year": 2012,
+    "org": "GNU Project",
+    "license": "GPL-3.0-or-later 等（僅自由許可證）",
+    "openness": "free",
+    "commercial_edition": "無",
+    "official_site": "https://guix.gnu.org/",
+    "docs": "https://guix.gnu.org/manual/",
+    "download": "https://guix.gnu.org/download/",
+    "repo": "https://git.savannah.gnu.org/cgit/guix.git",
+    "wiki": "https://guix.gnu.org/manual/",
+    "forum": "https://guix.gnu.org/en/community/",
+    "chat": "https://matrix.to/#/#guix:matrix.org",
+    "reddit": "https://www.reddit.com/r/GNUGuix/",
+    "intro": "Guix System 是 GNU 專案的宣告式發行版，2012 年由 Ludovic Courtès 發起，使用 GNU Guix 作為包管理器、GNU Shepherd 作為 init，並以 Scheme（Guile）作為配置語言。它與 NixOS 在思想上同源：軟體包構建可復現、系統配置可版本控制、支援原子升級與回滾；但 Guix 更強調完全自由軟體、GNU 生態與 Scheme 的可程式設計性。Guix 的包定義也是 Scheme 程式碼，使用者可以繼承、改寫和組合，適合喜歡函數語言程式設計、希望深度定製構建流程的開發者與研究者。它適合自由軟體倡導者、Scheme/Lisp 愛好者和需要可復現科研環境的使用者。需要注意的是，Guix 的學習曲線比 NixOS 更陡，軟體包數量相對少，非自由韌體預設不可用；某些硬體與專有軟體需要額外配置。它不提供商業版，由 GNU 志願者維護。",
+    "highlights": [
+      "GNU Guix + Scheme 宣告式配置",
+      "GNU Shepherd 替代 systemd",
+      "完全自由軟體與可復現構建",
+      "原子升級和回滾"
+    ],
+    "pros": [
+      "軟體自由與可復現性徹底",
+      "Scheme 配置可程式設計性強",
+      "系統回滾可靠"
+    ],
+    "cons": [
+      "學習曲線非常陡峭",
+      "軟體包數量較少",
+      "非自由硬體支援有限"
+    ],
+    "similar": [
+      "nixos",
+      "trisquel",
+      "parabola"
+    ],
+    "target_user": "自由軟體倡導者與函數語言程式設計愛好者",
+    "tags": [
+      "free",
+      "developer",
+      "declarative",
+      "hobby"
+    ],
+    "popularity": 2,
+    "data_as_of": "2026-11-18",
+    "verified": false
+  },
+  {
+    "id": "slackware",
+    "name": "Slackware",
+    "name_zh": "Slackware Linux",
+    "family": "other",
+    "secondary_families": [
+      "retro",
+      "server"
+    ],
+    "upstream": "獨立開發",
+    "based_on_since": null,
+    "first_release": 1993,
+    "latest_version": "15.0",
+    "latest_release_date": "2022-02-02",
+    "release_model": "fixed",
+    "release_cycle": "釋出週期較長，以穩定為先",
+    "package_manager": "pkgtools / slackpkg",
+    "update_command": "sudo slackpkg update && sudo slackpkg upgrade-all",
+    "gui_updater": "無官方圖形更新器",
+    "init_system": "sysvinit",
+    "default_desktop": [
+      "KDE Plasma",
+      "Xfce"
+    ],
+    "supported_arch": [
+      "x86_64"
+    ],
+    "status": "active",
+    "status_note": "仍在維護，但釋出節奏較慢；15.0 為當前穩定版",
+    "maintainer_type": "individual",
+    "maintainer": "Patrick Volkerding 與 Slackware 團隊",
+    "founder": "Patrick Volkerding",
+    "founded_year": 1993,
+    "org": "Slackware Linux 專案",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "firmware",
+    "commercial_edition": "無",
+    "official_site": "http://www.slackware.com/",
+    "docs": "https://docs.slackware.com/",
+    "download": "https://www.slackware.com/getslack/",
+    "repo": "https://git.slackware.nl/",
+    "wiki": "https://docs.slackware.com/",
+    "forum": "https://www.linuxquestions.org/questions/slackware-14/",
+    "chat": null,
+    "reddit": "https://www.reddit.com/r/slackware/",
+    "intro": "Slackware 由 Patrick Volkerding 於 1993 年釋出，是現存最古老的 Linux 發行版之一。它堅持“類 Unix、簡單、穩定”的設計：使用 pkgtools 與 slackpkg 管理 .tgz 包，不自動解決依賴，把控制權完全交給管理員；init 使用傳統的 sysvinit 指令碼，配置以純文本檔案為主。Slackware 的軟體版本保守，釋出週期長，但系統結構清晰、可預測，適合願意閱讀文件、理解依賴關係、喜歡傳統 Unix 工作方式的使用者。它也常被用於伺服器、教學和嵌入式基礎系統。需要注意，Slackware 不提供自動依賴解析，安裝第三方軟體需要手動處理庫依賴；官方倉庫規模較小，現代桌面應用可能需要額外編譯。Slackware 不提供商業版，由 Patrick Volkerding 與社群維護。它在本圖譜中歸入「其他系」，因為其獨立於 Arch、RH、Debian、Ubuntu 的譜系。",
+    "highlights": [
+      "現存最古老的 Linux 發行版之一",
+      "pkgtools/slackpkg，無自動依賴解析",
+      "傳統 sysvinit 與純文本配置",
+      "結構清晰、穩定可預測"
+    ],
+    "pros": [
+      "系統透明，控制權高",
+      "穩定、適合學習 Unix 管理",
+      "歷史與社群文化獨特"
+    ],
+    "cons": [
+      "依賴需手工解決",
+      "軟體版本保守、倉庫較小",
+      "現代桌面應用支援有限"
+    ],
+    "similar": [
+      "gentoo",
+      "void",
+      "pclinuxos"
+    ],
+    "target_user": "喜歡傳統 Unix 管理方式的進階使用者",
+    "tags": [
+      "server",
+      "desktop",
+      "retro",
+      "hobby"
+    ],
+    "popularity": 3,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "puppy",
+    "name": "Puppy Linux",
+    "name_zh": "Puppy Linux",
+    "family": "other",
+    "secondary_families": [
+      "lightweight",
+      "live",
+      "retro"
+    ],
+    "upstream": "獨立開發（多底座構建）",
+    "based_on_since": null,
+    "first_release": 2003,
+    "latest_version": null,
+    "latest_release_date": null,
+    "release_model": "fixed",
+    "release_cycle": "由不同 Puppy 分支獨立釋出",
+    "package_manager": "Puppy Package Manager / apt 相容",
+    "update_command": "通過 Puppy Package Manager 更新",
+    "gui_updater": "Puppy Package Manager",
+    "init_system": "sysvinit / BusyBox init",
+    "default_desktop": [
+      "JWM",
+      "ROX",
+      "Xfce（部分版本）"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "i386"
+    ],
+    "status": "active",
+    "status_note": "多個社群分支仍活躍，但版本與維護狀態差異較大",
+    "maintainer_type": "community",
+    "maintainer": "Puppy Linux 社群",
+    "founder": "Barry Kauler",
+    "founded_year": 2003,
+    "org": "Puppy Linux 社群",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "firmware",
+    "commercial_edition": "無",
+    "official_site": "https://puppylinux-woof-ce.github.io/",
+    "docs": "https://puppylinux-woof-ce.github.io/",
+    "download": "https://puppylinux-woof-ce.github.io/",
+    "repo": "https://github.com/puppylinux-woof-ce",
+    "wiki": "https://puppylinux-woof-ce.github.io/",
+    "forum": "https://forum.puppylinux.com/",
+    "chat": null,
+    "reddit": "https://www.reddit.com/r/puppylinux/",
+    "intro": "Puppy Linux 由 Barry Kauler 於 2003 年建立，是輕量 live 發行版的經典代表。它的映象通常只有幾百 MB，啟動後整個系統可以執行在記憶體中，因此響應極快，拔出 U 盤也不影響使用；關機時可選擇儲存會話到檔案。Puppy 使用 JWM/ROX 等輕量桌面，包管理由 Puppy Package Manager 負責，並有多個基於 Debian、Ubuntu、Slackware 的分支。它適合老電腦、系統救援、臨時辦公和隨身攜帶的系統，也適合想了解 live 系統構建的使用者。需要注意的是，Puppy 的分支眾多，版本、包管理和維護狀態差異很大，官方文件並不統一；記憶體執行模式會佔用 RAM，處理大檔案時需留意容量。它不提供商業版，由社群維護。近年來專案活躍度下降，但 Woof-CE 構建框架仍支援新分支。",
+    "highlights": [
+      "可完全在記憶體中執行的 live 系統",
+      "映象小，啟動快，適合救援",
+      "多個 Debian/Ubuntu/Slackware 分支",
+      "會話可儲存到檔案"
+    ],
+    "pros": [
+      "極低資源佔用",
+      "隨身攜帶、即插即用",
+      "老電腦與救援場景實用"
+    ],
+    "cons": [
+      "分支眾多、文件分散",
+      "記憶體模式限制大檔案處理",
+      "現代軟體支援有限"
+    ],
+    "similar": [
+      "tinycore",
+      "antix",
+      "knoppix"
+    ],
+    "target_user": "需要便攜 live 系統與老電腦救援的使用者",
+    "tags": [
+      "lightweight",
+      "live",
+      "retro",
+      "hobby"
+    ],
+    "popularity": 2,
+    "data_as_of": "2026-11-18",
+    "verified": false
+  },
+  {
+    "id": "tinycore",
+    "name": "Tiny Core Linux",
+    "name_zh": "Tiny Core Linux",
+    "family": "other",
+    "secondary_families": [
+      "lightweight",
+      "live",
+      "embedded"
+    ],
+    "upstream": "獨立開發",
+    "based_on_since": null,
+    "first_release": 2008,
+    "latest_version": null,
+    "latest_release_date": null,
+    "release_model": "fixed",
+    "release_cycle": "按版本釋出，更新節奏較慢",
+    "package_manager": "tce / ab",
+    "update_command": "tce-update",
+    "gui_updater": "Apps Browser",
+    "init_system": "BusyBox init / sysvinit",
+    "default_desktop": [
+      "FLTK",
+      "JWM",
+      "IceWM（可選）"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "x86",
+      "armv7"
+    ],
+    "status": "active",
+    "status_note": "活躍維護的極簡發行版",
+    "maintainer_type": "community",
+    "maintainer": "Tiny Core Linux 團隊",
+    "founder": "Robert Shingledecker",
+    "founded_year": 2008,
+    "org": "Tiny Core Linux 社群",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "free",
+    "commercial_edition": "無",
+    "official_site": "http://tinycorelinux.net/",
+    "docs": "http://tinycorelinux.net/book.html",
+    "download": "http://tinycorelinux.net/downloads.html",
+    "repo": "https://github.com/tinycorelinux",
+    "wiki": "http://wiki.tinycorelinux.net/",
+    "forum": "http://forum.tinycorelinux.net/",
+    "chat": null,
+    "reddit": "https://www.reddit.com/r/tinycorelinux/",
+    "intro": "Tiny Core Linux 由 Robert Shingledecker 於 2008 年建立，目標是提供一個“最小可執行”的圖形 Linux。Core 版本只有十幾 MB，啟動後完全駐留記憶體；使用者通過 tce 倉庫按需載入擴充套件，系統只保留真正需要的元件。它使用 BusyBox、FLTK 與自研的包工具，預設沒有完整桌面環境，而是提供極簡視窗管理與控制面板。Tiny Core 適合嵌入式裝置、老電腦、救援盤、瘦客戶端和想理解 Linux 最小組成的使用者。它也可以作為學習工具：從核心、init、庫到圖形棧，每一層都暴露在使用者面前。需要注意的是，Tiny Core 不追求開箱即用，安裝瀏覽器、辦公套件和中文字型都需要手工選擇擴充套件；其軟體倉庫規模與更新頻率也有限。它不提供商業版，由小團隊維護。對於日常桌面，Tiny Core 更像實驗平臺而非首選。",
+    "highlights": [
+      "十幾 MB 的 Core 映象",
+      "完全記憶體執行，速度極快",
+      "按需載入 tce 擴充套件",
+      "極簡 FLTK/BusyBox 系統"
+    ],
+    "pros": [
+      "體積極小、啟動極快",
+      "適合嵌入式與救援",
+      "系統組成完全透明"
+    ],
+    "cons": [
+      "開箱體驗極簡，配置繁瑣",
+      "軟體倉庫有限",
+      "不適合日常重型桌面"
+    ],
+    "similar": [
+      "puppy",
+      "alpine",
+      "void"
+    ],
+    "target_user": "嵌入式開發者、極簡系統愛好者與救援場景",
+    "tags": [
+      "lightweight",
+      "live",
+      "embedded",
+      "hobby"
+    ],
+    "popularity": 2,
+    "data_as_of": "2026-11-18",
+    "verified": false
+  },
+  {
+    "id": "void",
+    "name": "Void Linux",
+    "name_zh": "Void Linux",
+    "family": "other",
+    "secondary_families": [
+      "lightweight",
+      "desktop"
+    ],
+    "upstream": "獨立開發",
+    "based_on_since": null,
+    "first_release": 2008,
+    "latest_version": "滾動更新",
+    "latest_release_date": null,
+    "release_model": "rolling",
+    "release_cycle": "持續滾動，提供 glibc 與 musl 兩種變體",
+    "package_manager": "XBPS",
+    "update_command": "sudo xbps-install -Su",
+    "gui_updater": "Octoxbps（可選）",
+    "init_system": "runit",
+    "default_desktop": [
+      "無預設桌面（Xfce 等映象可選）"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "aarch64",
+      "armv7",
+      "riscv64"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，獨立滾動發行版",
+    "maintainer_type": "community",
+    "maintainer": "Void Linux 團隊",
+    "founder": "Juan Romero Pardines",
+    "founded_year": 2008,
+    "org": "Void Linux 社群",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "firmware",
+    "commercial_edition": "無",
+    "official_site": "https://voidlinux.org/",
+    "docs": "https://docs.voidlinux.org/",
+    "download": "https://voidlinux.org/download/",
+    "repo": "https://github.com/void-linux",
+    "wiki": "https://docs.voidlinux.org/",
+    "forum": "https://voidlinux.org/community/",
+    "chat": "https://matrix.to/#/#voidlinux:matrix.org",
+    "reddit": "https://www.reddit.com/r/voidlinux/",
+    "intro": "Void Linux 由 Juan Romero Pardines 於 2008 年建立，是一個獨立發展的滾動發行版，不基於 Arch、Debian 或 RHEL。它使用自研的 XBPS 包管理器與 runit 作為 init，提供 glibc 和 musl 兩種 libc 變體，系統輕量、啟動快，二進位制包與原始碼構建（xbps-src）並存。Void 的軟體版本較新，社群規模不大但活躍，文件清晰，適合想擺脫 systemd、喜歡滾動更新、又不想像 Gentoo 那樣全部編譯的使用者。它適合桌面、伺服器、嵌入式和容器場景，也常被用作輕量桌面或開發機。需要注意的是，Void 的軟體倉庫規模小於 Arch，部分冷門軟體需要自行打包；runit 的服務管理方式與 systemd 不同，排障時需要適應。它不提供商業版，由社群維護，曾有基礎設施與維護者變動，但專案仍在持續釋出。",
+    "highlights": [
+      "獨立 XBPS 包管理與 runit",
+      "glibc / musl 雙變體",
+      "滾動更新，輕量快速",
+      "二進位制包與原始碼構建並存"
+    ],
+    "pros": [
+      "輕量、啟動快",
+      "無 systemd，服務管理簡潔",
+      "獨立生態，不依賴大上游"
+    ],
+    "cons": [
+      "軟體倉庫規模有限",
+      "runit 需要重新學習",
+      "社群較小，支援資源有限"
+    ],
+    "similar": [
+      "artix",
+      "alpine",
+      "gentoo"
+    ],
+    "target_user": "想要獨立、輕量、無 systemd 滾動系統的使用者",
+    "tags": [
+      "desktop",
+      "server",
+      "lightweight",
+      "hobby"
+    ],
+    "popularity": 3,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "solus",
+    "name": "Solus",
+    "name_zh": "Solus",
+    "family": "other",
+    "secondary_families": [
+      "desktop"
+    ],
+    "upstream": "獨立開發",
+    "based_on_since": null,
+    "first_release": 2015,
+    "latest_version": null,
+    "latest_release_date": null,
+    "release_model": "rolling",
+    "release_cycle": "滾動更新，按需釋出 ISO 快照",
+    "package_manager": "eopkg",
+    "update_command": "sudo eopkg upgrade",
+    "gui_updater": "Software Center",
+    "init_system": "systemd",
+    "default_desktop": [
+      "Budgie",
+      "GNOME",
+      "KDE Plasma 等"
+    ],
+    "supported_arch": [
+      "x86_64"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，獨立滾動桌面發行版",
+    "maintainer_type": "community",
+    "maintainer": "Solus 專案",
+    "founder": "Ikey Doherty",
+    "founded_year": 2015,
+    "org": "Solus 專案",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "proprietary",
+    "commercial_edition": "無",
+    "official_site": "https://getsol.us/",
+    "docs": "https://help.getsol.us/",
+    "download": "https://getsol.us/download/",
+    "repo": "https://github.com/getsolus",
+    "wiki": "https://help.getsol.us/",
+    "forum": "https://discuss.getsol.us/",
+    "chat": "https://matrix.to/#/#solus:matrix.org",
+    "reddit": "https://www.reddit.com/r/SolusProject/",
+    "intro": "Solus 是 2015 年由 Ikey Doherty 發起的獨立滾動發行版，不基於任何主流上游。它使用自研的 eopkg 包管理器、Budgie 桌面環境與 Software Center，強調桌面體驗的一致性和“適度滾動”：軟體版本較新，但不會盲目追求最新。Solus 的 Budgie 桌面後來獨立為 Buddies of Budgie 專案，Solus 仍是其重要展示平臺。它提供 GNOME、KDE Plasma、MATE 等版本，適合想要一個乾淨、現代、滾動更新但不想折騰 Arch 的桌面使用者。需要注意的是，Solus 是小型獨立專案，曾經歷維護者變動與基礎設施中斷，軟體包更新速度與社群規模都不如大發行版；eopkg 生態也相對小眾。它不提供商業版。若你看重長期穩定與廣泛軟體支援，Ubuntu/Fedora 更穩妥；若喜歡獨立桌面創新，Solus 值得關注。",
+    "highlights": [
+      "獨立 eopkg 與 Budgie 桌面",
+      "滾動更新但節奏相對剋制",
+      "Software Center 圖形化管理",
+      "乾淨的桌面體驗"
+    ],
+    "pros": [
+      "桌面體驗獨立、設計統一",
+      "滾動更新不激進",
+      "安裝與使用較簡單"
+    ],
+    "cons": [
+      "獨立小專案，可持續性風險",
+      "軟體倉庫規模有限",
+      "eopkg 生態小眾"
+    ],
+    "similar": [
+      "arch-linux",
+      "void",
+      "mageia"
+    ],
+    "target_user": "喜歡獨立桌面與適度滾動的使用者",
+    "tags": [
+      "desktop",
+      "hobby"
+    ],
+    "popularity": 3,
+    "data_as_of": "2026-11-18",
+    "verified": false
+  },
+  {
+    "id": "clear-linux",
+    "name": "Clear Linux",
+    "name_zh": "Clear Linux（已終止）",
+    "family": "other",
+    "secondary_families": [
+      "cloud",
+      "server",
+      "retro"
+    ],
+    "upstream": "獨立開發",
+    "based_on_since": null,
+    "first_release": 2015,
+    "latest_version": "43800",
+    "latest_release_date": "2025-07-21",
+    "release_model": "rolling",
+    "release_cycle": "已終止；原為 Intel 的滾動最佳化發行版",
+    "package_manager": "swupd",
+    "update_command": "sudo swupd update  # 專案已停止",
+    "gui_updater": "無（面向雲/伺服器）",
+    "init_system": "systemd",
+    "default_desktop": [
+      "無（伺服器/雲）",
+      "GNOME（可選）"
+    ],
+    "supported_arch": [
+      "x86_64"
+    ],
+    "status": "eol",
+    "status_note": "Intel 於 2025-07-21 停止 Clear Linux OS 專案",
+    "maintainer_type": "company",
+    "maintainer": "Intel",
+    "founder": "Intel",
+    "founded_year": 2015,
+    "org": "Intel Corporation",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "firmware",
+    "commercial_edition": "無",
+    "official_site": "https://www.clearlinux.org/",
+    "docs": "https://docs.01.org/clearlinux/latest/",
+    "download": "https://www.clearlinux.org/downloads/",
+    "repo": "https://github.com/clearlinux",
+    "wiki": "https://github.com/clearlinux/",
+    "forum": "https://community.clearlinux.org/",
+    "chat": null,
+    "reddit": "https://www.reddit.com/r/ClearLinux/",
+    "intro": "Clear Linux 是 Intel 於 2015 年推出的滾動發行版，以極致的效能最佳化和雲原生場景為設計目標。它採用 swupd 做原子式系統更新，預設使用較新的核心與編譯器，並對 x86_64 指令集、庫和執行時進行了大量調優；在容器、微服務和雲端計算基準中曾表現突出。Clear Linux 提供無狀態（stateless）設計理念：系統配置與使用者資料分離，升級時系統可整體替換，降低配置漂移。它適合雲平臺、CI/CD、容器宿主機和需要 Intel 平臺最佳化的伺服器。2025 年 7 月 21 日，Intel 宣佈停止 Clear Linux OS 專案，因此現在只適合歷史研究或離線環境。它不提供商業支援，軟體包生態也相對有限；對於仍需要不可變雲映象的使用者，Flatcar、Fedora CoreOS 等是更現實的替代。",
+    "highlights": [
+      "swupd 原子更新與無狀態設計",
+      "Intel 平臺深度效能最佳化",
+      "雲原生與容器場景表現突出",
+      "2025 年 7 月停止專案"
+    ],
+    "pros": [
+      "效能最佳化激進、基準表現好",
+      "原子更新降低漂移",
+      "適合雲與容器宿主"
+    ],
+    "cons": [
+      "已終止，無安全更新",
+      "軟體生態較窄",
+      "僅支援 x86_64"
+    ],
+    "similar": [
+      "flatcar",
+      "fedora-silverblue",
+      "alpine"
+    ],
+    "target_user": "僅適合歷史研究、歸檔與替代方案評估",
+    "tags": [
+      "cloud",
+      "server",
+      "retro"
+    ],
+    "popularity": 3,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "mageia",
+    "name": "Mageia",
+    "name_zh": "Mageia",
+    "family": "other",
+    "secondary_families": [
+      "desktop"
+    ],
+    "upstream": "獨立開發（Mandriva 分支）",
+    "based_on_since": null,
+    "first_release": 2011,
+    "latest_version": "10",
+    "latest_release_date": "2026-06-29",
+    "release_model": "fixed",
+    "release_cycle": "約每年一個大版本，維護約 18 個月",
+    "package_manager": "dnf / urpmi / rpm",
+    "update_command": "sudo dnf upgrade --refresh",
+    "gui_updater": "Mageia Control Center / Discover",
+    "init_system": "systemd",
+    "default_desktop": [
+      "KDE Plasma",
+      "GNOME",
+      "Xfce",
+      "LXQt"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "aarch64"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，社群驅動的 Mandriva 繼承者",
+    "maintainer_type": "community",
+    "maintainer": "Mageia.Org",
+    "founder": "Mageia 社群（Mandriva 前員工與貢獻者）",
+    "founded_year": 2010,
+    "org": "Mageia.Org",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "firmware",
+    "commercial_edition": "無",
+    "official_site": "https://www.mageia.org/",
+    "docs": "https://doc.mageia.org/",
+    "download": "https://www.mageia.org/en/downloads/",
+    "repo": "https://git.mageia.org/",
+    "wiki": "https://wiki.mageia.org/",
+    "forum": "https://forums.mageia.org/",
+    "chat": "https://matrix.to/#/#mageia:matrix.org",
+    "reddit": "https://www.reddit.com/r/Mageia/",
+    "intro": "Mageia 是 2010 年由 Mandriva 前員工與社群志願者發起的獨立發行版，2011 年釋出首版，繼承了 Mandriva 的 rpm 傳統與 Mageia Control Center 圖形管理工具。它使用 dnf/urpmi，提供 KDE Plasma、GNOME、Xfce、LXQt 等桌面，預設配置對新手較友好，安裝器與硬體檢測也比較完整。Mageia 的釋出週期約一年，維護期約 18 個月，適合桌面使用者和小型伺服器。它與 OpenMandriva 同源於 Mandriva，但治理與打包路線不同：Mageia 更強調社群穩定釋出，OpenMandriva 則更積極嘗試新技術。Mageia 適合想要一個獨立、歐洲社群背景、開箱易用的 rpm 桌面發行版的使用者。需要注意的是，其軟體倉庫與國際社群規模有限，部分新硬體驅動可能滯後；中文資料也相對較少。它不提供商業版，由非營利組織維護。",
+    "highlights": [
+      "Mandriva 的社群繼承者",
+      "Mageia Control Center 圖形管理",
+      "KDE/GNOME/Xfce/LXQt 多桌面",
+      "獨立於大廠的 rpm 發行版"
+    ],
+    "pros": [
+      "開箱易用，工具完整",
+      "獨立社群治理",
+      "桌面選擇豐富"
+    ],
+    "cons": [
+      "社群與倉庫規模有限",
+      "軟體版本較保守",
+      "中文資料較少"
+    ],
+    "similar": [
+      "openmandriva",
+      "opensuse-leap",
+      "pclinuxos"
+    ],
+    "target_user": "偏好獨立歐洲社群 rpm 桌面的使用者",
+    "tags": [
+      "desktop",
+      "community"
+    ],
+    "popularity": 2,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "openmandriva",
+    "name": "OpenMandriva Lx",
+    "name_zh": "OpenMandriva Lx",
+    "family": "other",
+    "secondary_families": [
+      "desktop"
+    ],
+    "upstream": "獨立開發（Mandriva 分支）",
+    "based_on_since": null,
+    "first_release": 2013,
+    "latest_version": "滾動更新（ROME）",
+    "latest_release_date": null,
+    "release_model": "rolling",
+    "release_cycle": "ROME 滾動分支 + 定期 Lx 版本",
+    "package_manager": "dnf / rpm",
+    "update_command": "sudo dnf --refresh upgrade",
+    "gui_updater": "Discover / OpenMandriva Welcome",
+    "init_system": "systemd",
+    "default_desktop": [
+      "KDE Plasma",
+      "GNOME",
+      "LXQt"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "aarch64",
+      "riscv64"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，提供 ROME 滾動與 Lx 固定版本",
+    "maintainer_type": "foundation",
+    "maintainer": "OpenMandriva Association",
+    "founder": "OpenMandriva 社群",
+    "founded_year": 2012,
+    "org": "OpenMandriva Association",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "firmware",
+    "commercial_edition": "無",
+    "official_site": "https://www.openmandriva.org/",
+    "docs": "https://wiki.openmandriva.org/",
+    "download": "https://www.openmandriva.org/download",
+    "repo": "https://github.com/OpenMandrivaAssociation",
+    "wiki": "https://wiki.openmandriva.org/",
+    "forum": "https://forum.openmandriva.org/",
+    "chat": "https://matrix.to/#/#openmandriva:matrix.org",
+    "reddit": "https://www.reddit.com/r/OpenMandriva/",
+    "intro": "OpenMandriva Lx 是 Mandriva 停止後由社群於 2012–2013 年接續的發行版，使用 rpm 與 dnf，預設桌面為 KDE Plasma，也提供 GNOME 與 LXQt 版本。它分為固定版本 Lx 與滾動版本 ROME：ROME 更貼近上游，適合想持續獲得新軟體的使用者；Lx 則按版本釋出，適合希望穩定的桌面。OpenMandriva 的特色包括對 KDE 的緊密跟蹤、較新的編譯器與工具鏈，以及對 RISC-V 等新架構的嘗試。它適合喜歡 Mandriva 血統、願意參與小型社群、想要 KDE 優先體驗的使用者。需要注意，OpenMandriva 的社群規模有限，軟體倉庫與文件不如 Mageia 完整；ROME 的滾動更新也可能要求使用者關注公告。它不提供商業版，由非營利協會維護。對大多數使用者而言，Mageia 或 openSUSE 可能更穩妥。",
+    "highlights": [
+      "Mandriva 社群繼承者之一",
+      "KDE Plasma 優先，ROME 滾動分支",
+      "嘗試 RISC-V 等新架構",
+      "dnf/rpm 工具鏈"
+    ],
+    "pros": [
+      "KDE 體驗緊跟上游",
+      "滾動與固定版本可選",
+      "社群小而開放"
+    ],
+    "cons": [
+      "倉庫與文件規模有限",
+      "滾動分支需關注公告",
+      "國際社群較小"
+    ],
+    "similar": [
+      "mageia",
+      "opensuse-tumbleweed",
+      "pclinuxos"
+    ],
+    "target_user": "喜歡 Mandriva 血統與 KDE 優先的桌面使用者",
+    "tags": [
+      "desktop",
+      "community"
+    ],
+    "popularity": 2,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "pclinuxos",
+    "name": "PCLinuxOS",
+    "name_zh": "PCLinuxOS",
+    "family": "other",
+    "secondary_families": [
+      "desktop",
+      "retro"
+    ],
+    "upstream": "獨立開發（Mandrake 分支）",
+    "based_on_since": null,
+    "first_release": 2003,
+    "latest_version": "滾動更新",
+    "latest_release_date": null,
+    "release_model": "rolling",
+    "release_cycle": "持續滾動，ISO 定期重新整理",
+    "package_manager": "apt-rpm / Synaptic",
+    "update_command": "apt update && apt upgrade",
+    "gui_updater": "Synaptic / PCLinuxOS 更新器",
+    "init_system": "sysvinit",
+    "default_desktop": [
+      "KDE Plasma",
+      "MATE",
+      "Xfce"
+    ],
+    "supported_arch": [
+      "x86_64"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，面向桌面的獨立滾動發行版",
+    "maintainer_type": "community",
+    "maintainer": "PCLinuxOS 團隊",
+    "founder": "Bill Reynolds（Texstar）",
+    "founded_year": 2003,
+    "org": "PCLinuxOS 社群",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "proprietary",
+    "commercial_edition": "無",
+    "official_site": "https://www.pclinuxos.com/",
+    "docs": "https://www.pclinuxos.com/",
+    "download": "https://www.pclinuxos.com/?page_id=10",
+    "repo": "https://github.com/PCLinuxOS",
+    "wiki": "https://www.pclinuxos.com/",
+    "forum": "https://www.pclinuxos.com/forum/",
+    "chat": null,
+    "reddit": "https://www.reddit.com/r/PCLinuxOS/",
+    "intro": "PCLinuxOS 由 Bill Reynolds（Texstar）於 2003 年建立，最初基於 Mandrake，後來發展為獨立滾動發行版。它使用 apt-rpm 與 Synaptic 管理 rpm 包，介面傳統、配置直接，預設使用 KDE Plasma，也提供 MATE、Xfce 等版本。PCLinuxOS 長期堅持不採用 systemd，使用 sysvinit，這一點吸引了不少偏好傳統 init 的使用者。它的軟體版本較新，安裝映象提供完整的桌面與多媒體支援，適合從 Windows 遷移、喜歡 KDE 與 Synaptic、又不想使用 systemd 的桌面使用者。需要注意的是，PCLinuxOS 是小型社群專案，軟體倉庫規模有限，部分新硬體與冷門軟體支援不足；其安全更新依賴團隊人力，企業環境應謹慎評估。它不提供商業版，由社群維護。",
+    "highlights": [
+      "apt-rpm + Synaptic 的獨特組合",
+      "預設 KDE Plasma，桌面完整",
+      "堅持 sysvinit，不使用 systemd",
+      "滾動更新，面向桌面使用者"
+    ],
+    "pros": [
+      "Synaptic 對遷移使用者友好",
+      "無 systemd，符合部分使用者偏好",
+      "桌面開箱完整"
+    ],
+    "cons": [
+      "倉庫規模有限",
+      "小型社群，安全更新依賴人力",
+      "新硬體支援可能滯後"
+    ],
+    "similar": [
+      "mageia",
+      "openmandriva",
+      "slackware"
+    ],
+    "target_user": "喜歡 KDE、Synaptic 與 sysvinit 的桌面使用者",
+    "tags": [
+      "desktop",
+      "retro",
+      "hobby"
+    ],
+    "popularity": 2,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "kaos",
+    "name": "KaOS",
+    "name_zh": "KaOS",
+    "family": "other",
+    "secondary_families": [
+      "desktop"
+    ],
+    "upstream": "獨立開發",
+    "based_on_since": null,
+    "first_release": 2013,
+    "latest_version": "滾動更新",
+    "latest_release_date": null,
+    "release_model": "rolling",
+    "release_cycle": "持續滾動，ISO 定期重新整理",
+    "package_manager": "pacman",
+    "update_command": "sudo pacman -Syu",
+    "gui_updater": "Octopi",
+    "init_system": "systemd",
+    "default_desktop": [
+      "KDE Plasma"
+    ],
+    "supported_arch": [
+      "x86_64"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，專注 KDE Plasma 的獨立發行版",
+    "maintainer_type": "community",
+    "maintainer": "KaOS 團隊",
+    "founder": "Anke Boersma",
+    "founded_year": 2013,
+    "org": "KaOS 社群",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "proprietary",
+    "commercial_edition": "無",
+    "official_site": "https://kaosx.us/",
+    "docs": "https://kaosx.us/docs/",
+    "download": "https://kaosx.us/download/",
+    "repo": "https://github.com/KaOSx",
+    "wiki": "https://kaosx.us/docs/",
+    "forum": "https://forum.kaosx.us/",
+    "chat": "https://discord.gg/kaos",
+    "reddit": "https://www.reddit.com/r/KaOS/",
+    "intro": "KaOS 是 2013 年出現的獨立滾動發行版，目標非常專一：圍繞 KDE Plasma 構建一個乾淨、現代的桌面系統。它雖然使用 pacman，但並不是 Arch 的衍生版，而是維護自己的軟體倉庫，只打包 Qt/KDE 與精選應用，因此倉庫規模較小、依賴關係更可控。KaOS 預設使用 KDE Plasma，搭配 SDDM、Octopi 與一套統一的視覺設計，系統啟動快、預裝內容少。它適合喜歡 Plasma、想要滾動更新但不想面對 Arch 全倉庫複雜性的使用者，也適合希望系統保持精簡的 KDE 愛好者。需要注意的是，KaOS 的軟體選擇有限，非 KDE 應用可能需要 Flatpak 或自行編譯；小型團隊維護意味著更新節奏與安全響應不如大型發行版。它不提供商業版。若你需要廣泛的軟體相容性，Arch 或 openSUSE Tumbleweed 更合適。",
+    "highlights": [
+      "只圍繞 KDE Plasma 構建",
+      "獨立 pacman 倉庫，非 Arch 衍生",
+      "乾淨、精簡的預設系統",
+      "Octopi 圖形包管理"
+    ],
+    "pros": [
+      "Plasma 體驗純粹、統一",
+      "系統精簡，依賴可控",
+      "滾動更新"
+    ],
+    "cons": [
+      "軟體倉庫範圍窄",
+      "小型團隊維護",
+      "非 KDE 應用需額外方案"
+    ],
+    "similar": [
+      "arch-linux",
+      "openmandriva",
+      "solus"
+    ],
+    "target_user": "專注 KDE Plasma 的精簡桌面使用者",
+    "tags": [
+      "desktop",
+      "hobby"
+    ],
+    "popularity": 2,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "qubes",
+    "name": "Qubes OS",
+    "name_zh": "Qubes OS",
+    "family": "other",
+    "secondary_families": [
+      "security",
+      "privacy"
+    ],
+    "upstream": "Xen / Fedora / Debian 模板",
+    "based_on_since": 2012,
+    "first_release": 2012,
+    "latest_version": null,
+    "latest_release_date": null,
+    "release_model": "fixed",
+    "release_cycle": "按大版本釋出，提供安全更新",
+    "package_manager": "dnf（dom0）/ apt（模板）",
+    "update_command": "Qubes Update 工具（圖形或命令列）",
+    "gui_updater": "Qubes Update",
+    "init_system": "systemd",
+    "default_desktop": [
+      "Xfce"
+    ],
+    "supported_arch": [
+      "x86_64"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，以安全隔離為核心",
+    "maintainer_type": "foundation",
+    "maintainer": "Qubes OS Project",
+    "founder": "Joanna Rutkowska",
+    "founded_year": 2012,
+    "org": "Qubes OS Project",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "firmware",
+    "commercial_edition": "無（接受捐贈與企業支援合作）",
+    "official_site": "https://www.qubes-os.org/",
+    "docs": "https://www.qubes-os.org/doc/",
+    "download": "https://www.qubes-os.org/downloads/",
+    "repo": "https://github.com/QubesOS",
+    "wiki": "https://www.qubes-os.org/doc/",
+    "forum": "https://forum.qubes-os.org/",
+    "chat": "https://matrix.to/#/#qubes:matrix.org",
+    "reddit": "https://www.reddit.com/r/Qubes/",
+    "intro": "Qubes OS 由 Joanna Rutkowska 於 2012 年發起，是一個以“安全隔離”為核心的桌面作業系統。它把不同用途拆分為多個虛擬機器（稱為 qube），例如工作、個人、銀行、瀏覽不可信網站各用一個 VM，彼此通過 Xen 虛擬化隔離；即使某個應用被攻破，也難以直接影響其他 qube 或底層 dom0。Qubes 的 dom0 通常基於 Fedora，應用 VM 可使用 Fedora、Debian 等模板，提供 Qubes Update、Qubes Manager 與安全域間複製等工具。它適合記者、研究人員、安全從業者和高風險目標使用者，也適合需要嚴格隔離不同身份與資料的人。代價是硬體要求較高、配置複雜、圖形效能與便利性不如普通桌面；某些外設與休眠功能支援有限。Qubes 不提供商業版，依靠捐贈與社群維護。",
+    "highlights": [
+      "Xen 虛擬化實現強隔離的安全域",
+      "dom0 與多個應用 VM 分離",
+      "模板化系統與集中更新",
+      "面向高風險威脅模型"
+    ],
+    "pros": [
+      "隔離強度遠高於普通桌面",
+      "適合處理敏感與不可信內容",
+      "安全社群活躍"
+    ],
+    "cons": [
+      "硬體要求高、配置複雜",
+      "圖形效能與外設支援受限",
+      "日常使用便利性較低"
+    ],
+    "similar": [
+      "tails",
+      "debian",
+      "pureos"
+    ],
+    "target_user": "需要強隔離的高風險目標與安全從業者",
+    "tags": [
+      "security",
+      "privacy",
+      "desktop"
+    ],
+    "popularity": 4,
+    "data_as_of": "2026-11-18",
+    "verified": false
+  },
+  {
+    "id": "openwrt",
+    "name": "OpenWrt",
+    "name_zh": "OpenWrt",
+    "family": "other",
+    "secondary_families": [
+      "router",
+      "embedded"
+    ],
+    "upstream": "獨立開發",
+    "based_on_since": null,
+    "first_release": 2004,
+    "latest_version": "25.12.6",
+    "latest_release_date": "2026-10-18",
+    "release_model": "fixed",
+    "release_cycle": "約每年一個版本，提供點版本安全更新",
+    "package_manager": "opkg / apk",
+    "update_command": "通過 LuCI 或 sysupgrade 刷寫韌體",
+    "gui_updater": "LuCI",
+    "init_system": "procd",
+    "default_desktop": [
+      "無（LuCI Web 管理介面）"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "aarch64",
+      "armv7",
+      "mips",
+      "riscv64"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，路由器與嵌入式網路的事實標準之一",
+    "maintainer_type": "community",
+    "maintainer": "OpenWrt 專案",
+    "founder": "OpenWrt 社群",
+    "founded_year": 2004,
+    "org": "OpenWrt 專案",
+    "license": "GPL-2.0 / BSD 等",
+    "openness": "free",
+    "commercial_edition": "無",
+    "official_site": "https://openwrt.org/",
+    "docs": "https://openwrt.org/docs/start",
+    "download": "https://firmware-selector.openwrt.org/",
+    "repo": "https://git.openwrt.org/",
+    "wiki": "https://openwrt.org/docs/start",
+    "forum": "https://forum.openwrt.org/",
+    "chat": "https://matrix.to/#/#openwrt:matrix.org",
+    "reddit": "https://www.reddit.com/r/openwrt/",
+    "intro": "OpenWrt 始於 2004 年，最初是為 Linksys 路由器擴充套件韌體而生的專案，如今已成為路由器與嵌入式網路裝置最成熟的開源系統之一。它提供一個可寫的檔案系統與包管理器（opkg，新版本逐步引入 apk），使用者可以安裝 VPN、防火牆、QoS、AdGuard、Mesh、Docker 等元件，把家用路由器變成可程式設計的網路節點。OpenWrt 使用 procd 初始化系統與 UCI 統一配置，LuCI 提供 Web 管理介面；它支援大量路由器、單板機與 x86 裝置，並可按需構建精簡韌體。它適合希望掌控家庭網路、搭建旁路由、軟路由、物聯網閘道器或實驗環境的使用者。需要注意的是，不同裝置的支援質量差異很大，刷機有變磚風險；升級大版本時配置相容性也需檢查。OpenWrt 不提供商業版，由社群維護。",
+    "highlights": [
+      "可安裝軟體包的路由器系統",
+      "LuCI Web 管理與 UCI 配置",
+      "VPN、防火牆、QoS、Mesh 等擴充套件",
+      "覆蓋大量路由器與嵌入式裝置"
+    ],
+    "pros": [
+      "網路功能強大且可程式設計",
+      "裝置覆蓋廣、社群活躍",
+      "精簡韌體可按需構建"
+    ],
+    "cons": [
+      "刷機存在風險",
+      "裝置支援質量不一",
+      "配置與排障門檻較高"
+    ],
+    "similar": [
+      "alpine",
+      "flatcar",
+      "postmarketos"
+    ],
+    "target_user": "希望掌控家庭或實驗網路的進階使用者",
+    "tags": [
+      "router",
+      "embedded",
+      "network",
+      "server"
+    ],
+    "popularity": 4,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "truenas-scale",
+    "name": "TrueNAS SCALE",
+    "name_zh": "TrueNAS SCALE",
+    "family": "other",
+    "secondary_families": [
+      "nas",
+      "server",
+      "storage"
+    ],
+    "upstream": "Debian",
+    "based_on_since": 2022,
+    "first_release": 2022,
+    "latest_version": null,
+    "latest_release_date": null,
+    "release_model": "fixed",
+    "release_cycle": "約每年一個版本，提供企業級更新通道",
+    "package_manager": "apt（底層）+ 應用目錄",
+    "update_command": "通過 Web UI 的系統更新",
+    "gui_updater": "TrueNAS Web UI",
+    "init_system": "systemd",
+    "default_desktop": [
+      "無（Web 管理介面）"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "aarch64（部分硬體）"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，iXsystems 的 NAS 與超融合系統",
+    "maintainer_type": "company",
+    "maintainer": "iXsystems",
+    "founder": "iXsystems",
+    "founded_year": 2022,
+    "org": "iXsystems, Inc.",
+    "license": "GPL-2.0-or-later / BSD 等",
+    "openness": "proprietary",
+    "commercial_edition": "TrueNAS Enterprise",
+    "official_site": "https://www.truenas.com/",
+    "docs": "https://www.truenas.com/docs/",
+    "download": "https://www.truenas.com/download-truenas-scale/",
+    "repo": "https://github.com/truenas",
+    "wiki": "https://www.truenas.com/docs/",
+    "forum": "https://forums.truenas.com/",
+    "chat": "https://discord.gg/truenas",
+    "reddit": "https://www.reddit.com/r/truenas/",
+    "intro": "TrueNAS SCALE 是 iXsystems 於 2022 年推出的 NAS 與超融合系統，基於 Debian，使用 ZFS 作為儲存核心，並通過 Web UI 管理儲存池、快照、複製、SMB/NFS/iSCSI 共享與虛擬機器。與早期的 FreeBSD 版 TrueNAS CORE 不同，SCALE 使用 Linux 核心，支援 Docker/Kubernetes 應用、容器與更廣泛的硬體驅動，因此更適合家庭實驗室、媒體伺服器與中小企業的統一儲存。它提供免費社群版與付費企業版，企業版包含支援、叢集與高階功能。TrueNAS SCALE 適合願意投入時間規劃 ZFS 儲存、需要快照/複製與資料完整性的使用者。需要注意的是，ZFS 對記憶體與磁碟配置有要求，應用與虛擬機器功能在版本間可能變化；生產環境應使用 ECC 記憶體並做好備份。它不是通用桌面發行版。",
+    "highlights": [
+      "ZFS 儲存、快照與複製",
+      "Web UI 統一管理共享與虛擬機器",
+      "Debian 底座，容器與驅動支援更廣",
+      "免費社群版 + 企業版"
+    ],
+    "pros": [
+      "儲存功能專業、資料完整性高",
+      "Web 管理易用",
+      "應用與虛擬化能力較強"
+    ],
+    "cons": [
+      "ZFS 對硬體要求較高",
+      "版本升級需謹慎",
+      "非通用桌面系統"
+    ],
+    "similar": [
+      "debian",
+      "flatcar",
+      "openwrt"
+    ],
+    "target_user": "家庭實驗室與中小企業 NAS/儲存使用者",
+    "tags": [
+      "nas",
+      "server",
+      "storage",
+      "enterprise"
+    ],
+    "popularity": 4,
+    "data_as_of": "2026-11-18",
+    "verified": false
+  },
+  {
+    "id": "libreelec",
+    "name": "LibreELEC",
+    "name_zh": "LibreELEC",
+    "family": "other",
+    "secondary_families": [
+      "tv",
+      "multimedia"
+    ],
+    "upstream": "Buildroot / Kodi",
+    "based_on_since": 2016,
+    "first_release": 2016,
+    "latest_version": null,
+    "latest_release_date": null,
+    "release_model": "fixed",
+    "release_cycle": "按 Kodi 版本釋出，提供點版本更新",
+    "package_manager": "LibreELEC 更新器 + 外掛倉庫",
+    "update_command": "通過 LibreELEC 設定 → 更新",
+    "gui_updater": "LibreELEC 設定",
+    "init_system": "systemd",
+    "default_desktop": [
+      "Kodi"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "aarch64",
+      "armv7"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，專注 Kodi 媒體中心",
+    "maintainer_type": "community",
+    "maintainer": "LibreELEC 團隊",
+    "founder": "LibreELEC 團隊",
+    "founded_year": 2016,
+    "org": "LibreELEC 專案",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "free",
+    "commercial_edition": "無",
+    "official_site": "https://libreelec.tv/",
+    "docs": "https://wiki.libreelec.tv/",
+    "download": "https://libreelec.tv/downloads/",
+    "repo": "https://github.com/LibreELEC",
+    "wiki": "https://wiki.libreelec.tv/",
+    "forum": "https://forum.libreelec.tv/",
+    "chat": "https://discord.gg/libreelec",
+    "reddit": "https://www.reddit.com/r/libreelec/",
+    "intro": "LibreELEC 是 2016 年從 OpenELEC 分叉出的媒體中心繫統，目標只有一個：把 Kodi 以最穩定、最輕量的方式執行在電視盒子、樹莓派、迷你 PC 和舊電腦上。它基於 Buildroot 構建，系統映象小、啟動快，預設直接進入 Kodi，支援 4K/HDR、硬體解碼、遙控器與 CEC。LibreELEC 通過設定介面進行系統更新，外掛倉庫提供 PVR、流媒體與皮膚擴充套件；它不提供通用桌面環境，也不適合辦公或伺服器用途。它適合家庭影院、客廳電視、老硬體再利用和 HTPC 使用者。需要注意的是，Kodi 的外掛生態與版權合規性需使用者自行判斷；不同裝置的硬體解碼支援差異較大，部分新格式可能需要更新核心或更換裝置。LibreELEC 不提供商業版，由社群維護。",
+    "highlights": [
+      "極簡系統，開機直達 Kodi",
+      "支援 4K/HDR 與硬體解碼",
+      "樹莓派、電視盒子、迷你 PC 多平臺",
+      "系統與外掛更新集中管理"
+    ],
+    "pros": [
+      "HTPC 體驗純粹、啟動快",
+      "硬體解碼支援好",
+      "維護簡單"
+    ],
+    "cons": [
+      "不能作為通用桌面",
+      "裝置解碼能力差異大",
+      "外掛生態需自行甄別"
+    ],
+    "similar": [
+      "batocera",
+      "steamos",
+      "chimeraos"
+    ],
+    "target_user": "家庭影院與 Kodi 媒體中心使用者",
+    "tags": [
+      "tv",
+      "multimedia",
+      "lightweight"
+    ],
+    "popularity": 3,
+    "data_as_of": "2026-11-18",
+    "verified": false
+  },
+  {
+    "id": "batocera",
+    "name": "Batocera.linux",
+    "name_zh": "Batocera.linux",
+    "family": "other",
+    "secondary_families": [
+      "gaming",
+      "retro"
+    ],
+    "upstream": "Buildroot",
+    "based_on_since": 2018,
+    "first_release": 2018,
+    "latest_version": null,
+    "latest_release_date": null,
+    "release_model": "fixed",
+    "release_cycle": "按版本釋出，更新較頻繁",
+    "package_manager": "無傳統包管理（系統映象更新）",
+    "update_command": "通過 Batocera 選單 → 系統更新",
+    "gui_updater": "Batocera 系統選單",
+    "init_system": "systemd",
+    "default_desktop": [
+      "EmulationStation"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "aarch64",
+      "armv7"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，復古遊戲與模擬器整合系統",
+    "maintainer_type": "community",
+    "maintainer": "Batocera 團隊",
+    "founder": "Batocera 團隊",
+    "founded_year": 2018,
+    "org": "Batocera.linux 專案",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "proprietary",
+    "commercial_edition": "無",
+    "official_site": "https://batocera.org/",
+    "docs": "https://wiki.batocera.org/",
+    "download": "https://batocera.org/download",
+    "repo": "https://github.com/batocera-linux",
+    "wiki": "https://wiki.batocera.org/",
+    "forum": "https://forum.batocera.org/",
+    "chat": "https://discord.gg/batocera",
+    "reddit": "https://www.reddit.com/r/batocera/",
+    "intro": "Batocera.linux 是 2018 年出現的復古遊戲與模擬器整合系統，基於 Buildroot，啟動後直接進入 EmulationStation 介面，使用者只需放入 ROM 即可按平臺瀏覽和啟動遊戲。它預裝大量模擬器核心，支援手柄、藍牙、網路共享、螢幕刮削、存檔與多人遊戲，並可在 x86_64、樹莓派、Odroid、掌機等裝置上執行。Batocera 的系統更新以映象為單位，配置相對簡單，適合把舊電腦或單板機改造成客廳復古遊戲機。它適合懷舊玩家、模擬器愛好者、街機櫃與掌機改造使用者。需要注意的是，ROM 與 BIOS 的版權歸各自權利人所有，使用者必須確保合法使用；不同平臺的模擬精度與效能差異較大，部分新主機模擬仍不成熟。Batocera 不提供商業版，由社群維護。",
+    "highlights": [
+      "開箱即用的 EmulationStation 遊戲介面",
+      "大量模擬器核心與手柄支援",
+      "舊電腦、樹莓派、掌機多平臺",
+      "網路共享、刮削與存檔管理"
+    ],
+    "pros": [
+      "復古遊戲體驗完整",
+      "配置簡單、硬體覆蓋廣",
+      "社群活躍"
+    ],
+    "cons": [
+      "ROM/BIOS 版權需自行負責",
+      "模擬精度因平臺而異",
+      "不適合通用計算"
+    ],
+    "similar": [
+      "libreelec",
+      "steamos",
+      "chimeraos"
+    ],
+    "target_user": "復古遊戲玩家與客廳遊戲機改造者",
+    "tags": [
+      "gaming",
+      "retro",
+      "tv"
+    ],
+    "popularity": 3,
+    "data_as_of": "2026-11-18",
+    "verified": false
+  },
+  {
+    "id": "android",
+    "name": "Android (AOSP)",
+    "name_zh": "Android 開源專案",
+    "family": "other",
+    "secondary_families": [
+      "mobile",
+      "embedded"
+    ],
+    "upstream": "Linux kernel / AOSP",
+    "based_on_since": 2008,
+    "first_release": 2008,
+    "latest_version": "17（API 37）",
+    "latest_release_date": "2026-06-16",
+    "release_model": "fixed",
+    "release_cycle": "每年一個主要版本，廠商與裝置決定實際更新",
+    "package_manager": "APK / Google Play（廠商版）",
+    "update_command": "通過系統 OTA 或廠商工具",
+    "gui_updater": "系統更新（廠商實現）",
+    "init_system": "Android init",
+    "default_desktop": [
+      "Launcher3 / 廠商啟動器"
+    ],
+    "supported_arch": [
+      "arm64",
+      "armv7",
+      "x86_64"
+    ],
+    "status": "active",
+    "status_note": "AOSP 持續更新；實際裝置支援取決於晶片與廠商",
+    "maintainer_type": "company",
+    "maintainer": "Google / Open Handset Alliance",
+    "founder": "Andy Rubin 等（Android Inc.）",
+    "founded_year": 2003,
+    "org": "Google / Open Handset Alliance",
+    "license": "Apache-2.0（AOSP）等",
+    "openness": "proprietary",
+    "commercial_edition": "Google Mobile Services 與各廠商定製版",
+    "official_site": "https://source.android.com/",
+    "docs": "https://source.android.com/docs",
+    "download": "https://source.android.com/setup/build/downloading",
+    "repo": "https://android.googlesource.com/",
+    "wiki": "https://source.android.com/docs",
+    "forum": "https://source.android.com/community",
+    "chat": null,
+    "reddit": "https://www.reddit.com/r/Android/",
+    "intro": "Android 開源專案（AOSP）是 Google 主導的移動作業系統，2008 年隨首款 Android 手機發布，底層使用 Linux 核心，上層則是 Java/Kotlin 應用框架、ART 執行時、Binder IPC 與系統服務。AOSP 本身以 Apache-2.0 等許可開放，廠商可自由定製；但市面上大多數手機還疊加了 Google Mobile Services、廠商 UI 與專有驅動，因此“Android 開源”與“你手機上的 Android”並不是同一件事。AOSP 適合手機廠商、ROM 開發者、嵌入式裝置廠商和希望研究移動系統的人；普通使用者通常通過 Pixel、三星、小米等廠商發行版接觸它。需要注意的是，AOSP 不包含 Google Play 服務，普通使用者刷純 AOSP 會失去推送、支付與部分應用；裝置核心與驅動閉源也導致長期更新困難。它在本圖譜中作為移動/嵌入式代表列入其他系。",
+    "highlights": [
+      "Linux 核心 + Android 應用框架",
+      "AOSP 開放原始碼，廠商可定製",
+      "APK 應用生態與 ART 執行時",
+      "覆蓋手機、平板、電視、車載與嵌入式"
+    ],
+    "pros": [
+      "移動生態與硬體覆蓋極廣",
+      "AOSP 可自由定製",
+      "應用與開發工具成熟"
+    ],
+    "cons": [
+      "實際裝置含大量閉源元件",
+      "長期系統更新依賴廠商",
+      "純 AOSP 缺少 Google 服務"
+    ],
+    "similar": [
+      "ubuntu-touch",
+      "postmarketos",
+      "sailfish"
+    ],
+    "target_user": "移動裝置廠商、ROM 開發者與嵌入式廠商",
+    "tags": [
+      "mobile",
+      "embedded",
+      "enterprise"
+    ],
+    "popularity": 5,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "openkylin",
+    "name": "openKylin",
+    "name_zh": "開放麒麟 openKylin",
+    "family": "other",
+    "secondary_families": [
+      "chinese",
+      "desktop"
+    ],
+    "upstream": "獨立開發（Linux 核心 + UKUI）",
+    "based_on_since": null,
+    "first_release": 2022,
+    "latest_version": null,
+    "latest_release_date": null,
+    "release_model": "fixed",
+    "release_cycle": "按社群版本釋出，商業版由麒麟軟體提供",
+    "package_manager": "apt / dpkg",
+    "update_command": "sudo apt update && sudo apt upgrade",
+    "gui_updater": "麒麟軟體商店 / 系統更新",
+    "init_system": "systemd",
+    "default_desktop": [
+      "UKUI"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "aarch64",
+      "riscv64",
+      "loongarch64"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，開放原子開源基金會孵化專案",
+    "maintainer_type": "foundation",
+    "maintainer": "openKylin 社群",
+    "founder": "麒麟軟體等貢獻者",
+    "founded_year": 2022,
+    "org": "開放原子開源基金會",
+    "license": "GPL-2.0-or-later 等",
+    "openness": "proprietary",
+    "commercial_edition": "銀河麒麟商業版（生態關聯）",
+    "official_site": "https://www.openkylin.top/",
+    "docs": "https://docs.openkylin.top/",
+    "download": "https://www.openkylin.top/downloads/",
+    "repo": "https://gitee.com/openkylin",
+    "wiki": "https://docs.openkylin.top/",
+    "forum": "https://forum.openkylin.top/",
+    "chat": null,
+    "reddit": null,
+    "intro": "openKylin（開放麒麟）是 2022 年由麒麟軟體等國內廠商與社群共同發起的桌面作業系統社群，目標是構建一個開放、可控的 Linux 桌面生態。它使用 UKUI 桌面環境，基於 Linux 核心與 deb/apt 軟體包體系，支援 x86_64、ARM64、RISC-V、LoongArch 等國產硬體架構，並針對中文輸入、辦公、影音和外設適配做了本地化。openKylin 與銀河麒麟商業版存在生態關聯，但社群版獨立釋出。它適合需要國產化桌面、中文環境與多架構支援的使用者與機構，也適合關注 RISC-V/LoongArch 桌面生態的開發者。需要注意的是，openKylin 的軟體倉庫與國際主流發行版仍有差距，部分專業軟體需要適配；社群版更新節奏與商業版支援範圍也不同。它不直接等同於商業版銀河麒麟，選型時應確認具體版本與支援政策。",
+    "highlights": [
+      "UKUI 桌面與中文本地化",
+      "支援 x86、ARM、RISC-V、LoongArch",
+      "開放原子開源基金會孵化",
+      "與銀河麒麟商業生態關聯"
+    ],
+    "pros": [
+      "國產硬體與中文環境適配積極",
+      "多架構支援領先",
+      "桌面本地化完整"
+    ],
+    "cons": [
+      "國際軟體生態有限",
+      "社群版支援範圍有限",
+      "與商業版關係需釐清"
+    ],
+    "similar": [
+      "uos",
+      "deepin",
+      "ubuntu"
+    ],
+    "target_user": "需要國產化中文桌面的機構與開發者",
+    "tags": [
+      "desktop",
+      "chinese",
+      "education"
+    ],
+    "popularity": 3,
+    "data_as_of": "2026-11-18",
+    "verified": false
+  },
+  {
+    "id": "uos",
+    "name": "UOS",
+    "name_zh": "統信 UOS",
+    "family": "other",
+    "secondary_families": [
+      "chinese",
+      "enterprise",
+      "desktop"
+    ],
+    "upstream": "Deepin / Debian 生態",
+    "based_on_since": 2019,
+    "first_release": 2019,
+    "latest_version": null,
+    "latest_release_date": null,
+    "release_model": "lts",
+    "release_cycle": "按專業版/伺服器版週期釋出，提供商業支援",
+    "package_manager": "apt / dpkg + 應用商店",
+    "update_command": "通過 UOS 控制中心更新",
+    "gui_updater": "UOS 控制中心 / 應用商店",
+    "init_system": "systemd",
+    "default_desktop": [
+      "DDE（UOS 定製）"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "aarch64",
+      "loongarch64",
+      "riscv64"
+    ],
+    "status": "lts",
+    "status_note": "商業發行版，具體版本與生命週期以統信官方為準",
+    "maintainer_type": "company",
+    "maintainer": "統信軟體技術有限公司",
+    "founder": "統信軟體",
+    "founded_year": 2019,
+    "org": "統信軟體技術有限公司",
+    "license": "商業許可 + 開源元件",
+    "openness": "commercial",
+    "commercial_edition": "UOS 專業版 / 伺服器版 / 教育版等",
+    "official_site": "https://www.chinauos.com/",
+    "docs": "https://www.chinauos.com/",
+    "download": "https://www.chinauos.com/",
+    "repo": null,
+    "wiki": "https://www.chinauos.com/",
+    "forum": "https://bbs.chinauos.com/",
+    "chat": null,
+    "reddit": null,
+    "intro": "統信 UOS 是統信軟體於 2019 年推出的國產商業作業系統，面向黨政、金融、教育、能源等行業的桌面與伺服器場景。它繼承 deepin/DDE 的技術積累，使用 apt/dpkg 與自研應用商店，提供中文輸入、辦公套件、外設適配與集中管理能力，並支援 x86_64、ARM64、LoongArch、RISC-V 等架構。UOS 分為專業版、伺服器版、教育版等，通常需要授權與技術支援合同，個人使用者可通過社群版或 deepin 體驗相近的桌面。它適合需要國產化替代、本地服務與合規支援的組織。需要注意的是，UOS 是商業發行版，原始碼與更新政策並不完全公開；其軟體生態以國內應用適配為主，國際專業軟體支援有限。與 openKylin 的社群路線不同，UOS 更強調企業交付與支援。選型時應明確版本、授權範圍與硬體相容性。",
+    "highlights": [
+      "面向政企的國產商業發行版",
+      "DDE 定製桌面與中文辦公生態",
+      "多架構國產硬體支援",
+      "集中管理與商業支援"
+    ],
+    "pros": [
+      "本地化與政企支援完善",
+      "國產硬體適配積極",
+      "商業服務明確"
+    ],
+    "cons": [
+      "需要授權，開放性有限",
+      "國際軟體生態較弱",
+      "版本與支援政策需逐項確認"
+    ],
+    "similar": [
+      "deepin",
+      "openkylin",
+      "ubuntu"
+    ],
+    "target_user": "需要國產化替代與商業支援的政企使用者",
+    "tags": [
+      "desktop",
+      "enterprise",
+      "chinese"
+    ],
+    "popularity": 4,
+    "data_as_of": "2026-11-18",
+    "verified": false
+  },
+  {
+    "id": "flatcar",
+    "name": "Flatcar Container Linux",
+    "name_zh": "Flatcar Container Linux",
+    "family": "other",
+    "secondary_families": [
+      "container",
+      "cloud",
+      "immutable"
+    ],
+    "upstream": "CoreOS Container Linux",
+    "based_on_since": 2018,
+    "first_release": 2018,
+    "latest_version": "滾動更新",
+    "latest_release_date": null,
+    "release_model": "rolling",
+    "release_cycle": "持續滾動，按更新通道釋出",
+    "package_manager": "無傳統包管理（容器 + 自更新）",
+    "update_command": "通過 update_engine / 雲平臺自動更新",
+    "gui_updater": "無（面向伺服器）",
+    "init_system": "systemd",
+    "default_desktop": [
+      "無（伺服器/容器）"
+    ],
+    "supported_arch": [
+      "x86_64",
+      "aarch64"
+    ],
+    "status": "active",
+    "status_note": "活躍維護，CoreOS 的精神繼承者",
+    "maintainer_type": "company",
+    "maintainer": "Flatcar 專案（Microsoft 贊助）",
+    "founder": "Kinvolk",
+    "founded_year": 2018,
+    "org": "Flatcar 專案",
+    "license": "Apache-2.0 等",
+    "openness": "free",
+    "commercial_edition": "雲市場映象與商業支援",
+    "official_site": "https://www.flatcar.org/",
+    "docs": "https://www.flatcar.org/docs/latest/",
+    "download": "https://www.flatcar.org/docs/latest/installing/",
+    "repo": "https://github.com/flatcar",
+    "wiki": "https://www.flatcar.org/docs/latest/",
+    "forum": "https://github.com/flatcar/flatcar/issues",
+    "chat": "https://kubernetes.slack.com/",
+    "reddit": "https://www.reddit.com/r/Flatcar/",
+    "intro": "Flatcar Container Linux 是 2018 年從 CoreOS Container Linux 分叉出的容器最佳化作業系統，CoreOS 被 Red Hat 收購併轉向 Fedora CoreOS 後，Flatcar 接過“不可變、自動更新、專為容器設計”的路線。它沒有傳統包管理器，系統映象通過 update_engine 原子更新，使用者通過 Ignition 在首次啟動時完成配置，應用以容器形式執行。Flatcar 支援 x86_64 與 aarch64，提供雲映象、ISO 與 PXE 啟動，適合 Kubernetes 節點、容器宿主機與邊緣裝置。它適合熟悉宣告式配置、希望減少系統漂移的運維與平臺團隊。需要注意的是，Flatcar 不提供通用桌面，除錯需要適應只讀根分割槽與容器化工具；自動更新通道應結合維護視窗配置。它提供免費版本與商業支援，專案由 Microsoft 贊助的 Kinvolk 團隊維護，並保持開源治理。",
+    "highlights": [
+      "CoreOS 的社群精神繼承者",
+      "不可變系統與原子自動更新",
+      "Ignition 宣告式首次配置",
+      "專為容器與 Kubernetes 節點設計"
+    ],
+    "pros": [
+      "系統漂移小，適合大規模節點",
+      "自動更新與回滾可靠",
+      "雲映象與多架構支援"
+    ],
+    "cons": [
+      "不適合通用桌面",
+      "排障需適應只讀系統",
+      "自動更新需規劃維護視窗"
+    ],
+    "similar": [
+      "fedora-silverblue",
+      "clear-linux",
+      "nixos"
+    ],
+    "target_user": "執行容器與 Kubernetes 的平臺運維團隊",
+    "tags": [
+      "container",
+      "cloud",
+      "server",
+      "immutable"
+    ],
+    "popularity": 3,
+    "data_as_of": "2026-11-18",
+    "verified": true
+  },
+  {
+    "id": "sailfish",
+    "name": "Sailfish OS",
+    "name_zh": "Sailfish OS",
+    "family": "other",
+    "secondary_families": [
+      "mobile",
+      "privacy"
+    ],
+    "upstream": "Mer / Linux",
+    "based_on_since": 2013,
+    "first_release": 2013,
+    "latest_version": null,
+    "latest_release_date": null,
+    "release_model": "fixed",
+    "release_cycle": "按版本釋出，Jolla 與授權廠商提供更新",
+    "package_manager": "rpm / zypper",
+    "update_command": "通過系統設定 → 更新",
+    "gui_updater": "Sailfish 系統更新",
+    "init_system": "systemd",
+    "default_desktop": [
+      "Sailfish UI（Lipstick）"
+    ],
+    "supported_arch": [
+      "arm64",
+      "armv7",
+      "x86_64"
+    ],
+    "status": "active",
+    "status_note": "由 Jolla 與授權廠商維護，裝置支援範圍有限",
+    "maintainer_type": "company",
+    "maintainer": "Jolla",
+    "founder": "Jolla",
+    "founded_year": 2011,
+    "org": "Jolla Oy",
+    "license": "GPL-2.0-or-later / 專有 UI 元件",
+    "openness": "proprietary",
+    "commercial_edition": "Sailfish OS 授權與 Jolla 裝置",
+    "official_site": "https://sailfishos.org/",
+    "docs": "https://docs.sailfishos.org/",
+    "download": "https://sailfishos.org/",
+    "repo": "https://github.com/sailfishos",
+    "wiki": "https://docs.sailfishos.org/",
+    "forum": "https://forum.sailfishos.org/",
+    "chat": "https://matrix.to/#/#sailfishos:matrix.org",
+    "reddit": "https://www.reddit.com/r/sailfishos/",
+    "intro": "Sailfish OS 由 Jolla 於 2013 年推出，源自 MeeGo/Mer 專案，是一個以手勢操作和隱私為特色的移動 Linux 系統。它使用 rpm/zypper 包管理、systemd 與 Wayland，介面強調滑動導航、多工卡片和無需實體按鍵的操作；部分版本通過 Alien Dalvik 支援 Android 應用，但核心仍是 Linux 與 Qt。Sailfish 主要面向 Jolla 自家裝置、授權廠商與部分 Sony Xperia 移植社群，適合希望擺脫 Google 服務、重視隱私與歐洲開源生態的使用者。需要注意的是，Sailfish 的開放程度是“部分開源”：系統元件多可獲取，但 UI 與部分商業元件閉源；裝置支援範圍窄，應用生態遠小於 Android/iOS，日常使用需接受妥協。它提供商業授權與裝置，非完全免費發行版。",
+    "highlights": [
+      "MeeGo/Mer 血脈的手勢式移動系統",
+      "rpm/zypper 與 Wayland",
+      "部分版本支援 Android 應用",
+      "Jolla 與授權廠商維護"
+    ],
+    "pros": [
+      "隱私與獨立生態取向",
+      "手勢互動獨特",
+      "歐洲移動 Linux 代表"
+    ],
+    "cons": [
+      "裝置與應用生態有限",
+      "部分元件閉源",
+      "日常使用需妥協"
+    ],
+    "similar": [
+      "ubuntu-touch",
+      "postmarketos",
+      "android"
+    ],
+    "target_user": "重視隱私、願意接受有限生態的移動 Linux 使用者",
+    "tags": [
+      "mobile",
+      "privacy",
+      "hobby"
+    ],
+    "popularity": 2,
+    "data_as_of": "2026-11-18",
+    "verified": false
+  }
+]

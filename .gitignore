@@ -1,0 +1,5 @@
+distroatlas.db
+distroatlas.db-*
+.tmp/
+*.pyc
+__pycache__/

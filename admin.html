@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!-- SPDX-License-Identifier: AGPL-3.0-or-later -->
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="color-scheme" content="light">
+  <title>DistroAtlas · Admin</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2300695c'/%3E%3Cpath d='M18 42c8-2 12-8 13-20 1 12 5 18 15 20' fill='none' stroke='%23fff' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <header class="admin-bar">
+    <a class="admin-brand" href="/">DistroAtlas <span>/ Admin</span></a>
+    <div class="admin-bar-right">
+      <span id="keyFingerprint" class="fingerprint">ED25519</span>
+      <label class="admin-lang"><span>Language</span><select id="adminLang" aria-label="Language"></select></label>
+      <button id="logoutBtn" class="btn ghost" type="button" hidden>退出</button>
+    </div>
+  </header>
+
+  <div id="adminTranslationNote" class="admin-ai-note"></div>
+
+  <main class="admin-main">
+    <section id="loginView" class="login-card">
+      <div class="eyebrow">ADMIN ACCESS</div>
+      <h1>用密钥登录</h1>
+      <p class="lead">使用 ed25519.pub 对应的私钥签名一次挑战。私钥不会离开你的电脑，本站不保存密码。</p>
+      <div class="login-step">
+        <span class="step-no">01</span>
+        <div>
+          <h2>获取一次性挑战</h2>
+          <p>挑战 5 分钟内有效，只能使用一次。</p>
+          <button id="challengeBtn" class="btn primary" type="button">获取挑战</button>
+        </div>
+      </div>
+      <div id="challengePanel" class="challenge-panel" hidden>
+        <div class="challenge-meta"><span>NAMESPACE</span><code id="namespaceText">distroatlas</code><span id="expiresText"></span></div>
+        <pre id="challengeText" class="challenge-box"></pre>
+        <div class="cmd-head"><span>在本机执行 / Run locally</span><button id="copyCmdBtn" class="btn tiny" type="button">复制命令</button></div>
+        <pre id="commandText" class="command-box"></pre>
+        <p class="hint">把生成的 .sig 文件内容完整粘贴到下面。签名文件以 -----BEGIN SSH SIGNATURE----- 开头。</p>
+        <textarea id="signatureInput" rows="8" spellcheck="false" placeholder="-----BEGIN SSH SIGNATURE-----&#10;...&#10;-----END SSH SIGNATURE-----"></textarea>
+        <button id="verifyBtn" class="btn primary wide" type="button">验证并登录</button>
+      </div>
+      <p id="loginError" class="error" role="alert"></p>
+      <p class="key-note">允许登录的公钥指纹：<code id="loginFingerprint">加载中…</code></p>
+    </section>
+
+    <section id="dashboard" hidden>
+      <div class="dash-head">
+        <div>
+          <div class="eyebrow">SUBMISSION DESK</div>
+          <h1>投稿审核</h1>
+          <p class="lead">审核公开投稿；通过后会写入数据库并出现在站点的全量档案与派系页。</p>
+        </div>
+        <button id="refreshBtn" class="btn ghost" type="button">刷新</button>
+      </div>
+
+      <div class="view-switch" role="tablist" aria-label="Admin view">
+        <button class="view-tab active" type="button" data-admin-view="submissions">投稿审核</button>
+        <button class="view-tab" type="button" data-admin-view="entries">编辑条目</button>
+      </div>
+
+      <div id="submissionsView">
+      <div id="stats" class="stats">
+        <div class="stat"><b id="statPending">0</b><span>待审核</span></div>
+        <div class="stat"><b id="statApproved">0</b><span>已通过</span></div>
+        <div class="stat"><b id="statRejected">0</b><span>已拒绝</span></div>
+        <div class="stat"><b id="statPublished">0</b><span>已发布条目</span></div>
+      </div>
+
+      <div class="tabs" role="tablist">
+        <button class="tab active" type="button" data-status="pending">待审核</button>
+        <button class="tab" type="button" data-status="approved">已通过</button>
+        <button class="tab" type="button" data-status="rejected">已拒绝</button>
+        <button class="tab" type="button" data-status="all">全部</button>
+      </div>
+      <div id="submissionList" class="submission-list" aria-live="polite"></div>
+      <p id="dashError" class="error" role="alert"></p>
+      </div>
+
+      <section id="entriesView" hidden>
+        <div class="entries-toolbar">
+          <input id="entrySearch" type="search" placeholder="搜索名称、ID 或上游…" aria-label="搜索条目">
+          <button id="entryRefresh" class="btn ghost" type="button">刷新</button>
+        </div>
+        <div id="entriesList" class="entries-list" aria-live="polite"></div>
+        <p id="entriesError" class="error" role="alert"></p>
+      </section>
+    </section>
+
+    <div id="entryEditor" class="editor-layer" hidden>
+      <div class="editor-backdrop" data-close-editor="1"></div>
+      <section class="editor-card" role="dialog" aria-modal="true" aria-labelledby="entryEditorTitle">
+        <header class="editor-head">
+          <div><div class="eyebrow">EDIT ENTRY</div><h2 id="entryEditorTitle">编辑条目</h2><p id="entryEditorMeta"></p></div>
+          <button class="btn ghost" type="button" data-close-editor="1" aria-label="关闭编辑">关闭</button>
+        </header>
+        <form id="entryForm" class="editor-form" novalidate>
+          <div class="editor-grid">
+            <label class="field"><span>ID</span><input name="id" readonly></label>
+            <label class="field"><span>名称</span><input name="name" required maxlength="90"></label>
+            <label class="field"><span>中文名</span><input name="name_zh" maxlength="90"></label>
+            <label class="field"><span>派系</span><select name="family"><option value="arch">Arch</option><option value="rh">RH</option><option value="debian">Debian</option><option value="ubuntu">Ubuntu</option><option value="other">Other</option></select></label>
+            <label class="field"><span>上游</span><input name="upstream" required maxlength="180"></label>
+            <label class="field"><span>首版</span><input name="first_release" maxlength="20"></label>
+            <label class="field"><span>最新版本</span><input name="latest_version" maxlength="60"></label>
+            <label class="field"><span>最新发布日期</span><input name="latest_release_date" maxlength="30"></label>
+            <label class="field"><span>发布模式</span><select name="release_model"><option value="rolling">rolling</option><option value="fixed">fixed</option><option value="lts">lts</option><option value="hybrid">hybrid</option></select></label>
+            <label class="field"><span>维护状态</span><select name="status"><option value="active">active</option><option value="lts">lts</option><option value="dormant">dormant</option><option value="eol">eol</option></select></label>
+            <label class="field"><span>包管理器</span><input name="package_manager" maxlength="300"></label>
+            <label class="field"><span>官网</span><input name="official_site" type="url" maxlength="500"></label>
+            <label class="field"><span>代码仓库</span><input name="repo" type="url" maxlength="500"></label>
+            <label class="field"><span>文档</span><input name="docs" type="url" maxlength="500"></label>
+            <label class="field"><span>下载</span><input name="download" type="url" maxlength="500"></label>
+            <label class="field"><span>Wiki</span><input name="wiki" type="url" maxlength="500"></label>
+            <label class="field"><span>论坛</span><input name="forum" type="url" maxlength="500"></label>
+            <label class="field"><span>聊天</span><input name="chat" type="url" maxlength="500"></label>
+            <label class="field"><span>Reddit</span><input name="reddit" type="url" maxlength="500"></label>
+            <label class="field"><span>维护者</span><input name="maintainer" maxlength="160"></label>
+            <label class="field"><span>所属组织</span><input name="org" maxlength="160"></label>
+            <label class="field"><span>创始人</span><input name="founder" maxlength="160"></label>
+            <label class="field"><span>许可证</span><input name="license" maxlength="160"></label>
+            <label class="field"><span>商业版本</span><input name="commercial_edition" maxlength="300"></label>
+            <label class="field"><span>开源纯度</span><select name="openness"><option value="free">free</option><option value="firmware">firmware</option><option value="proprietary">proprietary</option><option value="commercial">commercial</option></select></label>
+            <label class="field"><span>维护者类型</span><select name="maintainer_type"><option value="community">community</option><option value="foundation">foundation</option><option value="company">company</option><option value="individual">individual</option></select></label>
+            <label class="field"><span>发布周期</span><input name="release_cycle" maxlength="500"></label>
+            <label class="field"><span>图形更新器</span><input name="gui_updater" maxlength="300"></label>
+            <label class="field"><span>初始化系统</span><input name="init_system" maxlength="100"></label>
+            <label class="field"><span>更新命令</span><input name="update_command" maxlength="500"></label>
+            <label class="field"><span>默认桌面（逗号分隔）</span><input name="default_desktop" maxlength="500"></label>
+            <label class="field"><span>支持架构（逗号分隔）</span><input name="supported_arch" maxlength="500"></label>
+            <label class="field"><span>标签（逗号分隔）</span><input name="tags" maxlength="500"></label>
+            <label class="field"><span>目标用户</span><input name="target_user" maxlength="500"></label>
+            <label class="field"><span>状态说明</span><input name="status_note" maxlength="500"></label>
+            <label class="field"><span>数据截止</span><input name="data_as_of" maxlength="20"></label>
+            <label class="field"><span>基于上游起始</span><input name="based_on_since" maxlength="20"></label>
+            <label class="field"><span>次派系（逗号分隔）</span><input name="secondary_families" maxlength="300"></label>
+            <label class="field"><span>相似条目 ID（逗号分隔）</span><input name="similar" maxlength="500"></label>
+            <label class="field"><span>知名度（1–5）</span><input name="popularity" type="number" min="1" max="5"></label>
+          </div>
+          <label class="field"><span>简介</span><textarea name="intro" rows="5" required minlength="20" maxlength="9000"></textarea></label>
+          <div class="editor-grid">
+            <label class="field"><span>核心特色（每行一条）</span><textarea name="highlights" rows="4"></textarea></label>
+            <label class="field"><span>优点（每行一条）</span><textarea name="pros" rows="4"></textarea></label>
+            <label class="field"><span>代价（每行一条）</span><textarea name="cons" rows="4"></textarea></label>
+          </div>
+          <label class="field checkbox"><input name="verified" type="checkbox"> <span>已核对 / verified</span></label>
+          <label class="field checkbox"><input name="ai_assisted" type="checkbox"> <span>有 AI 参与 / AI-assisted</span></label>
+          <footer class="editor-actions">
+            <button class="btn primary" type="submit">保存 / Save</button>
+            <button class="btn ghost" type="button" id="entryReset">还原 / Reset</button>
+            <button class="btn ghost" type="button" data-close-editor="1">取消</button>
+          </footer>
+          <p id="editorError" class="error" role="alert"></p>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <script src="i18n.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

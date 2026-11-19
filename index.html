@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<!-- SPDX-License-Identifier: AGPL-3.0-or-later -->
+<html lang="zh-CN" class="mdui-theme-light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="author" content="elyezyc">
+  <link rel="author" href="https://github.com/elyezyc">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#00695c">
+  <title>DistroAtlas · Linux 发行版图谱</title>
+  <meta name="description" content="DistroAtlas 是一份可搜索、可筛选、可对比的 Linux 发行版百科图谱，收录 Arch、Red Hat、Debian、Ubuntu 与独立发行版，覆盖 70+ 个活跃与历史系统。">
+  <link rel="license" href="https://www.gnu.org/licenses/agpl-3.0.html">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2300695c'/%3E%3Cpath d='M18 42c8-2 12-8 13-20 1 12 5 18 15 20' fill='none' stroke='%23fff' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='20' cy='20' r='4' fill='%23f6c85f'/%3E%3Ccircle cx='44' cy='22' r='3' fill='%2387d9cc'/%3E%3C/svg%3E">
+
+  <!-- 主题在样式加载前恢复，避免闪烁 -->
+  <script>
+    (function () {
+      try {
+        var raw = localStorage.getItem('distroatlas.theme');
+        var theme = 'auto';
+        try { theme = raw === null ? 'auto' : JSON.parse(raw); } catch (e) { theme = raw || 'auto'; }
+        var html = document.documentElement;
+        html.classList.remove('mdui-theme-light', 'mdui-theme-dark', 'mdui-theme-auto');
+        html.classList.add('mdui-theme-' + (theme === 'dark' || theme === 'light' ? theme : 'auto'));
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- 网络策略：默认官方源；只有「自动 + 中国大陆时区」或手动选择中国镜像时才切换。 -->
+  <script>
+    (function () {
+      var mode = 'auto';
+      try {
+        var raw = localStorage.getItem('distroatlas.networkMode');
+        if (raw !== null) {
+          try { mode = JSON.parse(raw); } catch (e) { mode = raw; }
+        }
+      } catch (e) {}
+      if (['auto', 'official', 'china'].indexOf(mode) < 0) mode = 'auto';
+      var timeZone = '';
+      try { timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch (e) {}
+      var mainland = ['Asia/Shanghai', 'Asia/Chongqing', 'Asia/Harbin', 'Asia/Urumqi', 'Asia/Kashgar'];
+      var detectedCN = mainland.indexOf(timeZone) >= 0;
+      var useCN = mode === 'china' || (mode === 'auto' && detectedCN);
+      window.__DISTROATLAS_NET__ = {
+        mode: mode,
+        detectedCN: detectedCN,
+        timeZone: timeZone,
+        useCN: useCN
+      };
+      document.documentElement.dataset.network = useCN ? 'cn' : 'global';
+    })();
+  </script>
+
+  <!-- MDUI 2.x：官方 jsDelivr；中国大陆镜像使用 Staticfile。2.1.5 的官方路径是 /mdui.css，而非 /dist/mdui.css。 -->
+  <script>
+    (function () {
+      var net = window.__DISTROATLAS_NET__ || { useCN: false };
+      var css = net.useCN
+        ? 'https://cdn.staticfile.net/mdui/2.1.5/mdui.css'
+        : 'https://cdn.jsdelivr.net/npm/mdui@2.1.5/mdui.css';
+      var cssFallback = net.useCN
+        ? 'https://fastly.jsdelivr.net/npm/mdui@2.1.5/mdui.css'
+        : 'https://fastly.jsdelivr.net/npm/mdui@2.1.5/mdui.css';
+      document.write('<link rel="stylesheet" href="' + css + '" onerror="this.onerror=null;this.href=\'' + cssFallback + '\'">');
+    })();
+  </script>
+  <link rel="preload" href="assets/material-icons.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <div class="reading-progress" id="readingProgress" aria-hidden="true"></div>
+
+  <div class="ambient-grid" aria-hidden="true"></div>
+
+  <mdui-top-app-bar class="site-appbar" id="appBar">
+    <mdui-button-icon class="menu-btn" id="menuBtn" icon="menu" aria-label="打开导航"></mdui-button-icon>
+
+    <a class="brand" href="#/" aria-label="DistroAtlas 首页">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="28" height="28" fill="none">
+          <circle cx="16" cy="16" r="13" stroke="currentColor" stroke-width="1.4" opacity=".4"/>
+          <circle cx="16" cy="16" r="7" stroke="currentColor" stroke-width="1.4" opacity=".7"/>
+          <circle cx="16" cy="16" r="2.4" fill="currentColor"/>
+          <circle cx="26" cy="9" r="2" fill="#f0b429"/>
+          <circle cx="6" cy="23" r="1.6" fill="#88d8c0"/>
+        </svg>
+      </span>
+      <span class="brand-text">Distro<span>Atlas</span></span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="主导航">
+      <a href="#/" data-nav="home">首页</a>
+      <a href="#/all" data-nav="all">全量档案</a>
+      <a href="#/map" data-nav="map">完整星图</a>
+      <a href="#/about" data-nav="about">关于</a>
+    </nav>
+
+    <div class="top-search" id="topSearchWrap">
+      <mdui-icon name="search" class="search-leading" aria-hidden="true"></mdui-icon>
+      <input id="globalSearch" type="search" placeholder="搜索名称、上游、标签…"
+             autocomplete="off" spellcheck="false" aria-label="搜索发行版" aria-controls="searchPopover" aria-expanded="false">
+      <kbd class="search-kbd" aria-hidden="true">/</kbd>
+      <button class="search-clear" id="searchClear" type="button" aria-label="清空搜索" hidden>
+        <mdui-icon name="close" aria-hidden="true"></mdui-icon>
+      </button>
+      <div class="search-popover" id="searchPopover" role="listbox" aria-label="搜索建议" hidden></div>
+    </div>
+
+    <div class="appbar-actions">
+      <mdui-tooltip content="搜索">
+        <mdui-button-icon id="searchToggle" class="mobile-only" icon="search" aria-label="打开搜索"></mdui-button-icon>
+      </mdui-tooltip>
+      <mdui-tooltip content="对比清单">
+        <button class="icon-btn appbar-btn" id="compareBtn" type="button" aria-label="打开对比清单">
+          <mdui-icon name="compare_arrows" aria-hidden="true"></mdui-icon>
+          <span class="action-count" id="compareCount" hidden>0</span>
+        </button>
+      </mdui-tooltip>
+      <mdui-tooltip content="只看收藏">
+        <button class="icon-btn appbar-btn" id="favoritesBtn" type="button" aria-label="只看收藏" aria-pressed="false">
+          <mdui-icon name="star" aria-hidden="true"></mdui-icon>
+          <span class="action-count" id="favoritesCount" hidden>0</span>
+        </button>
+      </mdui-tooltip>
+      <mdui-tooltip content="语言 / Language">
+        <button class="icon-btn appbar-btn" id="langBtn" type="button" data-action="open-language" aria-label="切换语言 / Change language">
+          <mdui-icon name="translate" aria-hidden="true"></mdui-icon>
+        </button>
+      </mdui-tooltip>
+      <mdui-tooltip content="切换主题：跟随系统">
+        <button class="icon-btn appbar-btn" id="themeBtn" type="button" aria-label="切换主题，当前跟随系统">
+          <mdui-icon name="brightness_auto" id="themeIcon" aria-hidden="true"></mdui-icon>
+        </button>
+      </mdui-tooltip>
+    </div>
+  </mdui-top-app-bar>
+
+  <mdui-navigation-drawer class="nav-drawer" id="navDrawer" close-on-esc close-on-overlay-click>
+    <div class="drawer-head">
+      <div class="drawer-eyebrow">LINUX DISTRO ATLAS</div>
+      <div class="drawer-title">沿着上游，<br>找到你的系统。</div>
+      <p class="drawer-desc">共 <span id="drawerTotal">77</span> 个发行版 · 5 条派系脉络 · 一份持续校对的数据图谱。</p>
+    </div>
+    <mdui-list class="drawer-list">
+      <mdui-list-item rounded href="#/" data-drawer-route="home">
+        <mdui-icon slot="icon" name="home"></mdui-icon>首页
+      </mdui-list-item>
+      <mdui-list-item rounded href="#/all" data-drawer-route="all">
+        <mdui-icon slot="icon" name="table_rows"></mdui-icon>全量档案
+      </mdui-list-item>
+      <mdui-list-item rounded href="#/map" data-drawer-route="map">
+        <mdui-icon slot="icon" name="scatter_plot"></mdui-icon>完整星图
+      </mdui-list-item>
+      <mdui-list-item rounded href="#/all?fav=1" data-drawer-route="favorites">
+        <mdui-icon slot="icon" name="star"></mdui-icon>我的收藏
+      </mdui-list-item>
+      <mdui-list-item rounded href="#/about" data-drawer-route="about">
+        <mdui-icon slot="icon" name="info"></mdui-icon>关于本站
+      </mdui-list-item>
+      <mdui-list-item rounded id="drawerNetwork" class="drawer-network-item" tabindex="0" role="button" aria-label="网络与镜像设置">
+        <mdui-icon slot="icon" name="public"></mdui-icon>网络与镜像
+      </mdui-list-item>
+      <mdui-list-item rounded id="drawerLanguage" tabindex="0" role="button" data-action="open-language" aria-label="语言 / Language">
+        <mdui-icon slot="icon" name="translate"></mdui-icon>语言 / Language
+      </mdui-list-item>
+    </mdui-list>
+    <div class="drawer-divider"></div>
+    <div class="drawer-label">派系</div>
+    <div class="drawer-families" id="drawerFamilies"></div>
+    <div class="drawer-foot">
+      <button class="text-btn" id="drawerShortcuts" type="button">
+        <mdui-icon name="keyboard" aria-hidden="true"></mdui-icon>键盘快捷键
+      </button>
+      <span>数据截至 2026-11-18</span>
+    </div>
+  </mdui-navigation-drawer>
+
+  <main id="main" class="main-shell" tabindex="-1">
+    <div class="initial-skeleton" id="initialSkeleton">
+      <div class="skeleton-hero">
+        <span class="sk sk-eyebrow"></span>
+        <span class="sk sk-title"></span>
+        <span class="sk sk-title short"></span>
+        <span class="sk sk-text"></span>
+        <span class="sk sk-text tiny"></span>
+      </div>
+      <div class="skeleton-grid">
+        <span class="sk sk-card"></span>
+        <span class="sk sk-card"></span>
+        <span class="sk sk-card"></span>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="siteFooter">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <div class="brand footer-logo">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="24" height="24" fill="none">
+              <circle cx="16" cy="16" r="13" stroke="currentColor" stroke-width="1.4" opacity=".4"/>
+              <circle cx="16" cy="16" r="7" stroke="currentColor" stroke-width="1.4" opacity=".7"/>
+              <circle cx="16" cy="16" r="2.4" fill="currentColor"/>
+            </svg>
+          </span>
+          <span class="brand-text">Distro<span>Atlas</span></span>
+        </div>
+        <p>一份用上游关系与维护状态组织起来的 Linux 发行版图谱。数据可核对，分类有取舍，链接可直达。</p>
+      </div>
+      <nav class="footer-col" aria-label="站点导航">
+        <h3>浏览</h3>
+        <a href="#/">首页</a>
+        <a href="#/all">全量档案</a>
+        <a href="#/map">完整星图</a>
+        <a href="#/about">关于本站</a>
+      </nav>
+      <nav class="footer-col" aria-label="派系导航">
+        <h3>派系</h3>
+        <a href="#/family/arch">Arch 系</a>
+        <a href="#/family/rh">RH 系</a>
+        <a href="#/family/debian">Debian 系</a>
+        <a href="#/family/ubuntu" class="footer-child-link">↳ Ubuntu 系</a>
+        <a href="#/family/other">其他系</a>
+      </nav>
+      <div class="footer-col">
+        <h3>说明</h3>
+        <button class="footer-link" id="shortcutsBtn" type="button">键盘快捷键</button>
+        <button class="footer-link" id="networkSettingsBtn" type="button">网络与镜像</button>
+        <button class="footer-link" id="dataNotesBtn" type="button">数据与免责声明</button>
+        <a href="#/submit">投稿发行版</a>
+        <a href="/admin">管理入口 ↗</a>
+        <a href="https://github.com/elyezyc/DistroAtlas" data-github-link target="_blank" rel="noopener noreferrer">提交发行版 PR ↗</a>
+        <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" rel="noopener noreferrer license">AGPL-3.0-or-later</a>
+        <a href="https://www.mdui.org/" target="_blank" rel="noopener noreferrer">MDUI 2 文档 ↗</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 DistroAtlas · 作者 <a href="https://github.com/elyezyc" data-github-link target="_blank" rel="noopener noreferrer">elyezyc</a> · <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" rel="noopener noreferrer license">AGPL-3.0-or-later</a></span>
+      <span>非官方项目 · 与各发行版商标持有人无隶属关系</span>
+    </div>
+  </footer>
+
+  <mdui-fab class="back-top" id="backTop" icon="arrow_upward" aria-label="返回顶部" hidden></mdui-fab>
+
+  <div class="sheet-layer" id="filterLayer" hidden>
+    <div class="sheet-backdrop" data-close-sheet="filter"></div>
+    <section class="filter-sheet" id="filterSheet" role="dialog" aria-modal="true" aria-labelledby="filterTitle">
+      <div class="sheet-handle" aria-hidden="true"></div>
+      <header class="sheet-head">
+        <div>
+          <div class="eyebrow">FILTER THE ATLAS</div>
+          <h2 id="filterTitle">筛选发行版</h2>
+        </div>
+        <button class="icon-btn" type="button" data-close-sheet="filter" aria-label="关闭筛选">
+          <mdui-icon name="close" aria-hidden="true"></mdui-icon>
+        </button>
+      </header>
+      <div class="filter-body" id="filterBody"></div>
+      <footer class="sheet-foot">
+        <button class="text-btn" type="button" id="filterReset">清除全部</button>
+        <button class="primary-btn" type="button" id="filterApply">查看结果</button>
+      </footer>
+    </section>
+  </div>
+
+  <div class="compare-layer" id="compareLayer" hidden>
+    <div class="compare-backdrop" data-close-compare="1"></div>
+    <aside class="compare-drawer" id="compareDrawer" role="dialog" aria-modal="true" aria-labelledby="compareTitle">
+      <header class="compare-head">
+        <div>
+          <div class="eyebrow">SIDE BY SIDE</div>
+          <h2 id="compareTitle">发行版对比</h2>
+        </div>
+        <button class="icon-btn" type="button" data-close-compare="1" aria-label="关闭对比">
+          <mdui-icon name="close" aria-hidden="true"></mdui-icon>
+        </button>
+      </header>
+      <div class="compare-body" id="compareBody"></div>
+      <footer class="compare-foot">
+        <span id="compareHint">勾选 2–4 个发行版后即可并排查看核心字段。</span>
+        <button class="primary-btn" type="button" id="compareClear">清空清单</button>
+      </footer>
+    </aside>
+  </div>
+
+  <mdui-snackbar id="snackbar" placement="bottom"></mdui-snackbar>
+  <div class="fallback-toast" id="fallbackToast" role="status" aria-live="polite" hidden></div>
+
+  <mdui-dialog id="shortcutsDialog" close-on-esc close-on-overlay-click class="atlas-dialog"
+               headline="键盘快捷键">
+    <div class="dialog-copy">
+      <div class="shortcut-row"><kbd>/</kbd><span>聚焦顶部搜索</span></div>
+      <div class="shortcut-row"><kbd>Esc</kbd><span>关闭浮层 / 清空搜索</span></div>
+      <div class="shortcut-row"><kbd>?</kbd><span>打开快捷键说明</span></div>
+      <div class="shortcut-row"><span class="key-combo"><kbd>G</kbd><kbd>H</kbd></span><span>依次按 G 再按 H，回到首页</span></div>
+      <div class="shortcut-row"><span class="key-combo"><kbd>G</kbd><kbd>A</kbd></span><span>依次按 G 再按 A，打开全量档案</span></div>
+      <p class="dialog-note">搜索支持名称、中文名、上游、标签与简介；结果会随输入实时更新。</p>
+    </div>
+  </mdui-dialog>
+
+  <mdui-dialog id="dataNotesDialog" close-on-esc close-on-overlay-click class="atlas-dialog"
+               headline="数据与免责声明">
+    <div class="dialog-copy">
+      <p>本站是个人维护的 Linux 发行版百科图谱，不是任何发行版或厂商的官方网站。版本号、发布日期与维护状态会变化，请以各项目官方公告为准。</p>
+      <p>无法确认的字段标记为「待核实」，并在详情页保留 null 而不猜测。已终止发行版保留在数据集中，用灰色状态与终止说明区分。</p>
+      <p>分类存在争议时（例如 openSUSE 是否归入 RH 系、Vanilla OS 的 Debian/Ubuntu 归属），条目简介中会注明取舍理由。</p>
+    </div>
+  </mdui-dialog>
+
+  <mdui-dialog id="networkDialog" close-on-esc close-on-overlay-click class="atlas-dialog"
+               headline="网络与镜像">
+    <div id="networkSettingsBody"></div>
+  </mdui-dialog>
+
+  <mdui-dialog id="languageDialog" close-on-esc close-on-overlay-click class="atlas-dialog language-dialog"
+               headline="Language / 語言 / Kieli">
+    <div class="lang-dialog-copy">
+      <p class="lang-dialog-lead">介面語言 / Interface language / Käyttöliittymän kieli</p>
+      <div class="lang-grid" id="langGrid">
+        <button class="lang-option" type="button" data-lang="zh-CN"><span class="lang-option-name">简体中文</span><span class="lang-option-kind">SOURCE</span><span class="lang-option-code">zh-CN</span></button>
+        <button class="lang-option" type="button" data-lang="zh-TW"><span class="lang-option-name">繁體中文</span><span class="lang-option-kind">MACHINE</span><span class="lang-option-code">zh-TW</span></button>
+        <button class="lang-option" type="button" data-lang="en"><span class="lang-option-name">English</span><span class="lang-option-kind">AI</span><span class="lang-option-code">EN</span></button>
+        <button class="lang-option" type="button" data-lang="fi"><span class="lang-option-name">Suomi</span><span class="lang-option-kind">AI</span><span class="lang-option-code">FI</span></button>
+      </div>
+      <p class="lang-dialog-note">切換語言會重新載入頁面。 / Changing language reloads the page. / Kielen vaihto lataa sivun uudelleen.<br>AI / machine-assisted translations may contain errors. <a href="https://github.com/elyezyc/DistroAtlas/issues/new?labels=translation" target="_blank" rel="noopener noreferrer">Report a translation issue ↗</a></p>
+    </div>
+  </mdui-dialog>
+
+  <noscript>
+    <div class="noscript">DistroAtlas 需要 JavaScript 来渲染路由、搜索与筛选。请在浏览器中启用 JavaScript。</div>
+  </noscript>
+
+  <!-- 引入顺序：数据 → 应用逻辑。样式由 styles.css 提供。 -->
+  <script>
+    (function () {
+      var net = window.__DISTROATLAS_NET__ || { useCN: false };
+      var src = net.useCN
+        ? 'https://cdn.staticfile.net/mdui/2.1.5/mdui.global.js'
+        : 'https://cdn.jsdelivr.net/npm/mdui@2.1.5/mdui.global.js';
+      var fallback = net.useCN
+        ? 'https://fastly.jsdelivr.net/npm/mdui@2.1.5/mdui.global.js'
+        : 'https://fastly.jsdelivr.net/npm/mdui@2.1.5/mdui.global.js';
+      document.write('<script src="' + src + '"><\/script>');
+      document.write('<script>if(!window.mdui){document.write(\'<script src="' + fallback + '"><\\/script>\')}<\/script>');
+    })();
+  </script>
+  <script>
+    (function () {
+      var lang = "";
+      try {
+        var raw = localStorage.getItem("distroatlas.lang");
+        lang = raw ? JSON.parse(raw) : "";
+      } catch (e) {}
+      if (["zh-CN", "zh-TW", "en", "fi"].indexOf(lang) < 0) {
+        var browser = String(navigator.language || "").toLowerCase();
+        if (browser.indexOf("fi") === 0) lang = "fi";
+        else if (browser === "zh-tw" || browser === "zh-hk" || browser === "zh-mo" || browser.indexOf("hant") >= 0) lang = "zh-TW";
+        else if (browser.indexOf("zh") === 0) lang = "zh-CN";
+        else if (browser.indexOf("en") === 0) lang = "en";
+        else lang = "zh-CN";
+      }
+      document.write('<script src="' + (lang === "zh-TW" ? "data.zh-TW.js" : "data.js") + '"><\/script>');
+      if (lang === "en" || lang === "fi") {
+        document.write('<script src="translations.js"><\/script>');
+      }
+    })();
+  </script>
+  <script src="i18n.js"></script>
+  <script src="about-i18n.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
